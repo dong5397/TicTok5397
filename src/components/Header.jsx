@@ -21,6 +21,9 @@ const LogoContainer = styled(Link)`
   font-size: 24px;
   display: flex;
   gap: 30px;
+  &:hover {
+    transform: scale(1.1);
+  }
 `;
 
 const LogoImage = styled.img`
@@ -41,7 +44,7 @@ const NavLink = styled(Link)`
   font-family: "GmarketSansMedium";
 
   &:hover {
-    transform: scale(1.3);
+    transform: scale(1.1);
   }
 `;
 
