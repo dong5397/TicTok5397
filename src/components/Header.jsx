@@ -7,11 +7,12 @@ const HeaderContainer = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px;
-  background-color: white;
+  padding: 10px;
+  background-color: #212121;
   color: white;
   transition: transform 0.3s;
   width: 1280px;
+  height: 40px;
   margin: 0 auto;
 `;
 
@@ -37,13 +38,14 @@ const NavLinks = styled.nav`
 
 const NavLink = styled(Link)`
   text-decoration: none;
-  color: black;
+  color: white;
   font-size: 25px;
   font-weight: bold;
-  transition: color 0.3s;
+  transition: color 0.3s, transform 0.3s;
   font-family: "GmarketSansMedium";
 
   &:hover {
+    color: #66e9ee; /* 원하는 색상으로 변경하세요 */
     transform: scale(1.1);
   }
 `;
@@ -57,7 +59,7 @@ function Header() {
       <NavLinks>
         <NavLink to="/Intord">소개</NavLink>
         <NavLink to="/Submit">지원</NavLink>
-        <NavLink to="/Qusetion">문의</NavLink>
+        <NavLink to="/Question">문의</NavLink>
       </NavLinks>
     </HeaderContainer>
   );

@@ -7,25 +7,25 @@ import ImageData from "../components/ImageData";
 import ImageData2 from "../components/ImageData2";
 
 const Container = styled.div`
-  max-width: 1280px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 50px;
   font-family: "GmarketSansMedium";
-  color: #333;
-  text-align: center;
+  color: white;
+  background-color: #212121;
+
   margin-top: 100px;
 `;
 
 const Heading = styled.h1`
-  text-align: center;
   margin-bottom: 20px;
-  color: #333;
+  color: white;
   font-size: 50px;
 `;
 
 const SubHeading = styled.h2`
   margin-top: 100px;
-  color: #333;
+  color: white;
   font-size: 40px;
   font-family: "GmarketSansMedium";
 `;
@@ -50,7 +50,7 @@ const Link = styled.a`
 `;
 
 const TextBox = styled.div`
-  width: 1000px;
+  width: 700px;
   border: 6px solid;
   border-radius: 10px;
   transition: transform 0.3s ease-in-out;
