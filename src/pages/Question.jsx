@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import Img1 from "../../images/Question/1.png";
 
 const questions1 = [
   {
@@ -49,7 +48,6 @@ function Question() {
       <MainContainer>
         <HeaderText>
           {"     "}
-          <Image src={Img1} alt="Img1" />
           1. 질문
         </HeaderText>
         {questions1.map((q, index) => (
@@ -71,7 +69,6 @@ function Question() {
       <MainContainer>
         <HeaderText>
           {"     "}
-          <Image src={Img1} alt="Img1" />
           2. 질문
         </HeaderText>
         {questions2.map((q, index) => (

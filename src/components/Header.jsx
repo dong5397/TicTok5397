@@ -8,7 +8,7 @@ const HeaderContainer = styled.header`
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  background-color: #212121;
+
   color: white;
   transition: transform 0.3s;
   width: 1280px;
@@ -21,7 +21,7 @@ const LogoContainer = styled(Link)`
   color: white;
   font-size: 24px;
   display: flex;
-  gap: 30px;
+  gap: 20px;
   &:hover {
     transform: scale(1.1);
   }
@@ -33,7 +33,7 @@ const LogoImage = styled.img`
 
 const NavLinks = styled.nav`
   display: flex;
-  gap: 70px;
+  gap: 30px;
 `;
 
 const NavLink = styled(Link)`
@@ -42,7 +42,7 @@ const NavLink = styled(Link)`
   font-size: 25px;
   font-weight: bold;
   transition: color 0.3s, transform 0.3s;
-  font-family: "GmarketSansMedium";
+  font-family: "Inter-Bold", Helvetica;
 
   &:hover {
     color: #66e9ee; /* 원하는 색상으로 변경하세요 */
@@ -57,9 +57,10 @@ function Header() {
         <LogoImage src={Logo} alt="Logo" />
       </LogoContainer>
       <NavLinks>
-        <NavLink to="/Intord">소개</NavLink>
-        <NavLink to="/Submit">지원</NavLink>
-        <NavLink to="/Question">문의</NavLink>
+        <NavLink to="/">HOME</NavLink>
+        <NavLink to="/Intord">RECRUIT</NavLink>
+        <NavLink to="/Submit">DETAILS</NavLink>
+        <NavLink to="/Question">FAQ</NavLink>
       </NavLinks>
     </HeaderContainer>
   );

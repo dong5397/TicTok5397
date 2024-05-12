@@ -1,5 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import styled, { keyframes, css } from "styled-components";
+import Img1 from "../../../images/Dot/1.png";
+import Img2 from "../../../images/Dot/2.png";
+import Img3 from "../../../images/Dot/3.png";
 
 // 파도타기 애니메이션 정의 (세로로 나타나기)
 const waveAnimation = keyframes`
@@ -14,12 +17,11 @@ const waveAnimation = keyframes`
 `;
 
 // 애니메이션 적용 여부를 동적으로 설정하는 스타일 컴포넌트
-const Box = styled.div`
-  width: 300px;
-  height: 300px;
-  margin: 10px;
+const Image = styled.img`
+  width: 10px;
+  height: 10px;
+  margin-top: 10px;
   border-radius: 8px;
-  background-color: ${(props) => props.color || "#3498db"};
   opacity: 0;
   transform: translateY(20px);
   ${(props) =>
@@ -35,11 +37,11 @@ const Container = styled.div`
   flex-direction: column; /* 세로 정렬 */
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 200px;
 `;
 
-const DelayedBox = ({ delay, color, isVisible }) => {
-  return <Box delay={delay} color={color} isVisible={isVisible} />;
+const DelayedImage = ({ delay, src, alt, isVisible }) => {
+  return <Image delay={delay} src={src} alt={alt} isVisible={isVisible} />;
 };
 
 const TestBox = () => {
@@ -63,9 +65,24 @@ const TestBox = () => {
 
   return (
     <Container ref={containerRef}>
-      <DelayedBox delay={0.1} color="#3498db" isVisible={isVisible} />
-      <DelayedBox delay={0.3} color="#e74c3c" isVisible={isVisible} />
-      <DelayedBox delay={0.5} color="#f1c40f" isVisible={isVisible} />
+      <DelayedImage
+        delay={0.1}
+        src={Img1}
+        alt="Image 1"
+        isVisible={isVisible}
+      />
+      <DelayedImage
+        delay={0.3}
+        src={Img2}
+        alt="Image 2"
+        isVisible={isVisible}
+      />
+      <DelayedImage
+        delay={0.5}
+        src={Img3}
+        alt="Image 3"
+        isVisible={isVisible}
+      />
     </Container>
   );
 };
