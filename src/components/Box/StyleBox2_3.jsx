@@ -6,23 +6,14 @@ const CenterContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 420px;
-  margin-top: 300px;
-  transform: translate(-50%, -50%);
-
-  @media (max-width: 1024px) {
-    margin-left: 350px;
-    margin-top: 250px;
-  }
+  margin-top: 100px;
 
   @media (max-width: 768px) {
-    margin-left: 50%;
-    margin-top: 200px;
+    margin-top: 50px;
   }
 
   @media (max-width: 480px) {
-    margin-left: 50%;
-    margin-top: 150px;
+    margin-top: 50px;
   }
 `;
 

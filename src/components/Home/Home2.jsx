@@ -134,7 +134,7 @@ const Content = styled.div`
     margin-bottom: 20px; /* 이미지 사이에 간격을 추가 */
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 800px) {
     margin-top: 150px;
     margin-bottom: 60px;
   }

@@ -82,11 +82,11 @@ const Styleline = styled.div`
     height: 2px;
 
     @media (max-width: 768px) {
-      margin-left: 0;
+      margin-left: -50px;
     }
 
     @media (max-width: 480px) {
-      margin-left: 0;
+      margin-left: -50px;
     }
   }
 `;

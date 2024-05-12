@@ -37,8 +37,11 @@ const StyledLabel = styled.div`
     align-items: center;
     gap: 10px;
 
+    @media (max-width: 768px) {
+      align-items: flex-start;
+    }
+
     @media (max-width: 480px) {
-      flex-direction: column;
       align-items: flex-start;
     }
   }
@@ -73,11 +76,11 @@ const Styleline = styled.div`
     height: 2px;
 
     @media (max-width: 768px) {
-      margin-left: 0;
+      margin-left: -50px;
     }
 
     @media (max-width: 480px) {
-      margin-left: 0;
+      margin-left: -50px;
     }
   }
 `;

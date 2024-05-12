@@ -86,11 +86,11 @@ const Styleline = styled.div`
     height: 2px;
 
     @media (max-width: 768px) {
-      margin-left: 0;
+      margin-left: -50px;
     }
 
     @media (max-width: 480px) {
-      margin-left: 0;
+      margin-left: -50px;
     }
   }
 `;
@@ -146,8 +146,8 @@ function Home10() {
       <BoxContainer>
         <StyleBox2 />
         <StyleBox2_2 />
-        <StyleBox2_3 />
       </BoxContainer>
+      <StyleBox2_3 />
     </MainContainer>
   );
 }

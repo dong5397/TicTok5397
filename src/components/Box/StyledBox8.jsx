@@ -167,9 +167,7 @@ function StyleBox8() {
         <div className="group">
           <div className="text-wrapper">
             <img className="dot-img" src={Dot} alt="점" />
-            애니메이션 박스 8
           </div>
-          <div className="div">여기에 내용을 추가하세요.</div>
         </div>
       </AnimatedBox>
     </StyledBox2Container>

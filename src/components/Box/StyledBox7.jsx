@@ -19,8 +19,8 @@ const fadeInUp = keyframes`
 
 const StyledBox7Container = styled.div`
   position: relative;
-  height: 398px;
   width: 792px;
+  height: 398px;
 
   @media (max-width: 768px) {
     width: 90%;
@@ -43,7 +43,7 @@ const RowContainer = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: 16px; /* 줄 간격 */
+  margin-bottom: 16px;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -60,9 +60,9 @@ const StyledRectangle = styled.div`
   -webkit-backdrop-filter: blur(4px) brightness(100%);
   backdrop-filter: blur(4px) brightness(100%);
   background-color: #ffffffb2;
-  border-radius: 30px;
-  width: 250px; /* 가로 크기 조정 */
-  height: 220px; /* 세로 크기 조정 */
+  border-radius: 20px;
+  width: 250px;
+  height: 220px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,12 +85,12 @@ const StyledRectangle = styled.div`
   }
 
   @media (max-width: 768px) {
-    width: 100%;
+    width: 50%;
     height: 180px;
   }
 
   @media (max-width: 480px) {
-    width: 100%;
+    width: 50%;
     height: 150px;
   }
 `;
@@ -99,9 +99,9 @@ const StyledDiv = styled.div`
   -webkit-backdrop-filter: blur(4px) brightness(100%);
   backdrop-filter: blur(4px) brightness(100%);
   background-color: #ffffffb2;
-  border-radius: 30px;
-  width: 380px; /* 가로 크기 조정 */
-  height: 175px; /* 세로 크기 조정 */
+  border-radius: 20px;
+  width: 380px;
+  height: 175px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -124,12 +124,12 @@ const StyledDiv = styled.div`
   }
 
   @media (max-width: 768px) {
-    width: 100%;
+    width: 50%;
     height: 150px;
   }
 
   @media (max-width: 480px) {
-    width: 100%;
+    width: 50%;
     height: 120px;
   }
 `;
