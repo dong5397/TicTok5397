@@ -9,6 +9,21 @@ const CenterContainer = styled.div`
   margin-left: 420px;
   margin-top: 300px;
   transform: translate(-50%, -50%);
+
+  @media (max-width: 1024px) {
+    margin-left: 350px;
+    margin-top: 250px;
+  }
+
+  @media (max-width: 768px) {
+    margin-left: 50%;
+    margin-top: 200px;
+  }
+
+  @media (max-width: 480px) {
+    margin-left: 50%;
+    margin-top: 150px;
+  }
 `;
 
 const StyledLink = styled(Link)`
@@ -22,6 +37,16 @@ const StyledLabel = styled.div`
   font-weight: 700;
   text-align: center;
   padding: 30px;
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 16px;
+    padding: 15px;
+  }
 `;
 
 const StyledBox = styled.div`
@@ -49,6 +74,26 @@ const StyledBox = styled.div`
   &:hover .rectangle {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
     transform: scale(1.05);
+  }
+
+  @media (max-width: 768px) {
+    height: 90px;
+    width: 350px;
+
+    & .rectangle {
+      height: 90px;
+      width: 350px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    height: 72px;
+    width: 300px;
+
+    & .rectangle {
+      height: 72px;
+      width: 300px;
+    }
   }
 `;
 

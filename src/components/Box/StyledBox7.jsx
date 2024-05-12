@@ -21,6 +21,16 @@ const StyledBox7Container = styled.div`
   position: relative;
   height: 398px;
   width: 792px;
+
+  @media (max-width: 768px) {
+    width: 90%;
+    height: auto;
+  }
+
+  @media (max-width: 480px) {
+    width: 100%;
+    height: auto;
+  }
 `;
 
 const StyledGroup = styled.div`
@@ -34,6 +44,16 @@ const RowContainer = styled.div`
   justify-content: space-between;
   width: 100%;
   margin-bottom: 16px; /* 줄 간격 */
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    gap: 16px;
+  }
 `;
 
 const StyledRectangle = styled.div`
@@ -63,6 +83,16 @@ const StyledRectangle = styled.div`
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 180px;
+  }
+
+  @media (max-width: 480px) {
+    width: 100%;
+    height: 150px;
+  }
 `;
 
 const StyledDiv = styled.div`
@@ -91,6 +121,16 @@ const StyledDiv = styled.div`
   &:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 150px;
+  }
+
+  @media (max-width: 480px) {
+    width: 100%;
+    height: 120px;
   }
 `;
 

@@ -4,7 +4,7 @@ import Home2Image from "../../../images/Home/Home2.png";
 import TicTokImage from "../../../images/Home/TicTok.png";
 import MakertoneImage from "../../../images/Home/Home3.png";
 
-function Home() {
+function Home2() {
   const textRefs = useRef([]);
 
   useEffect(() => {
@@ -71,7 +71,7 @@ function Home() {
   );
 }
 
-export default Home;
+export default Home2;
 
 const StyledBox = styled.div`
   position: absolute; /* 배경 이미지를 절대 위치로 고정 */
@@ -124,7 +124,7 @@ const Content = styled.div`
   margin-top: 200px;
   text-align: center;
   transform: translateY(-10%); /* 살짝 위로 이동 */
-  max-width: 80%; /* 이미지가 화면에 꽉차지 않도록 제한 */
+  max-width: 80%; /* 이미지가 화면에 꽉 차지 않도록 제한 */
   margin-bottom: 80px; /* 아래쪽에 여유 공간 추가 */
 
   & img {
@@ -133,18 +133,37 @@ const Content = styled.div`
     margin-top: 0px;
     margin-bottom: 20px; /* 이미지 사이에 간격을 추가 */
   }
+
+  @media (max-width: 768px) {
+    margin-top: 150px;
+    margin-bottom: 60px;
+  }
+
+  @media (max-width: 480px) {
+    margin-top: 120px;
+    margin-bottom: 40px;
+  }
 `;
 
 const MainContainer = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-
-  margin-top: 250px;
   align-items: center;
   height: 150vh;
   width: 100vw;
   overflow: hidden;
+  margin-top: 250px;
+
+  @media (max-width: 768px) {
+    margin-top: 200px;
+    height: 140vh;
+  }
+
+  @media (max-width: 480px) {
+    margin-top: 150px;
+    height: 130vh;
+  }
 `;
 
 const StyledLabel = styled.div`
@@ -158,6 +177,14 @@ const StyledLabel = styled.div`
     display: flex;
     flex-direction: column;
     gap: 10px;
+
+    @media (max-width: 768px) {
+      gap: 8px;
+    }
+
+    @media (max-width: 480px) {
+      gap: 6px;
+    }
   }
 
   & .text {
@@ -169,6 +196,16 @@ const StyledLabel = styled.div`
     opacity: 0;
     transition: opacity 0.6s, transform 0.6s;
     transform: translateY(20px);
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+      line-height: 1.3;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 14px;
+      line-height: 1.2;
+    }
   }
 
   & .visible {
@@ -181,5 +218,13 @@ const StyledLabel = styled.div`
     font-family: "Inter-SemiBold", Helvetica;
     font-size: 18px;
     font-weight: 600;
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 14px;
+    }
   }
 `;

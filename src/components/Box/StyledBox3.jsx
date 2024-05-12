@@ -22,6 +22,14 @@ const StyledBox2Container = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   gap: 80px;
+
+  @media (max-width: 768px) {
+    gap: 60px;
+  }
+
+  @media (max-width: 480px) {
+    gap: 40px;
+  }
 `;
 
 const StyledBox3 = styled.div`
@@ -37,6 +45,14 @@ const StyledBox3 = styled.div`
   & .group {
     position: relative;
     width: 800px;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+
+    @media (max-width: 480px) {
+      width: 100%;
+    }
   }
 
   & .text-wrapper {
@@ -50,10 +66,28 @@ const StyledBox3 = styled.div`
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+
+    @media (max-width: 768px) {
+      font-size: 24px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 20px;
+    }
   }
 
   & .dot-img {
     margin-right: 8px;
+
+    @media (max-width: 768px) {
+      width: 16px;
+      height: 16px;
+    }
+
+    @media (max-width: 480px) {
+      width: 14px;
+      height: 14px;
+    }
   }
 
   & .div {
@@ -64,7 +98,27 @@ const StyledBox3 = styled.div`
     letter-spacing: 0;
     line-height: 1.5;
     position: relative;
-    margin-left: 15px; /* 왼쪽 마진 추가 */
+    margin-left: 15px;
+
+    @media (max-width: 768px) {
+      font-size: 18px;
+      margin-left: 10px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 16px;
+      margin-left: 8px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 90%;
+    margin-left: 0;
+  }
+
+  @media (max-width: 480px) {
+    width: 100%;
+    margin-left: 0;
   }
 `;
 

@@ -9,7 +9,7 @@ const StyledBox = styled.div`
   border-radius: 10px;
   background: linear-gradient(
     90deg,
-    /* 왼쪽에서 오른쪽으로 변경 */ rgba(0, 0, 0, 0) 2.87%,
+    rgba(0, 0, 0, 0) 2.87%,
     rgb(254, 44, 85) 100%
   );
   box-shadow: 0 0 10px rgba(254, 44, 85, 0.8);
@@ -20,7 +20,7 @@ const StyledBox = styled.div`
     box-shadow: 0 0 20px rgba(254, 44, 85, 1);
     background: linear-gradient(
       90deg,
-      /* 왼쪽에서 오른쪽으로 변경 */ rgba(0, 0, 0, 0.2) 2.87%,
+      rgba(0, 0, 0, 0.2) 2.87%,
       rgba(254, 44, 85, 0.2) 100%
     );
   }
@@ -35,10 +35,21 @@ const StyledBox = styled.div`
     border-radius: 10px;
     background: linear-gradient(
       to right,
-      /* 왼쪽에서 오른쪽으로 변경 */ rgb(254, 44, 85),
+      rgb(254, 44, 85),
       rgba(254, 44, 85, 0.2)
     );
     z-index: -1;
+  }
+
+  /* 반응형 미디어 쿼리 */
+  @media (max-width: 768px) {
+    width: 90%;
+    height: 120px;
+  }
+
+  @media (max-width: 480px) {
+    width: 100%;
+    height: 100px;
   }
 `;
 
@@ -60,6 +71,15 @@ const StyledLabel = styled.div`
     font-weight: 500;
     letter-spacing: 0;
     line-height: 1.4;
+
+    /* 반응형 미디어 쿼리 */
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 14px;
+    }
   }
 `;
 

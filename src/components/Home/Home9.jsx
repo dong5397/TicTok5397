@@ -25,6 +25,18 @@ const StyledBox = styled.div`
     width: 100vh; /* 세로를 가로 방향으로 회전시킴 */
     height: 100vw; /* 가로를 세로 방향으로 회전시킴 */
     transform: translate(-50%, -50%) rotate(90deg);
+
+    @media (max-width: 768px) {
+      width: 120vw;
+      height: 120vh;
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    @media (max-width: 480px) {
+      width: 100vw;
+      height: 100vh;
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
   }
 `;
 

@@ -21,6 +21,14 @@ const StyledBox2Container = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   gap: 80px;
+
+  @media (max-width: 768px) {
+    gap: 60px;
+  }
+
+  @media (max-width: 480px) {
+    gap: 40px;
+  }
 `;
 
 const StyledBox4 = styled.div`
@@ -36,6 +44,14 @@ const StyledBox4 = styled.div`
   & .group {
     position: relative;
     width: 800px;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+
+    @media (max-width: 480px) {
+      width: 100%;
+    }
   }
 
   & .text-wrapper {
@@ -49,11 +65,29 @@ const StyledBox4 = styled.div`
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-    margin-left: 8px; /* 왼쪽 마진 추가 */
+    margin-left: 8px;
+
+    @media (max-width: 768px) {
+      font-size: 24px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 20px;
+    }
   }
 
   & .dot-img {
     margin-right: 8px;
+
+    @media (max-width: 768px) {
+      width: 16px;
+      height: 16px;
+    }
+
+    @media (max-width: 480px) {
+      width: 14px;
+      height: 14px;
+    }
   }
 
   & .div {
@@ -64,7 +98,27 @@ const StyledBox4 = styled.div`
     letter-spacing: 0;
     line-height: 1.5;
     position: relative;
-    margin-left: 20px; /* 왼쪽 마진 추가 */
+    margin-left: 20px;
+
+    @media (max-width: 768px) {
+      font-size: 18px;
+      margin-left: 15px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 16px;
+      margin-left: 10px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 90%;
+    margin-left: 0;
+  }
+
+  @media (max-width: 480px) {
+    width: 100%;
+    margin-left: 0;
   }
 `;
 
@@ -131,11 +185,10 @@ function StyleBox4() {
         <div className="group">
           <div className="text-wrapper">
             <img className="dot-img" src={Dot} alt="점" />
-            등록방법
+            교육일정
           </div>
           <div className="div">
-            <h3>교육일정</h3>
-            내용 : TikTok Effect House 활용법 및 심화교육
+            내용: TikTok Effect House 활용법 및 심화교육
             <br />
             서울 1차 : 8월 5일 화요일, 중앙대학교
             <br />

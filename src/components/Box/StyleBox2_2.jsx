@@ -30,6 +30,17 @@ const Image = styled.img`
       animation: ${waveAnimation} 0.5s ease forwards;
       animation-delay: ${props.delay}s;
     `}
+
+  /* 반응형 크기 변경 */
+  @media (max-width: 768px) {
+    width: 8px;
+    height: 8px;
+  }
+
+  @media (max-width: 480px) {
+    width: 6px;
+    height: 6px;
+  }
 `;
 
 const Container = styled.div`
@@ -38,6 +49,15 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: 200px;
+
+  /* 반응형 레이아웃 변경 */
+  @media (max-width: 768px) {
+    margin-top: 150px;
+  }
+
+  @media (max-width: 480px) {
+    margin-top: 100px;
+  }
 `;
 
 const DelayedImage = ({ delay, src, alt, isVisible }) => {

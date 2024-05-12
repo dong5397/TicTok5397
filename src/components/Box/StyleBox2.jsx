@@ -21,6 +21,16 @@ const StyledLabel = styled.div`
     letter-spacing: 0;
     line-height: 1.5;
     margin-bottom: 20px;
+
+    @media (max-width: 768px) {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
   }
 
   & .h3 {
@@ -31,6 +41,16 @@ const StyledLabel = styled.div`
     letter-spacing: 0;
     line-height: 1.4;
     margin-bottom: 70px;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+      margin-bottom: 50px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 12px;
+      margin-bottom: 30px;
+    }
   }
 `;
 
@@ -39,6 +59,16 @@ const BoxContainerStyle = styled.div`
   justify-content: center;
   align-items: center;
   gap: 20px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    gap: 10px;
+  }
 `;
 
 const StyledBox = styled.div`
@@ -66,6 +96,9 @@ const StyledBox = styled.div`
     width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: all 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   &:hover {
@@ -76,6 +109,16 @@ const StyledBox = styled.div`
     ${StyledLabel} {
       transform: translateY(-5px);
     }
+  }
+
+  @media (max-width: 768px) {
+    height: 150px;
+    width: 350px;
+  }
+
+  @media (max-width: 480px) {
+    height: 120px;
+    width: 300px;
   }
 `;
 

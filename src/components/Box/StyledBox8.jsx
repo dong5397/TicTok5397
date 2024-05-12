@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import styled, { keyframes } from "styled-components";
 import Dot from "../../../images/Home/Dot.png";
-import StyleBox2 from "./StyleBox2";
+
 const fadeIn = keyframes`
   0% {
     opacity: 0;
@@ -19,9 +19,17 @@ const StyledBox2Container = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* 세로 중앙 정렬 추가 */
-  align-items: center; /* 가로 중앙 정렬 추가 */
+  justify-content: center;
+  align-items: center;
   gap: 80px;
+
+  @media (max-width: 768px) {
+    gap: 60px;
+  }
+
+  @media (max-width: 480px) {
+    gap: 40px;
+  }
 `;
 
 const StyledBox8 = styled.div`
@@ -37,6 +45,14 @@ const StyledBox8 = styled.div`
   & .group {
     position: relative;
     width: 800px;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+
+    @media (max-width: 480px) {
+      width: 100%;
+    }
   }
 
   & .text-wrapper {
@@ -50,10 +66,28 @@ const StyledBox8 = styled.div`
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+
+    @media (max-width: 768px) {
+      font-size: 24px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 20px;
+    }
   }
 
   & .dot-img {
     margin-right: 8px;
+
+    @media (max-width: 768px) {
+      width: 16px;
+      height: 16px;
+    }
+
+    @media (max-width: 480px) {
+      width: 14px;
+      height: 14px;
+    }
   }
 
   & .div {
@@ -64,9 +98,29 @@ const StyledBox8 = styled.div`
     letter-spacing: 0;
     line-height: 1.5;
     position: relative;
-    display: flex; /* 추가 */
-    justify-content: center; /* 추가 */
-    gap: 20px; /* 추가 */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    @media (max-width: 768px) {
+      font-size: 18px;
+      gap: 15px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 16px;
+      gap: 10px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 90%;
+    margin-left: 0;
+  }
+
+  @media (max-width: 480px) {
+    width: 100%;
+    margin-left: 0;
   }
 `;
 
@@ -111,7 +165,11 @@ function StyleBox8() {
     <StyledBox2Container>
       <AnimatedBox delay={0}>
         <div className="group">
-          <div className="div"></div>
+          <div className="text-wrapper">
+            <img className="dot-img" src={Dot} alt="점" />
+            애니메이션 박스 8
+          </div>
+          <div className="div">여기에 내용을 추가하세요.</div>
         </div>
       </AnimatedBox>
     </StyledBox2Container>

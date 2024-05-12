@@ -15,10 +15,26 @@ const StyledNotificationLabel = styled.div`
     letter-spacing: 0;
     line-height: normal;
     margin-bottom: 5px;
+
+    @media (max-width: 768px) {
+      font-size: 9px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 8px;
+    }
   }
 
   & .indent {
     margin-left: 10px; /* 들여쓰기 간격 */
+
+    @media (max-width: 768px) {
+      margin-left: 8px;
+    }
+
+    @media (max-width: 480px) {
+      margin-left: 6px;
+    }
   }
 `;
 
