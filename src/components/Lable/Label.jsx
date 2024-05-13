@@ -26,7 +26,7 @@ const StyledNotificationLabel = styled.div`
   }
 
   & .indent {
-    margin-left: 10px; /* 들여쓰기 간격 */
+    margin-left: 15px; /* 들여쓰기 간격 */
 
     @media (max-width: 768px) {
       margin-left: 8px;

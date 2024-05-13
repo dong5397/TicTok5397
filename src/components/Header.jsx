@@ -5,6 +5,8 @@ import Logo from "../../images/Logo.png";
 
 const HeaderContainer = styled.header`
   display: flex;
+  position: fixed;
+  top: 0;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
@@ -14,6 +16,10 @@ const HeaderContainer = styled.header`
   max-width: 1280px;
   height: 40px;
   margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.8); /* 반투명 배경 */
+  z-index: 1000;
+  left: 50%;
+  transform: translateX(-50%);
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -33,10 +39,7 @@ const LogoContainer = styled(Link)`
   font-size: 24px;
   display: flex;
   gap: 20px;
-
-  &:hover {
-    transform: scale(1.1);
-  }
+  margin-right: auto;
 
   @media (max-width: 768px) {
     font-size: 20px;
@@ -50,7 +53,7 @@ const LogoContainer = styled(Link)`
 `;
 
 const LogoImage = styled.img`
-  width: 100px;
+  width: 140px;
 
   @media (max-width: 768px) {
     width: 80px;
@@ -64,6 +67,8 @@ const LogoImage = styled.img`
 const NavLinks = styled.nav`
   display: flex;
   gap: 30px;
+  justify-content: space-between;
+  margin-left: auto;
 
   @media (max-width: 768px) {
     gap: 20px;
@@ -87,8 +92,7 @@ const NavLink = styled(Link)`
   font-family: "Inter-Bold", Helvetica;
 
   &:hover {
-    color: #66e9ee; /* 원하는 색상으로 변경하세요 */
-    transform: scale(1.1);
+    color: #66e9ee;
   }
 
   @media (max-width: 768px) {

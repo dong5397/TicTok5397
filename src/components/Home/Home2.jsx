@@ -168,7 +168,7 @@ const StyledLabel = styled.div`
   position: relative;
   z-index: 2;
   max-width: 80%;
-  margin-top: px;
+  margin-top: -70px;
   text-align: center;
 
   & .flexcontainer {

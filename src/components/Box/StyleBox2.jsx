@@ -36,7 +36,7 @@ const StyledLabel = styled.div`
   & .h3 {
     color: #ffffff;
     font-family: "Inter-Regular", Helvetica;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 500;
     letter-spacing: 0;
     line-height: 1.4;
@@ -79,7 +79,7 @@ const StyledBox = styled.div`
 
   & .rectangle {
     background: linear-gradient(
-      270deg,
+      220deg,
       ${(props) => props.gradientStart} 0%,
       ${(props) => props.gradientEnd} 100%
     );
@@ -91,7 +91,7 @@ const StyledBox = styled.div`
       )
       1;
     border-radius: 16px;
-    border: 4px solid;
+    border: 2px solid ${(props) => props.gradientEnd}; /* 수정 */
     height: 100%;
     width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -152,7 +152,7 @@ const StyledBox2 = () => (
   </StyledBox>
 );
 
-const StyleBox2 = () => {
+const StyledBox2Container = () => {
   return (
     <BoxContainerStyle>
       <StyledBox1 />
@@ -161,4 +161,4 @@ const StyleBox2 = () => {
   );
 };
 
-export default StyleBox2;
+export default StyledBox2Container;
