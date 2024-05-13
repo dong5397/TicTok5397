@@ -79,7 +79,7 @@ const StyledBox = styled.div`
   left: 0;
 
   width: 100%;
-  height: 100%;
+  height: 80%;
   z-index: 0;
 
   & .mask-group {
@@ -95,7 +95,7 @@ const StyledBox = styled.div`
     top: 0;
     left: 0;
     width: 100%;
-    height: 30%;
+    height: 40%;
     background: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.9),
@@ -121,7 +121,7 @@ const Content = styled.div`
   position: relative; /* 컨텐츠를 백그라운드 위로 올리기 위해 상대 위치 설정 */
   z-index: 2;
   color: white;
-  margin-top: 200px;
+  margin-top: 250px;
   text-align: center;
   transform: translateY(-10%); /* 살짝 위로 이동 */
   max-width: 80%; /* 이미지가 화면에 꽉 차지 않도록 제한 */
@@ -150,19 +150,17 @@ const MainContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 150vh;
+  height: 130vh;
   width: 100vw;
   overflow: hidden;
-  margin-top: 250px;
-
   @media (max-width: 768px) {
     margin-top: 200px;
-    height: 140vh;
+    height: 100vh;
   }
 
   @media (max-width: 480px) {
     margin-top: 150px;
-    height: 130vh;
+    height: 100vh;
   }
 `;
 
@@ -170,7 +168,7 @@ const StyledLabel = styled.div`
   position: relative;
   z-index: 2;
   max-width: 80%;
-  margin-top: -60px; /* Content와 겹치지 않도록 위로 올림 */
+  margin-top: px;
   text-align: center;
 
   & .flexcontainer {

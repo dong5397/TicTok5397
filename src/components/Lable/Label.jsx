@@ -10,7 +10,7 @@ const StyledNotificationLabel = styled.div`
   & .text-wrapper {
     color: #25f4ee;
     font-family: "Inter-Medium", Helvetica;
-    font-size: 10px;
+    font-size: 15px;
     font-weight: 500;
     letter-spacing: 0;
     line-height: normal;

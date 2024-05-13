@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for tictoktestpage on 2024-05-13T02:53:37+09:00
+# fly.toml app configuration file generated for tiktoktestpage on 2024-05-13T15:16:54+09:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'tictoktestpage'
+app = 'tiktoktestpage'
 primary_region = 'nrt'
 
 [build]

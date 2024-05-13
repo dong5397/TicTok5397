@@ -23,7 +23,8 @@ const StyledBox7Container = styled.div`
   height: 398px;
 
   @media (max-width: 768px) {
-    width: 90%;
+    width: 100%;
+
     height: auto;
   }
 
@@ -46,13 +47,9 @@ const RowContainer = styled.div`
   margin-bottom: 16px;
 
   @media (max-width: 768px) {
-    flex-direction: column;
-    gap: 16px;
   }
 
   @media (max-width: 480px) {
-    flex-direction: column;
-    gap: 16px;
   }
 `;
 

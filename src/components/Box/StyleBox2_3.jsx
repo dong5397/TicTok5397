@@ -48,7 +48,7 @@ const StyledBox = styled.div`
 
   & .rectangle {
     background: linear-gradient(
-      180deg,
+      90deg,
       rgb(37, 244, 238) 0%,
       rgb(254, 44, 85) 100%
     );

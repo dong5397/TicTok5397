@@ -5,11 +5,13 @@ const StyledLabel = styled.div`
   height: auto;
   width: 100%;
   max-width: 274px;
+  margin-top: 100px;
+  margin-left: 15px;
 
   & .tiktok-effect-house {
     color: #25f4ee;
     font-family: "Inter-Medium", Helvetica;
-    font-size: 10px;
+    font-size: 15px;
     font-weight: 500;
     letter-spacing: 0;
     line-height: normal;
@@ -19,12 +21,12 @@ const StyledLabel = styled.div`
 
     @media (max-width: 768px) {
       font-size: 9px;
-      margin-top: 80px;
+      margin-top: 90px;
     }
 
     @media (max-width: 480px) {
       font-size: 8px;
-      margin-top: 70px;
+      margin-top: 90px;
     }
   }
 `;

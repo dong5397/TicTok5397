@@ -98,7 +98,7 @@ const Styleline = styled.div`
 const Img = styled.img`
   width: 50px;
   height: 50px;
-  margin-top: 20px;
+  margin-top: 0px;
 
   @media (max-width: 768px) {
     width: 40px;

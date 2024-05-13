@@ -15,7 +15,7 @@ const fadeIn = keyframes`
 `;
 
 const StyledBox2Container = styled.div`
-  margin-top: 30px;
+  margin-top: 50px;
   max-width: 800px;
   width: 100%;
   display: flex;

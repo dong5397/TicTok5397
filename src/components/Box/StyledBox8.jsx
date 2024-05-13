@@ -165,9 +165,7 @@ function StyleBox8() {
     <StyledBox2Container>
       <AnimatedBox delay={0}>
         <div className="group">
-          <div className="text-wrapper">
-            <img className="dot-img" src={Dot} alt="점" />
-          </div>
+          <div className="text-wrapper"></div>
         </div>
       </AnimatedBox>
     </StyledBox2Container>
