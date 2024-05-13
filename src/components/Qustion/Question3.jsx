@@ -88,13 +88,13 @@ const StyledBox = styled.div`
   }
 `;
 
-export const StyleBox2_3 = () => {
+export const Question3 = () => {
   return (
     <CenterContainer>
-      <StyledLink to="/Submit">
+      <StyledLink to="/QuestionSend">
         <StyledBox>
           <div className="rectangle">
-            <StyledLabel>참가신청하기</StyledLabel>
+            <StyledLabel>문의하기</StyledLabel>
           </div>
         </StyledBox>
       </StyledLink>
@@ -102,4 +102,4 @@ export const StyleBox2_3 = () => {
   );
 };
 
-export default StyleBox2_3;
+export default Question3;

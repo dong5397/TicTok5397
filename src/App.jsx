@@ -2,7 +2,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "../src/components/Header";
 import Intord from "./pages/Intord";
 import Submit from "./pages/Submit";
-import Question from "../src/pages/Question";
+import Question from "../src/pages/MainQuestion";
+import QuestionSend from "../src/pages/QuestionSend";
 import MainHome from "./pages/MainHome";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Route path="/Intord" element={<Intord />} />
         <Route path="/Submit" element={<Submit />} />
         <Route path="/Question" element={<Question />} />
+        <Route path="/QuestionSend" element={<QuestionSend />} />
       </Routes>
     </BrowserRouter>
   );
