@@ -105,10 +105,6 @@ const StyledBox = styled.div`
     & .rectangle {
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     }
-
-    ${StyledLabel} {
-      transform: translateY(-5px);
-    }
   }
 
   @media (max-width: 768px) {
