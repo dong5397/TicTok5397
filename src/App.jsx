@@ -3,7 +3,7 @@ import Header from "../src/components/Header";
 import Intord from "./pages/Intord";
 import Submit from "./pages/Submit";
 import Question from "../src/pages/MainQuestion";
-import QuestionSend from "../src/pages/QuestionSend";
+import MainSend from "./pages/MainSend";
 import MainHome from "./pages/MainHome";
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
         <Route path="/Intord" element={<Intord />} />
         <Route path="/Submit" element={<Submit />} />
         <Route path="/Question" element={<Question />} />
-        <Route path="/QuestionSend" element={<QuestionSend />} />
+        <Route path="/MainSend" element={<MainSend />} />
       </Routes>
     </BrowserRouter>
   );

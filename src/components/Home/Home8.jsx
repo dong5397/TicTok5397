@@ -72,7 +72,7 @@ const StyledLabel = styled.div`
 `;
 
 const Styleline = styled.div`
-  width: 70%;
+  width: 90%;
   max-width: 800px;
   margin-top: 10px;
   margin-left: 60px;
