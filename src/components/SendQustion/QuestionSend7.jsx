@@ -127,7 +127,6 @@ const MainContainer = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100vw;
-
   overflow: hidden;
 
   @media (max-width: 768px) {
@@ -156,6 +155,16 @@ const StyledLabel = styled.div`
     padding: 0 70px;
     margin-top: 30px;
     margin-left: 10px;
+
+    @media (max-width: 768px) {
+      padding: 0 20px;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 480px) {
+      padding: 0 10px;
+      margin-top: 10px;
+    }
   }
 
   .text-wrapper2 {
@@ -224,18 +233,16 @@ const StyledContent = styled.div`
     border-radius: 10px;
   }
 
-  ::placeholder {
-    color: #ffffff80;
-  }
-
   @media (max-width: 768px) {
     width: 100%;
     height: 250px;
+    margin-left: 20px;
   }
 
   @media (max-width: 480px) {
     width: 100%;
     height: 200px;
+    margin-left: 10px;
   }
 `;
 
@@ -254,10 +261,12 @@ const CheckboxContainer = styled.div`
 
   @media (max-width: 768px) {
     width: 100%;
+    margin-left: 20px;
   }
 
   @media (max-width: 480px) {
     width: 100%;
+    margin-left: 10px;
   }
 `;
 
@@ -271,10 +280,12 @@ const WarningMessage = styled.div`
 
   @media (max-width: 768px) {
     width: 100%;
+    margin-left: 20px;
   }
 
   @media (max-width: 480px) {
     width: 100%;
+    margin-left: 10px;
   }
 `;
 

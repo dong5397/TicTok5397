@@ -45,9 +45,7 @@ const MainContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-
   width: 100vw;
-
   overflow: hidden;
 
   @media (max-width: 768px) {
@@ -75,7 +73,15 @@ const StyledLabel = styled.div`
     width: 100%;
     padding: 0 70px;
     margin-top: 30px;
-    margin-left: 10px;
+
+    @media (max-width: 768px) {
+      padding: 0 20px;
+    }
+
+    @media (max-width: 480px) {
+      padding: 0 10px;
+      margin-top: 20px;
+    }
   }
 
   .text-wrapper2 {
@@ -138,12 +144,14 @@ const StyledFileInput = styled.input`
   @media (max-width: 768px) {
     width: 100%;
     height: 60px;
+    margin-left: 20px;
     line-height: 60px;
   }
 
   @media (max-width: 480px) {
     width: 100%;
     height: 50px;
+    margin-left: 10px;
     line-height: 50px;
   }
 `;
@@ -158,9 +166,7 @@ const StyledLabel2 = styled.div`
     font-family: "Inter-Medium", Helvetica;
     font-size: 15px;
     font-weight: 500;
-    left: 0;
-    letter-spacing: 0;
-    line-height: 1.2; /* 줄 간격을 조절합니다 */
+    line-height: 1.2;
     margin: 0;
   }
 
@@ -169,18 +175,18 @@ const StyledLabel2 = styled.div`
     font-family: "Inter-Medium", Helvetica;
     font-size: 15px;
     font-weight: 500;
-    padding-left: 15px; /* 오른쪽으로 살짝 이동 */
-    left: 0;
-    letter-spacing: 0;
-    line-height: 1.2; /* 줄 간격을 조절합니다 */
+    padding-left: 15px;
+    line-height: 1.2;
     margin: 0;
   }
 
   @media (max-width: 768px) {
     width: 100%;
+    margin-left: 20px;
   }
 
   @media (max-width: 480px) {
     width: 100%;
+    margin-left: 10px;
   }
 `;

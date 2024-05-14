@@ -1,6 +1,5 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
-import line from "../../../images/Home/line.png";
 import star from "../../../images/Question/star.png";
 
 const slideIn = keyframes`
@@ -23,11 +22,7 @@ function QuestionSend5() {
           </div>
         </div>
       </StyledLabel>
-      <StyledInput
-        className="rectangle"
-        type="text"
-        placeholder="내용을 입력하세요"
-      />
+      <StyledTextarea className="rectangle" placeholder="내용을 입력하세요" />
     </MainContainer>
   );
 }
@@ -39,7 +34,6 @@ const MainContainer = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100vw;
-
   overflow: hidden;
 
   @media (max-width: 768px) {
@@ -61,54 +55,31 @@ const StyledLabel = styled.div`
   width: 100%;
   max-width: 800px;
 
-  .label-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-
-    @media (max-width: 768px) {
-      align-items: flex-start;
-    }
-
-    @media (max-width: 480px) {
-      align-items: flex-start;
-    }
-  }
-
-  .text-wrapper {
-    color: #ffffff;
-    font-family: "Inter-SemiBold", Helvetica;
-    font-size: 40px;
-    font-weight: 700;
-    margin-top: 20px;
-    margin-left: 70px;
-
-    @media (max-width: 768px) {
-      font-size: 30px;
-    }
-
-    @media (max-width: 480px) {
-      font-size: 24px;
-    }
-  }
-
   .row-wrapper {
     display: flex;
     justify-content: space-between;
     width: 100%;
     padding: 0 70px;
-    margin-top: 30px; /* 이전의 50px에서 30px로 변경 */
+    margin-top: 30px;
+
+    @media (max-width: 768px) {
+      padding: 0 20px;
+    }
+
+    @media (max-width: 480px) {
+      padding: 0 10px;
+      margin-top: 20px;
+    }
   }
 
-  .text-wrapper2,
-  .text-wrapper3 {
+  .text-wrapper2 {
     display: flex;
     align-items: center;
     position: relative;
     color: #ffffff;
     font-family: "Inter-SemiBold", Helvetica;
     font-weight: 700;
-    margin-top: 10px; /* 이전의 20px에서 10px로 변경 */
+    margin-top: 10px;
 
     .star-icon {
       width: 12px;
@@ -126,66 +97,35 @@ const StyledLabel = styled.div`
         height: 8px;
       }
     }
-
-    .star-icon2 {
-      width: 12px;
-      height: 12px;
-      margin-bottom: 5px;
-      margin-right: 15px;
-
-      @media (max-width: 768px) {
-        width: 10px;
-        height: 10px;
-      }
-
-      @media (max-width: 480px) {
-        width: 8px;
-        height: 8px;
-      }
-    }
   }
 
   .text-wrapper2 {
     font-size: 20px;
 
     @media (max-width: 768px) {
-      font-size: 30px;
+      font-size: 18px;
     }
 
     @media (max-width: 480px) {
-      font-size: 24px;
+      font-size: 16px;
     }
-  }
-
-  .text-wrapper3 {
-    font-size: 15px;
-    margin-right: 90px;
-    @media (max-width: 768px) {
-      font-size: 30px;
-    }
-
-    @media (max-width: 480px) {
-      font-size: 24px;
-    }
-  }
-
-  .img {
-    margin-bottom: 200px;
   }
 `;
 
-const StyledInput = styled.input`
+const StyledTextarea = styled.textarea`
   height: 350px;
   width: 680px;
+  max-width: 100%;
   border: 2px solid #ffffff80;
   border-radius: 10px;
   background-color: transparent;
   color: white;
-  padding: 0 15px;
+  padding: 15px;
   font-size: 16px;
   outline: none;
   margin-left: 50px;
-  margin-top: 10px; /* 이전의 20px에서 10px로 변경 */
+  margin-top: 10px;
+  resize: none;
 
   ::placeholder {
     color: #ffffff80;
@@ -193,11 +133,13 @@ const StyledInput = styled.input`
 
   @media (max-width: 768px) {
     width: 100%;
-    height: 60px;
+    height: 250px;
+    margin-left: 20px;
   }
 
   @media (max-width: 480px) {
     width: 100%;
-    height: 50px;
+    height: 200px;
+    margin-left: 10px;
   }
 `;

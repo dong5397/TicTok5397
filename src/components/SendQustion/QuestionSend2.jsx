@@ -1,6 +1,5 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
-
 import star from "../../../images/Question/star.png";
 
 function QuestionSend2() {
@@ -76,42 +75,21 @@ const StyledLabel = styled.div`
   width: 100%;
   max-width: 800px;
 
-  .label-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-
-    @media (max-width: 768px) {
-      align-items: flex-start;
-    }
-
-    @media (max-width: 480px) {
-      align-items: flex-start;
-    }
-  }
-
-  .text-wrapper {
-    color: #ffffff;
-    font-family: "Inter-SemiBold", Helvetica;
-    font-size: 40px;
-    font-weight: 700;
-    margin-top: 20px;
-    margin-left: 70px;
-
-    @media (max-width: 768px) {
-      font-size: 30px;
-    }
-
-    @media (max-width: 480px) {
-      font-size: 24px;
-    }
-  }
-
   .row-wrapper {
     display: flex;
     justify-content: space-between;
     width: 100%;
     padding: 0 70px;
+    margin-top: 20px;
+
+    @media (max-width: 768px) {
+      padding: 0 20px;
+    }
+
+    @media (max-width: 480px) {
+      padding: 0 10px;
+      margin-top: 10px;
+    }
   }
 
   .text-wrapper2 {
@@ -121,8 +99,8 @@ const StyledLabel = styled.div`
     color: #ffffff;
     font-family: "Inter-SemiBold", Helvetica;
     font-weight: 700;
-    margin-top: 20px;
-    margin-right: 90px;
+    margin-top: 10px;
+
     .star-icon {
       width: 12px;
       height: 12px;
@@ -145,14 +123,15 @@ const StyledLabel = styled.div`
     font-size: 20px;
 
     @media (max-width: 768px) {
-      font-size: 30px;
+      font-size: 18px;
     }
 
     @media (max-width: 480px) {
-      font-size: 24px;
+      font-size: 16px;
     }
   }
 `;
+
 const InputBox = styled.div`
   height: 74px;
   width: 222px;
@@ -176,14 +155,15 @@ const InputBox = styled.div`
 
   @media (max-width: 768px) {
     width: 100%;
-    margin-bottom: 10px;
+    height: 60px;
   }
 
   @media (max-width: 480px) {
     width: 100%;
-    margin-bottom: 10px;
+    height: 50px;
   }
 `;
+
 const InputContainer = styled.div`
   display: flex;
   align-items: center;
@@ -192,20 +172,26 @@ const InputContainer = styled.div`
   margin-bottom: 20px;
   margin-top: 10px;
   margin-left: 50px;
+  max-width: 800px;
 
   @media (max-width: 768px) {
     flex-direction: column;
     gap: 5px;
+    margin-left: 0;
+    width: 100%;
   }
 
   @media (max-width: 480px) {
     flex-direction: column;
     gap: 5px;
+    margin-left: 0;
+    width: 100%;
   }
 `;
 
 const InputDivider = styled.span`
   color: white;
+  font-size: 24px;
 
   @media (max-width: 768px) {
     font-size: 20px;

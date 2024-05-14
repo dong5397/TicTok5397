@@ -88,9 +88,7 @@ const MainContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-
   width: 100vw;
-
   overflow: hidden;
 
   @media (max-width: 768px) {
@@ -112,25 +110,19 @@ const StyledLabel = styled.div`
   width: 100%;
   max-width: 800px;
 
-  .label-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-
-    @media (max-width: 768px) {
-      align-items: flex-start;
-    }
-
-    @media (max-width: 480px) {
-      align-items: flex-start;
-    }
-  }
-
   .row-wrapper {
     display: flex;
     justify-content: space-between;
     width: 100%;
     padding: 0 70px;
+
+    @media (max-width: 768px) {
+      padding: 0 20px;
+    }
+
+    @media (max-width: 480px) {
+      padding: 0 10px;
+    }
   }
 
   .text-wrapper2 {
@@ -142,6 +134,7 @@ const StyledLabel = styled.div`
     font-weight: 700;
     margin-top: 20px;
     margin-right: 90px;
+
     .star-icon {
       width: 12px;
       height: 12px;
@@ -164,11 +157,11 @@ const StyledLabel = styled.div`
     font-size: 20px;
 
     @media (max-width: 768px) {
-      font-size: 30px;
+      font-size: 18px;
     }
 
     @media (max-width: 480px) {
-      font-size: 24px;
+      font-size: 16px;
     }
   }
 `;
@@ -196,11 +189,13 @@ const InputBox = styled.div`
 
   @media (max-width: 768px) {
     width: 100%;
+    height: 60px;
     margin-bottom: 10px;
   }
 
   @media (max-width: 480px) {
     width: 100%;
+    height: 50px;
     margin-bottom: 10px;
   }
 `;
@@ -209,7 +204,7 @@ const InputContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15px;
+  gap: 10px;
   margin-bottom: 20px;
   margin-top: 10px;
   margin-left: 50px;
@@ -218,12 +213,14 @@ const InputContainer = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
     gap: 5px;
+    margin-left: 0;
     width: 100%;
   }
 
   @media (max-width: 480px) {
     flex-direction: column;
     gap: 5px;
+    margin-left: 0;
     width: 100%;
   }
 `;

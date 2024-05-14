@@ -5,31 +5,34 @@ import Logo from "../../images/Logo.png";
 
 const HeaderContainer = styled.header`
   display: flex;
+  justify-content: center;
   position: fixed;
   top: 0;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
+  padding: 10px 0;
   color: white;
   transition: transform 0.3s;
   width: 100%;
-  max-width: 1280px;
-  height: 40px;
-  margin: 0 auto;
   background-color: rgba(0, 0, 0, 0.8); /* 반투명 배경 */
   z-index: 1000;
-  left: 50%;
-  transform: translateX(-50%);
+`;
+
+const InnerContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1280px;
+  padding: 0 20px;
 
   @media (max-width: 768px) {
     flex-direction: column;
-    height: auto;
+    align-items: flex-start;
   }
 
   @media (max-width: 480px) {
     flex-direction: column;
-    height: auto;
-    padding: 5px;
+    align-items: flex-start;
+    padding: 0 10px;
   }
 `;
 
@@ -39,7 +42,6 @@ const LogoContainer = styled(Link)`
   font-size: 24px;
   display: flex;
   gap: 20px;
-  margin-right: auto;
 
   @media (max-width: 768px) {
     font-size: 20px;
@@ -68,7 +70,6 @@ const NavLinks = styled.nav`
   display: flex;
   gap: 30px;
   justify-content: space-between;
-  margin-left: auto;
 
   @media (max-width: 768px) {
     gap: 20px;
@@ -107,15 +108,17 @@ const NavLink = styled(Link)`
 function Header() {
   return (
     <HeaderContainer>
-      <LogoContainer to="/">
-        <LogoImage src={Logo} alt="Logo" />
-      </LogoContainer>
-      <NavLinks>
-        <NavLink to="/">HOME</NavLink>
-        <NavLink to="/Intord">RECRUIT</NavLink>
-        <NavLink to="/Submit">DETAILS</NavLink>
-        <NavLink to="/Question">FAQ</NavLink>
-      </NavLinks>
+      <InnerContainer>
+        <LogoContainer to="/">
+          <LogoImage src={Logo} alt="Logo" />
+        </LogoContainer>
+        <NavLinks>
+          <NavLink to="/">HOME</NavLink>
+          <NavLink to="/Intord">RECRUIT</NavLink>
+          <NavLink to="/Submit">DETAILS</NavLink>
+          <NavLink to="/Question">FAQ</NavLink>
+        </NavLinks>
+      </InnerContainer>
     </HeaderContainer>
   );
 }
