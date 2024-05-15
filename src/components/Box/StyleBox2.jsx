@@ -24,12 +24,10 @@ const StyledLabel = styled.div`
 
     @media (max-width: 768px) {
       font-size: 18px;
-      margin-bottom: 15px;
     }
 
     @media (max-width: 480px) {
       font-size: 16px;
-      margin-bottom: 10px;
     }
   }
 
@@ -44,12 +42,10 @@ const StyledLabel = styled.div`
 
     @media (max-width: 768px) {
       font-size: 14px;
-      margin-bottom: 50px;
     }
 
     @media (max-width: 480px) {
       font-size: 12px;
-      margin-bottom: 30px;
     }
   }
 `;
@@ -61,12 +57,10 @@ const BoxContainerStyle = styled.div`
   gap: 20px;
 
   @media (max-width: 768px) {
-    flex-direction: column;
     gap: 15px;
   }
 
   @media (max-width: 480px) {
-    flex-direction: column;
     gap: 10px;
   }
 `;
@@ -108,13 +102,9 @@ const StyledBox = styled.div`
   }
 
   @media (max-width: 768px) {
-    height: 150px;
-    width: 350px;
   }
 
   @media (max-width: 480px) {
-    height: 120px;
-    width: 300px;
   }
 `;
 

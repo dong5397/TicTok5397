@@ -18,22 +18,22 @@ const StyledNotificationLabel = styled.div`
 
     @media (max-width: 768px) {
       font-size: 9px;
+      margin-left: 20px;
     }
 
     @media (max-width: 480px) {
       font-size: 8px;
     }
   }
-
   & .indent {
     margin-left: 15px; /* 들여쓰기 간격 */
 
     @media (max-width: 768px) {
-      margin-left: 8px;
+      margin-left: 30px;
     }
 
     @media (max-width: 480px) {
-      margin-left: 6px;
+      margin-left: 28px;
     }
   }
 `;

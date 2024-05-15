@@ -27,14 +27,14 @@ const StyledBox = styled.div`
     transform: translate(-50%, -50%) rotate(90deg);
 
     @media (max-width: 100%) {
-      width: 120vw;
-      height: 120vh;
+      width: 120%;
+
       transform: translate(-50%, -50%) rotate(0deg);
     }
 
     @media (max-width: 100%) {
-      width: 100vw;
-      height: 100vh;
+      width: 100%;
+
       transform: translate(-50%, -50%) rotate(0deg);
     }
   }

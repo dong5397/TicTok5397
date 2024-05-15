@@ -15,14 +15,16 @@ const MainContainer = styled.div`
   margin-bottom: 100px;
 
   @media (max-width: 768px) {
-    padding: 15px;
     margin-top: 80px;
+    width: 100%;
+
     margin-bottom: 80px;
   }
 
   @media (max-width: 480px) {
-    padding: 10px;
     margin-top: 60px;
+    width: 100%;
+
     margin-bottom: 60px;
   }
 `;
@@ -42,10 +44,12 @@ const StyledLabel = styled.div`
 
     @media (max-width: 768px) {
       align-items: flex-start;
+      width: 100%;
     }
 
     @media (max-width: 480px) {
       align-items: flex-start;
+      width: 100%;
     }
   }
 

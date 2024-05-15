@@ -3,33 +3,19 @@ import styled, { keyframes, css } from "styled-components";
 import Dot from "../../../images/Home/Dot.png";
 import Label2 from "../Lable/Label2";
 
-const fadeIn = keyframes`
-  0% {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-`;
-
 const StyledBox2Container = styled.div`
   margin-top: 30px;
   max-width: 800px;
   width: 100%;
-  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   gap: 80px;
 
   @media (max-width: 768px) {
-    gap: 60px;
   }
 
   @media (max-width: 480px) {
-    gap: 40px;
   }
 `;
 
@@ -81,13 +67,15 @@ const StyledBox2 = styled.div`
     margin-right: 8px;
 
     @media (max-width: 768px) {
-      width: 16px;
-      height: 16px;
+      width: 8px;
+      height: 8px;
+      margin-left: 10px;
     }
 
     @media (max-width: 480px) {
-      width: 14px;
-      height: 14px;
+      width: 8px;
+      height: 8px;
+      margin-left: 10px;
     }
   }
 
@@ -103,12 +91,12 @@ const StyledBox2 = styled.div`
 
     @media (max-width: 768px) {
       font-size: 18px;
-      margin-left: 10px;
+      margin-left: 28px;
     }
 
     @media (max-width: 480px) {
       font-size: 16px;
-      margin-left: 8px;
+      margin-left: 24px;
     }
   }
 

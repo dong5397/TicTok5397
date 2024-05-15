@@ -34,11 +34,13 @@ const StyledBox = styled.div`
   @media (max-width: 768px) {
     width: 90%;
     height: 120px;
+    margin-left: 20px;
   }
 
   @media (max-width: 480px) {
-    width: 100%;
+    width: 90%;
     height: 100px;
+    margin-left: 20px;
   }
 `;
 
@@ -63,11 +65,11 @@ const StyledLabel = styled.div`
 
     /* 반응형 미디어 쿼리 */
     @media (max-width: 768px) {
-      font-size: 16px;
+      font-size: 15px;
     }
 
     @media (max-width: 480px) {
-      font-size: 14px;
+      font-size: 12px;
     }
   }
 `;
