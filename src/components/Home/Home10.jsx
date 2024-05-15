@@ -46,12 +46,10 @@ const StyledLabel = styled.div`
     gap: 10px;
 
     @media (max-width: 768px) {
-      flex-direction: column;
       align-items: flex-start;
     }
 
     @media (max-width: 480px) {
-      flex-direction: column;
       align-items: flex-start;
     }
   }

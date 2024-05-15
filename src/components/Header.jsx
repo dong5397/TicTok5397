@@ -24,15 +24,9 @@ const InnerContainer = styled.div`
   max-width: 1280px;
   padding: 0 20px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 100%) {
     flex-direction: column;
     align-items: flex-start;
-  }
-
-  @media (max-width: 480px) {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0 10px;
   }
 `;
 

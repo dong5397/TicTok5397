@@ -195,14 +195,8 @@ const StyledLabel = styled.div`
     transition: opacity 0.6s, transform 0.6s;
     transform: translateY(20px);
 
-    @media (max-width: 768px) {
-      font-size: 16px;
-      line-height: 1.3;
-    }
-
-    @media (max-width: 480px) {
-      font-size: 14px;
-      line-height: 1.2;
+    @media (max-width: 100%) {
+      font-size: 10px;
     }
   }
 

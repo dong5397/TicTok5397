@@ -134,7 +134,7 @@ const StyledLabel = styled.div`
 
 const InputBox = styled.div`
   height: 74px;
-  width: 222px;
+  width: 215px;
 
   .rectangle {
     border: 2px solid #ffffff80;

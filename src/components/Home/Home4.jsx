@@ -36,12 +36,10 @@ const StyledLabel = styled.div`
     gap: 10px;
 
     @media (max-width: 768px) {
-      flex-direction: column;
       align-items: flex-start;
     }
 
     @media (max-width: 480px) {
-      flex-direction: column;
       align-items: flex-start;
     }
   }
@@ -90,13 +88,13 @@ const Img = styled.img`
   height: 50px;
   margin-top: 20px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 100%) {
     width: 40px;
     height: 40px;
     margin-top: 15px;
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: 100px) {
     width: 30px;
     height: 30px;
     margin-top: 10px;
