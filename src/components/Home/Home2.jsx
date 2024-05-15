@@ -122,6 +122,7 @@ const Content = styled.div`
   z-index: 2;
   color: white;
   margin-top: 250px;
+  width: 100%;
   text-align: center;
   transform: translateY(-10%); /* 살짝 위로 이동 */
   max-width: 80%; /* 이미지가 화면에 꽉 차지 않도록 제한 */
@@ -151,23 +152,15 @@ const MainContainer = styled.div`
   flex-direction: column;
   align-items: center;
   height: 130vh;
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
-  @media (max-width: 768px) {
-    margin-top: 200px;
-    height: 100vh;
-  }
-
-  @media (max-width: 480px) {
-    margin-top: 150px;
-    height: 100vh;
-  }
 `;
 
 const StyledLabel = styled.div`
   position: relative;
   z-index: 2;
   max-width: 80%;
+  width: 100%;
   margin-top: -70px;
   text-align: center;
 
@@ -175,14 +168,6 @@ const StyledLabel = styled.div`
     display: flex;
     flex-direction: column;
     gap: 10px;
-
-    @media (max-width: 768px) {
-      gap: 8px;
-    }
-
-    @media (max-width: 480px) {
-      gap: 6px;
-    }
   }
 
   & .text {
@@ -194,10 +179,6 @@ const StyledLabel = styled.div`
     opacity: 0;
     transition: opacity 0.6s, transform 0.6s;
     transform: translateY(20px);
-
-    @media (max-width: 100%) {
-      font-size: 10px;
-    }
   }
 
   & .visible {
@@ -210,13 +191,5 @@ const StyledLabel = styled.div`
     font-family: "Inter-SemiBold", Helvetica;
     font-size: 18px;
     font-weight: 600;
-
-    @media (max-width: 768px) {
-      font-size: 16px;
-    }
-
-    @media (max-width: 480px) {
-      font-size: 14px;
-    }
   }
 `;
