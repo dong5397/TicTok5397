@@ -58,12 +58,10 @@ const MainContainer = styled.div`
 
   @media (max-width: 768px) {
     height: auto;
-    padding: 20px;
   }
 
   @media (max-width: 480px) {
     height: auto;
-    padding: 10px;
   }
 `;
 
@@ -79,15 +77,13 @@ const StyledLabel = styled.div`
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 0 70px;
+
     margin-top: 20px;
 
     @media (max-width: 768px) {
-      padding: 0 20px;
     }
 
     @media (max-width: 480px) {
-      padding: 0 10px;
       margin-top: 10px;
     }
   }

@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Img1 from "../../../images/Home/Dot2.png";
 import line from "../../../images/Home/line.png";
-import StyledBox8 from "../Box/StyledBox8";
+
 import StyleBox2 from "../Box/StyleBox2";
 import StyleBox2_2 from "../Box/StyleBox2_2";
 import StyleBox2_3 from "../Box/StyleBox2_3";
@@ -19,13 +19,11 @@ const MainContainer = styled.div`
   margin-bottom: 200px;
 
   @media (max-width: 768px) {
-    padding: 15px;
     margin-top: 80px;
     margin-bottom: 150px;
   }
 
   @media (max-width: 480px) {
-    padding: 10px;
     margin-top: 60px;
     margin-bottom: 100px;
   }
@@ -76,18 +74,20 @@ const Styleline = styled.div`
   width: 90%;
   max-width: 800px;
   margin-top: 10px;
-  margin-left: 60px;
+  margin-left: 30px;
 
   & .vector {
     width: 100%;
     height: 2px;
 
     @media (max-width: 768px) {
-      margin-left: -50px;
+      width: 90%;
+      margin-right: 20px;
     }
 
     @media (max-width: 480px) {
-      margin-left: -50px;
+      width: 90%;
+      margin-right: 20px;
     }
   }
 `;
@@ -95,18 +95,19 @@ const Styleline = styled.div`
 const Img = styled.img`
   width: 50px;
   height: 50px;
-  margin-top: 0px;
+  margin-top: 20px;
 
   @media (max-width: 768px) {
-    width: 40px;
-    height: 40px;
-    margin-top: 15px;
+    width: 25px;
+    height: 25px;
+    margin-top: 20px;
+    margin-left: 5px;
   }
 
   @media (max-width: 480px) {
-    width: 30px;
-    height: 30px;
-    margin-top: 10px;
+    width: 25px;
+    height: 25px;
+    margin-top: 25px;
   }
 `;
 
@@ -119,10 +120,13 @@ const BoxContainer = styled.div`
   align-items: center;
 
   @media (max-width: 768px) {
+    width: 90%;
     margin-top: 20px;
+    display: inline-block;
   }
 
   @media (max-width: 480px) {
+    width: 90%;
     margin-top: 15px;
   }
 `;
@@ -139,7 +143,6 @@ function Home10() {
           <img className="vector" src={line} alt="Line" />
         </Styleline>
       </StyledLabel>
-      <StyledBox8 />
       <BoxContainer>
         <StyleBox2 />
         <StyleBox2_2 />

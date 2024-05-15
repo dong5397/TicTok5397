@@ -76,18 +76,20 @@ const Styleline = styled.div`
   width: 90%;
   max-width: 800px;
   margin-top: 10px;
-  margin-left: 60px;
+  margin-left: 30px;
 
   & .vector {
     width: 100%;
     height: 2px;
 
     @media (max-width: 768px) {
-      margin-left: -50px;
+      width: 90%;
+      margin-right: 20px;
     }
 
     @media (max-width: 480px) {
-      margin-left: -50px;
+      width: 90%;
+      margin-right: 20px;
     }
   }
 `;
@@ -98,15 +100,16 @@ const Img = styled.img`
   margin-top: 20px;
 
   @media (max-width: 768px) {
-    width: 40px;
-    height: 40px;
-    margin-top: 15px;
+    width: 25px;
+    height: 25px;
+    margin-top: 20px;
+    margin-left: 5px;
   }
 
   @media (max-width: 480px) {
-    width: 30px;
-    height: 30px;
-    margin-top: 10px;
+    width: 25px;
+    height: 25px;
+    margin-top: 25px;
   }
 `;
 

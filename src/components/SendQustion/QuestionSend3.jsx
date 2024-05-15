@@ -88,17 +88,15 @@ const MainContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
 
   @media (max-width: 768px) {
     height: auto;
-    padding: 20px;
   }
 
   @media (max-width: 480px) {
     height: auto;
-    padding: 10px;
   }
 `;
 
@@ -114,7 +112,6 @@ const StyledLabel = styled.div`
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 0 70px;
 
     @media (max-width: 768px) {
       padding: 0 20px;
@@ -245,7 +242,7 @@ const DomainSelector = styled.select`
   border-radius: 10px;
   background-color: transparent;
   color: white;
-  padding: 0 15px;
+
   font-size: 16px;
   outline: none;
   box-sizing: border-box;

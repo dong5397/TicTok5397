@@ -92,11 +92,13 @@ const StyledBox2 = styled.div`
     @media (max-width: 768px) {
       font-size: 18px;
       margin-left: 28px;
+      margin-right: 20px;
     }
 
     @media (max-width: 480px) {
       font-size: 16px;
       margin-left: 24px;
+      margin-right: 20px;
     }
   }
 

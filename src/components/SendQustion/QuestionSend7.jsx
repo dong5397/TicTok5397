@@ -126,17 +126,14 @@ const MainContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100vw;
-  overflow: hidden;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
 
   @media (max-width: 768px) {
-    height: auto;
-    padding: 20px;
   }
 
   @media (max-width: 480px) {
-    height: auto;
-    padding: 10px;
   }
 `;
 
@@ -144,25 +141,19 @@ const StyledLabel = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  height: auto;
   width: 100%;
-  max-width: 800px;
 
   .row-wrapper {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 0 70px;
     margin-top: 30px;
-    margin-left: 10px;
 
     @media (max-width: 768px) {
-      padding: 0 20px;
       margin-top: 20px;
     }
 
     @media (max-width: 480px) {
-      padding: 0 10px;
       margin-top: 10px;
     }
   }
@@ -196,8 +187,9 @@ const StyledLabel = styled.div`
 `;
 
 const StyledContent = styled.div`
+  width: 100%;
+  max-width: 700px;
   height: 350px;
-  width: 680px;
   border: 2px solid #ffffff80;
   border-radius: 10px;
   background-color: transparent;
@@ -205,7 +197,6 @@ const StyledContent = styled.div`
   padding: 15px;
   font-size: 16px;
   outline: none;
-  margin-left: 50px;
   margin-top: 10px;
   overflow-y: scroll;
 
@@ -234,15 +225,11 @@ const StyledContent = styled.div`
   }
 
   @media (max-width: 768px) {
-    width: 100%;
     height: 250px;
-    margin-left: 20px;
   }
 
   @media (max-width: 480px) {
-    width: 100%;
     height: 200px;
-    margin-left: 10px;
   }
 `;
 
@@ -250,8 +237,8 @@ const CheckboxContainer = styled.div`
   display: flex;
   align-items: center;
   margin-top: 10px;
-  margin-left: 50px;
-  width: 680px;
+  width: 100%;
+  max-width: 700px;
   color: white;
 
   & input[type="checkbox"] {
@@ -260,32 +247,28 @@ const CheckboxContainer = styled.div`
   }
 
   @media (max-width: 768px) {
-    width: 100%;
-    margin-left: 20px;
+    margin-top: 10px;
   }
 
   @media (max-width: 480px) {
-    width: 100%;
-    margin-left: 10px;
+    margin-top: 5px;
   }
 `;
 
 const WarningMessage = styled.div`
   color: #ff4444;
   margin-top: 10px;
-  margin-left: 50px;
-  width: 680px;
+  width: 100%;
+  max-width: 700px;
   font-family: "Inter-Medium", Helvetica;
   font-size: 14px;
 
   @media (max-width: 768px) {
-    width: 100%;
-    margin-left: 20px;
+    margin-top: 10px;
   }
 
   @media (max-width: 480px) {
-    width: 100%;
-    margin-left: 10px;
+    margin-top: 5px;
   }
 `;
 
@@ -295,16 +278,13 @@ const StyledLabel2 = styled.div`
   font-size: 24px;
   font-weight: 700;
   text-align: center;
-  padding: 30px;
 
   @media (max-width: 768px) {
     font-size: 20px;
-    padding: 20px;
   }
 
   @media (max-width: 480px) {
     font-size: 16px;
-    padding: 15px;
   }
 
   ${({ disabled }) =>
@@ -316,9 +296,13 @@ const StyledLabel2 = styled.div`
 `;
 
 const StyledBox2 = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 108px;
-  width: 408px;
-  margin-top: 100px;
+  width: 100%;
+  max-width: 408px;
+  margin-top: 60px;
   position: relative;
   transition: all 0.3s ease;
 
@@ -329,8 +313,8 @@ const StyledBox2 = styled.div`
       rgb(254, 44, 85) 100%
     );
     border-radius: 20px;
-    height: 108px;
-    width: 408px;
+    height: 100%;
+    width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
     display: flex;
@@ -346,21 +330,11 @@ const StyledBox2 = styled.div`
 
   @media (max-width: 768px) {
     height: 90px;
-    width: 350px;
-
-    & .rectangle {
-      height: 90px;
-      width: 350px;
-    }
+    max-width: 350px;
   }
 
   @media (max-width: 480px) {
     height: 72px;
-    width: 300px;
-
-    & .rectangle {
-      height: 72px;
-      width: 300px;
-    }
+    max-width: 300px;
   }
 `;

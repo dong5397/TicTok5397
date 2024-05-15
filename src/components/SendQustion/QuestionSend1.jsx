@@ -51,18 +51,15 @@ const MainContainer = styled.div`
   flex-direction: column;
   align-items: center;
 
-  width: 100vw;
   margin-top: 150px;
   overflow: hidden;
 
   @media (max-width: 768px) {
     height: auto;
-    padding: 20px;
   }
 
   @media (max-width: 480px) {
     height: auto;
-    padding: 10px;
   }
 `;
 
@@ -98,6 +95,7 @@ const StyledLabel = styled.div`
 
     @media (max-width: 768px) {
       font-size: 30px;
+      margin-left: 10px;
     }
 
     @media (max-width: 480px) {
@@ -109,7 +107,7 @@ const StyledLabel = styled.div`
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 0 70px;
+
     margin-top: 30px; /* 이전의 50px에서 30px로 변경 */
   }
 
@@ -172,7 +170,7 @@ const StyledLabel = styled.div`
 
   .text-wrapper3 {
     font-size: 15px;
-    margin-right: 90px;
+
     @media (max-width: 768px) {
       font-size: 30px;
     }
@@ -215,10 +213,10 @@ const StyledInput = styled.input`
   border-radius: 10px;
   background-color: transparent;
   color: white;
-  padding: 0 15px;
+
   font-size: 16px;
   outline: none;
-  margin-left: 50px;
+
   margin-top: 10px; /* 이전의 20px에서 10px로 변경 */
 
   ::placeholder {

@@ -80,13 +80,15 @@ const StyledBox3 = styled.div`
     margin-right: 8px;
 
     @media (max-width: 768px) {
-      width: 16px;
-      height: 16px;
+      width: 8px;
+      height: 8px;
+      margin-left: 10px;
     }
 
     @media (max-width: 480px) {
-      width: 14px;
-      height: 14px;
+      width: 8px;
+      height: 8px;
+      margin-left: 10px;
     }
   }
 
@@ -102,12 +104,14 @@ const StyledBox3 = styled.div`
 
     @media (max-width: 768px) {
       font-size: 18px;
-      margin-left: 10px;
+      margin-left: 28px;
+      margin-right: 20px;
     }
 
     @media (max-width: 480px) {
       font-size: 16px;
-      margin-left: 8px;
+      margin-left: 24px;
+      margin-right: 20px;
     }
   }
 
@@ -170,7 +174,7 @@ function StyleBox3() {
           <div className="div">5월 6일(월)부터 6월 16일(일)까지</div>
         </div>
       </AnimatedBox>
-      <AnimatedBox delay={0.1}>
+      <AnimatedBox>
         <div className="group">
           <div className="text-wrapper">
             <img className="dot-img" src={Dot} alt="점" />

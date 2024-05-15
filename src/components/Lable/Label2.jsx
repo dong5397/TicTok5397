@@ -24,7 +24,7 @@ const StyledLabel = styled.div`
 
     @media (max-width: 480px) {
       font-size: 8px;
-      margin-top: 140px;
+      margin-top: 170px;
     }
   }
 `;

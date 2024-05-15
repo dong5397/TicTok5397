@@ -7,17 +7,16 @@ const StyledNotificationLabel = styled.div`
   max-width: 800px;
   margin-top: 20px;
 
-  .tiktok-effect-house {
+  .tiktok-effect-house,
+  .text-wrapper {
     color: #25f4ee;
-    font-family: "Inter-Medium", Helvetica;
-    font-size: 17px;
+    font-family: "Inter-Medium", Helvetica, sans-serif;
+    font-size: 15px;
     font-weight: 500;
-    letter-spacing: 0;
     line-height: normal;
-    margin-bottom: 5px;
 
     @media (max-width: 768px) {
-      font-size: 15px;
+      font-size: 12px;
     }
 
     @media (max-width: 480px) {
@@ -25,42 +24,28 @@ const StyledNotificationLabel = styled.div`
     }
   }
 
-  .text-wrapper {
-    color: #25f4ee;
-    font-family: "Inter-Medium", Helvetica;
-    font-size: 15px;
-    font-weight: 500;
-    letter-spacing: 0;
-    line-height: normal;
-    margin-left: 15px;
-    &.indent {
-      color: #25f4ee;
-      font-family: "Inter-Medium", Helvetica;
-      font-size: 15px;
-      font-weight: 500;
-      letter-spacing: 0;
-      line-height: normal;
-
-      /* 변경 */
-      margin-left: 15px; /* 변경 */
-    }
+  .tiktok-effect-house {
+    margin-bottom: 5px;
+    margin-left: 20px;
 
     @media (max-width: 768px) {
-      font-size: 9px;
-      margin-left: 8px;
-      &.indent {
-        /* 변경 */
-        margin-left: 5px; /* 변경 */
-      }
+      margin-left: 25px;
     }
 
     @media (max-width: 480px) {
-      font-size: 9px;
-      margin-left: 10px;
-      &.indent {
-        /* 변경 */
-        margin-left: 6px; /* 변경 */
-      }
+      margin-left: 20px;
+    }
+  }
+
+  .text-wrapper {
+    margin-left: 35px;
+
+    @media (max-width: 768px) {
+      margin-left: 35px;
+    }
+
+    @media (max-width: 480px) {
+      margin-left: 30px;
     }
   }
 `;
@@ -69,16 +54,12 @@ export const Label3 = () => {
   return (
     <StyledNotificationLabel>
       <p className="tiktok-effect-house">
-        ※ Tiktok Effect House 메이커톤 전용페이지(온라인)
+        ※ Tiktok Effect House 메이커톤 전용 페이지(온라인)
       </p>
-      <p className="text-wrapper">
-        {" "}
-        {/* 변경 */}
-        학회 홈페이지 진행행사 안내페이지(QR 삽입 - 지원하러가기)
+      <p className="tiktok-effect-house">
+        학회 홈페이지 진행 행사 안내 페이지(QR 삽입 - 지원하러 가기)
       </p>
-      <p className="text-wrapper">
-        {" "}
-        {/* 변경 */}
+      <p className="tiktok-effect-house">
         학교, 학과, 이름, 연락처, 이메일, 틱톡 아이디 필수, 정보 동의 필요
       </p>
     </StyledNotificationLabel>

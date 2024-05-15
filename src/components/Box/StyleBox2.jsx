@@ -23,7 +23,7 @@ const StyledLabel = styled.div`
     margin-bottom: 20px;
 
     @media (max-width: 768px) {
-      font-size: 18px;
+      font-size: 15px;
     }
 
     @media (max-width: 480px) {
@@ -41,11 +41,13 @@ const StyledLabel = styled.div`
     margin-bottom: 70px;
 
     @media (max-width: 768px) {
-      font-size: 14px;
+      font-size: 10px;
+      margin-right: 2px;
     }
 
     @media (max-width: 480px) {
-      font-size: 12px;
+      font-size: 10px;
+      margin-right: 2px;
     }
   }
 `;

@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import img1 from "../../../images/Home/q.png";
 import line from "../../../images/Home/line.png";
-import StyleBox3 from "../Box/StyledBox3";
+import StyledBox3 from "../Box/StyledBox3";
 
 const MainContainer = styled.div`
   display: flex;
@@ -116,7 +116,7 @@ function Home5() {
           <img className="vector" src={line} alt="Line" />
         </Styleline>
       </StyledLabel>
-      <StyleBox3 />
+      <StyledBox3 />
     </MainContainer>
   );
 }

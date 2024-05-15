@@ -50,12 +50,10 @@ const MainContainer = styled.div`
 
   @media (max-width: 768px) {
     height: auto;
-    padding: 20px;
   }
 
   @media (max-width: 480px) {
     height: auto;
-    padding: 10px;
   }
 `;
 
@@ -75,11 +73,9 @@ const StyledLabel = styled.div`
     margin-top: 30px;
 
     @media (max-width: 768px) {
-      padding: 0 20px;
     }
 
     @media (max-width: 480px) {
-      padding: 0 10px;
       margin-top: 20px;
     }
   }

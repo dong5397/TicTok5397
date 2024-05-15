@@ -2,17 +2,6 @@ import React, { useState, useEffect, useRef } from "react";
 import styled, { keyframes } from "styled-components";
 import Dot from "../../../images/Home/Dot.png";
 
-const fadeIn = keyframes`
-  0% {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-`;
-
 const StyledBox2Container = styled.div`
   margin-top: 30px;
   max-width: 800px;
@@ -68,10 +57,12 @@ const StyledBox5 = styled.div`
 
     @media (max-width: 768px) {
       font-size: 24px;
+      margin-right: 10px;
     }
 
     @media (max-width: 480px) {
       font-size: 20px;
+      margin-right: 10px;
     }
   }
 
@@ -79,13 +70,16 @@ const StyledBox5 = styled.div`
     margin-right: 8px;
 
     @media (max-width: 768px) {
-      width: 16px;
-      height: 16px;
+      width: 8px;
+      height: 8px;
+      margin-left: 10px;
     }
 
     @media (max-width: 480px) {
-      width: 14px;
-      height: 14px;
+      width: 8px;
+      height: 8px;
+      margin-left: 10px;
+      margin-top: -25px;
     }
   }
 
@@ -100,24 +94,28 @@ const StyledBox5 = styled.div`
     margin-left: 20px;
 
     @media (max-width: 768px) {
-      font-size: 18px;
-      margin-left: 15px;
+      font-size: 19px;
+      margin-left: 30px;
+      margin-right: 20px;
     }
 
     @media (max-width: 480px) {
-      font-size: 16px;
-      margin-left: 10px;
+      font-size: 15px;
+      margin-left: 25px;
+      margin-right: 20px;
     }
   }
 
   @media (max-width: 768px) {
     width: 90%;
     margin-left: 0;
+    margin-right: 20px;
   }
 
   @media (max-width: 480px) {
     width: 100%;
     margin-left: 0;
+    margin-right: 20px;
   }
 `;
 

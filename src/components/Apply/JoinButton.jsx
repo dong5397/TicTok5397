@@ -1,6 +1,34 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+
+function JoinButton({ selectedButton, selectedRadio }) {
+  const [redirectUrl, setRedirectUrl] = useState("");
+
+  useEffect(() => {
+    if (selectedButton === "서울" && selectedRadio === "Team") {
+      setRedirectUrl(
+        "https://docs.google.com/forms/d/e/1FAIpQLScUzMtsokD_sEKVc3Ws6Vvx_E2VPUVkwi-Cmo_RLbwMsyK9iw/formResponse"
+      );
+    } else {
+      setRedirectUrl("");
+      console.log("none");
+    }
+  }, [selectedButton, selectedRadio]);
+
+  return (
+    <CenterContainer>
+      <StyledLink href={redirectUrl} target="_blank" rel="noopener noreferrer">
+        <StyledBox>
+          <div className="rectangle">
+            <StyledLabel>지원하기</StyledLabel>
+          </div>
+        </StyledBox>
+      </StyledLink>
+    </CenterContainer>
+  );
+}
+
+export default JoinButton;
 
 const CenterContainer = styled.div`
   display: flex;
@@ -15,10 +43,6 @@ const CenterContainer = styled.div`
   @media (max-width: 480px) {
     margin-top: 50px;
   }
-`;
-
-const StyledLink = styled(Link)`
-  text-decoration: none;
 `;
 
 const StyledLabel = styled.div`
@@ -41,7 +65,7 @@ const StyledLabel = styled.div`
 `;
 
 const StyledBox = styled.div`
-  height: 200px;
+  height: 108px;
   width: 408px;
   position: relative;
   transition: all 0.3s ease;
@@ -60,11 +84,6 @@ const StyledBox = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  &:hover .rectangle {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-    transform: scale(1.05);
   }
 
   @media (max-width: 768px) {
@@ -88,18 +107,6 @@ const StyledBox = styled.div`
   }
 `;
 
-export const Question3 = () => {
-  return (
-    <CenterContainer>
-      <StyledLink to="/MainSend">
-        <StyledBox>
-          <div className="rectangle">
-            <StyledLabel>문의하기</StyledLabel>
-          </div>
-        </StyledBox>
-      </StyledLink>
-    </CenterContainer>
-  );
-};
-
-export default Question3;
+const StyledLink = styled.a`
+  text-decoration: none;
+`;

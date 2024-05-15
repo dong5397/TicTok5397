@@ -19,11 +19,11 @@ function MainHome() {
       <Home3 />
       <Home4 />
       <Home5 />
-      {/* <Home6 />
+      <Home6 />
       <Home7 />
       <Home8 />
       <Home9 />
-      <Home10 /> */}
+      <Home10 />
     </div>
   );
 }

@@ -38,12 +38,10 @@ const MainContainer = styled.div`
 
   @media (max-width: 768px) {
     height: auto;
-    padding: 20px;
   }
 
   @media (max-width: 480px) {
     height: auto;
-    padding: 10px;
   }
 `;
 

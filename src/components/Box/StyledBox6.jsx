@@ -79,13 +79,17 @@ const StyledBox6 = styled.div`
     margin-right: 8px;
 
     @media (max-width: 768px) {
-      width: 16px;
-      height: 16px;
+      width: 8px;
+      height: 8px;
+      margin-left: 10px;
+      margin-top: -30px;
     }
 
     @media (max-width: 480px) {
-      width: 14px;
-      height: 14px;
+      width: 8px;
+      height: 8px;
+      margin-left: 10px;
+      margin-top: -0px;
     }
   }
 
@@ -100,13 +104,13 @@ const StyledBox6 = styled.div`
     margin-left: 20px;
 
     @media (max-width: 768px) {
-      font-size: 18px;
-      margin-left: 15px;
+      font-size: 19px;
+      margin-left: 30px;
     }
 
     @media (max-width: 480px) {
-      font-size: 16px;
-      margin-left: 10px;
+      font-size: 15px;
+      margin-left: 25px;
     }
   }
 

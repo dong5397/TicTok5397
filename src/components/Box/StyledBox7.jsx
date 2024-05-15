@@ -84,11 +84,15 @@ const StyledRectangle = styled.div`
   @media (max-width: 768px) {
     width: 50%;
     height: 180px;
+    margin-left: 10px;
+    margin-left: 10px;
   }
 
   @media (max-width: 480px) {
     width: 50%;
     height: 150px;
+    margin-left: 10px;
+    margin-left: 10px;
   }
 `;
 
@@ -121,13 +125,17 @@ const StyledDiv = styled.div`
   }
 
   @media (max-width: 768px) {
-    width: 50%;
+    width: 40%;
     height: 150px;
+    margin-left: 10px;
+    margin-left: 10px;
   }
 
   @media (max-width: 480px) {
     width: 50%;
     height: 120px;
+    margin-left: 10px;
+    margin-left: 10px;
   }
 `;
 

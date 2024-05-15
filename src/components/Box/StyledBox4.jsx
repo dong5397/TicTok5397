@@ -80,13 +80,15 @@ const StyledBox4 = styled.div`
     margin-right: 8px;
 
     @media (max-width: 768px) {
-      width: 16px;
-      height: 16px;
+      width: 8px;
+      height: 8px;
+      margin-left: 10px;
     }
 
     @media (max-width: 480px) {
-      width: 14px;
-      height: 14px;
+      width: 8px;
+      height: 8px;
+      margin-left: 10px;
     }
   }
 
@@ -102,26 +104,29 @@ const StyledBox4 = styled.div`
 
     @media (max-width: 768px) {
       font-size: 18px;
-      margin-left: 15px;
+      margin-left: 30px;
+      margin-right: 20px;
     }
 
     @media (max-width: 480px) {
       font-size: 16px;
-      margin-left: 10px;
+      margin-left: 35px;
+      margin-right: 20px;
     }
   }
 
   @media (max-width: 768px) {
     width: 90%;
     margin-left: 0;
+    margin-right: 20px;
   }
 
   @media (max-width: 480px) {
     width: 100%;
     margin-left: 0;
+    margin-right: 20px;
   }
 `;
-
 function AnimatedBox({ delay, children }) {
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef(null);

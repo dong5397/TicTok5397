@@ -79,21 +79,9 @@ function Question() {
 export default Question;
 
 const MainContainer = styled.div`
-  width: 100%;
-  margin: 20px;
-
-  @media (min-width: 480px) {
-    width: 90%;
-    margin: 40px auto;
-  }
-
-  @media (min-width: 768px) {
-    width: 800px;
-    margin: 200px auto;
-    margin-top: 100px;
-    border-radius: 10px;
-    margin-bottom: 30px;
-  }
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 `;
 
 const QuestionContainer = styled.div`
@@ -103,9 +91,11 @@ const QuestionContainer = styled.div`
 const QuestionBox = styled.div`
   cursor: pointer;
   padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
 
   @media (min-width: 480px) {
-    padding-top: 50px;
+    padding: 30px;
   }
 
   @media (min-width: 768px) {
@@ -118,39 +108,53 @@ const QuestionTitle = styled.div`
   align-items: center;
   justify-content: space-between;
   font-weight: bold;
-  color: white; /* 질문 텍스트 색상 */
-  font-size: 20px;
+  color: white;
+  font-size: 23px;
   margin-top: 10px;
+
   @media (min-width: 480px) {
     font-size: 16px;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 23px;
   }
 `;
 
 const Answer = styled.div`
   padding: 20px 0;
-  margin-top: 30px;
+  margin-top: 10px;
   color: #25f4ee;
   display: ${({ isOpen }) => (isOpen ? "block" : "none")};
+  font-size: 18px;
 
   @media (min-width: 480px) {
-    padding: 10px 0;
     font-size: 14px;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 18px;
   }
 `;
 
 const Divider = styled.div`
   width: 100%;
-  margin-left: 20px;
-  height: 3px;
+  height: 2px;
   background: linear-gradient(
     to right,
     rgba(16, 216, 196, 0.37),
     rgba(233, 17, 60, 0.8)
   );
+  margin: 20px 0;
 `;
 
 const StyledImage = styled.div`
-  margin-left: 15px;
+  display: flex;
+
   margin-bottom: 40px;
   padding-top: 150px;
+
+  img {
+    max-width: 600px;
+  }
 `;

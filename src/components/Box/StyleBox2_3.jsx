@@ -31,17 +31,15 @@ const StyledLabel = styled.div`
 
   @media (max-width: 768px) {
     font-size: 20px;
-    padding: 20px;
   }
 
   @media (max-width: 480px) {
     font-size: 16px;
-    padding: 15px;
   }
 `;
 
 const StyledBox = styled.div`
-  height: 108px;
+  height: 300px;
   width: 408px;
   position: relative;
   transition: all 0.3s ease;
@@ -53,7 +51,7 @@ const StyledBox = styled.div`
       rgb(254, 44, 85) 100%
     );
     border-radius: 20px;
-    height: 108px;
+    height: 100px;
     width: 408px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
@@ -68,17 +66,17 @@ const StyledBox = styled.div`
   }
 
   @media (max-width: 768px) {
-    height: 90px;
+    height: 300px;
     width: 350px;
 
     & .rectangle {
-      height: 90px;
+      height: 100px;
       width: 350px;
     }
   }
 
   @media (max-width: 480px) {
-    height: 72px;
+    height: 200px;
     width: 300px;
 
     & .rectangle {

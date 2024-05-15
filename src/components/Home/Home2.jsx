@@ -40,39 +40,48 @@ function Home2() {
       <StyledBox>
         <img className="mask-group" alt="Mask group" src={Home2Image} />
       </StyledBox>
-      <Content>
-        <img className="tiktok-image" alt="TicTok Logo" src={TicTokImage} />
-        <br />
-        <img className="makertone-image" alt="Makertone" src={MakertoneImage} />
-      </Content>
-      <StyledLabel>
-        <div className="flexcontainer">
-          <p className="text" ref={(el) => (textRefs.current[0] = el)}>
-            <span className="text-wrapper">
-              대학생 AR 특수 효과 산업 이해도 상승, AR 필터 제작 기술 습득, 취업
-              옵션 확장 지원
-              <br />
-            </span>
-          </p>
-          <p className="text" ref={(el) => (textRefs.current[1] = el)}>
-            <span className="text-wrapper">
-              틱톡의 Effect House 홍보, AR 필터 크리에이터 영입 및 육성
-            </span>
-          </p>
-          <p className="text" ref={(el) => (textRefs.current[2] = el)}>
-            <span className="text-wrapper">
-              프로젝트 완료 후 지속적으로 틱톡 Effect House 프로그램 필터
-              크리에이터 활동
-            </span>
-          </p>
-        </div>
-      </StyledLabel>
+      <ContentContainer>
+        <Content>
+          <img className="tiktok-image" alt="TicTok Logo" src={TicTokImage} />
+          <br />
+          <img
+            className="makertone-image"
+            alt="Makertone"
+            src={MakertoneImage}
+          />
+        </Content>
+        <StyledLabel>
+          <div className="flexcontainer">
+            <p className="text" ref={(el) => (textRefs.current[0] = el)}>
+              <span className="text-wrapper">
+                대학생 AR 특수 효과 산업 이해도 상승, AR 필터 제작 기술 습득,
+                취업 옵션 확장 지원
+                <br />
+              </span>
+            </p>
+            <p className="text" ref={(el) => (textRefs.current[1] = el)}>
+              <span className="text-wrapper">
+                틱톡의 Effect House 홍보, AR 필터 크리에이터 영입 및 육성
+              </span>
+            </p>
+            <p className="text" ref={(el) => (textRefs.current[2] = el)}>
+              <span className="text-wrapper">
+                프로젝트 완료 후 지속적으로 틱톡 Effect House 프로그램 필터
+                크리에이터 활동
+              </span>
+            </p>
+          </div>
+        </StyledLabel>
+      </ContentContainer>
     </MainContainer>
   );
 }
 
 export default Home2;
 
+const ContentContainer = styled.div`
+  margin-top: 30px;
+`;
 const StyledBox = styled.div`
   position: absolute; /* 배경 이미지를 절대 위치로 고정 */
   top: 0;
@@ -122,9 +131,10 @@ const Content = styled.div`
   color: white;
   margin-top: 250px;
   text-align: center;
-  transform: translateY(-10%); /* 살짝 위로 이동 */
+  margin-bottom: 30px;
   max-width: 80%; /* 이미지가 화면에 꽉 차지 않도록 제한 */
-  margin-bottom: 80px; /* 아래쪽에 여유 공간 추가 */
+  margin-left: auto;
+  margin-right: auto; /* 가운데 정렬 */
 
   & img {
     max-width: 100%; /* 부모인 Content의 너비에 맞춰 조정 */
@@ -136,6 +146,7 @@ const Content = styled.div`
   @media (max-width: 800px) {
     margin-top: 150px;
     margin-bottom: 60px;
+    width: 50%;
   }
 
   @media (max-width: 480px) {
@@ -166,17 +177,16 @@ const MainContainer = styled.div`
 const StyledLabel = styled.div`
   position: relative;
   z-index: 2;
-  max-width: 80%;
-  margin-top: -70px;
+
   text-align: center;
 
   & .flexcontainer {
-    display: flex;
     flex-direction: column;
-    gap: 10px;
 
     @media (max-width: 768px) {
+      text-align: center;
       gap: 8px;
+      margin: 0px;
     }
 
     @media (max-width: 480px) {
@@ -211,17 +221,23 @@ const StyledLabel = styled.div`
   }
 
   & .text-wrapper {
+    width: 800px;
     color: #ffffff;
     font-family: "Inter-SemiBold", Helvetica;
     font-size: 18px;
     font-weight: 600;
+    display: inline-block;
+    text-align: center; /* 모바일 화면에서 가운데 정렬 */
 
     @media (max-width: 768px) {
       font-size: 16px;
+      width: 90%;
+      margin: 0 auto; /* 모바일 화면에서 가운데 정렬 */
     }
 
     @media (max-width: 480px) {
       font-size: 14px;
+      margin: 0;
     }
   }
 `;
