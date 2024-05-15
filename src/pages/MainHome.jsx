@@ -10,6 +10,7 @@ import Home7 from "../components/Home/Home7";
 import Home8 from "../components/Home/Home8";
 import Home9 from "../components/Home/Home9";
 import Home10 from "../components/Home/Home10";
+
 function MainHome() {
   return (
     <div>

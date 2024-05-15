@@ -154,7 +154,7 @@ const StyledImage = styled.div`
 
   & .untitled {
     height: 439px;
-    width: 1203px;
+    width: 1280px;
     animation: ${electricShock} 4s infinite;
 
     @media (max-width: 1200px) {
@@ -179,7 +179,7 @@ const MainContainer = styled.div`
   justify-content: center;
   align-items: center;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
   margin-top: 100px;
 

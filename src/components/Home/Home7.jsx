@@ -11,7 +11,6 @@ const MainContainer = styled.div`
   height: 100%;
   width: 100%;
   overflow: hidden;
-  padding: 20px;
   margin-top: 100px;
 
   @media (max-width: 768px) {

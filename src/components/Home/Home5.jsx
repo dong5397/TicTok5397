@@ -11,7 +11,6 @@ const MainContainer = styled.div`
   height: 100%;
   width: 100%;
   overflow: hidden;
-  padding: 20px;
   margin-top: 100px;
 
   @media (max-width: 768px) {
@@ -39,10 +38,12 @@ const StyledLabel = styled.div`
     gap: 10px;
 
     @media (max-width: 768px) {
+      flex-direction: column;
       align-items: flex-start;
     }
 
     @media (max-width: 480px) {
+      flex-direction: column;
       align-items: flex-start;
     }
   }

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import Faq from "../../../images/Question/FAQ.png";
+import Faq from "../../../images/Question/faq.png";
 import on from "../../../images/Question/on.png";
 import off from "../../../images/Question/off.png";
 

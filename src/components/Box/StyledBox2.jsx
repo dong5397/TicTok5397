@@ -18,6 +18,7 @@ const StyledBox2Container = styled.div`
   margin-top: 30px;
   max-width: 800px;
   width: 100%;
+  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

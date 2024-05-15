@@ -8,7 +8,7 @@ const HeaderContainer = styled.header`
   justify-content: center;
   position: fixed;
   top: 0;
-  padding: 10px 0;
+
   color: white;
   transition: transform 0.3s;
   width: 100%;
@@ -18,16 +18,11 @@ const HeaderContainer = styled.header`
 
 const InnerContainer = styled.div`
   display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 1280px;
-  padding: 0 20px;
-
-  @media (max-width: 100%) {
-    flex-direction: column;
-    align-items: flex-start;
-  }
 `;
 
 const LogoContainer = styled(Link)`
@@ -35,47 +30,16 @@ const LogoContainer = styled(Link)`
   color: white;
   font-size: 24px;
   display: flex;
-  gap: 20px;
-
-  @media (max-width: 768px) {
-    font-size: 20px;
-    gap: 15px;
-  }
-
-  @media (max-width: 480px) {
-    font-size: 18px;
-    gap: 10px;
-  }
 `;
 
 const LogoImage = styled.img`
   width: 140px;
-
-  @media (max-width: 768px) {
-    width: 80px;
-  }
-
-  @media (max-width: 480px) {
-    width: 60px;
-  }
 `;
 
 const NavLinks = styled.nav`
   display: flex;
   gap: 30px;
   justify-content: space-between;
-
-  @media (max-width: 768px) {
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  @media (max-width: 480px) {
-    gap: 15px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
 `;
 
 const NavLink = styled(Link)`

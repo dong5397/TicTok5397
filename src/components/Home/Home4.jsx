@@ -11,7 +11,14 @@ const MainContainer = styled.div`
   height: 100%;
   width: 100%;
   overflow: hidden;
-  padding: 20px;
+
+  @media (max-width: 768px) {
+    padding: 15px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 10px;
+  }
 `;
 
 const StyledLabel = styled.div`
@@ -26,6 +33,16 @@ const StyledLabel = styled.div`
     display: flex;
     align-items: center;
     gap: 10px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    @media (max-width: 480px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 
   & .text-wrapper {
@@ -36,6 +53,14 @@ const StyledLabel = styled.div`
     letter-spacing: 0;
     line-height: normal;
     margin-top: 20px;
+
+    @media (max-width: 768px) {
+      font-size: 30px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 24px;
+    }
   }
 `;
 
@@ -48,6 +73,14 @@ const Styleline = styled.div`
   & .vector {
     width: 100%;
     height: 2px;
+
+    @media (max-width: 768px) {
+      margin-left: -50px;
+    }
+
+    @media (max-width: 480px) {
+      margin-left: -50px;
+    }
   }
 `;
 
@@ -55,6 +88,18 @@ const Img = styled.img`
   width: 50px;
   height: 50px;
   margin-top: 20px;
+
+  @media (max-width: 768px) {
+    width: 40px;
+    height: 40px;
+    margin-top: 15px;
+  }
+
+  @media (max-width: 480px) {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+  }
 `;
 
 function Home4() {

@@ -11,7 +11,7 @@ const MainContainer = styled.div`
   width: 100%;
   align-items: center;
   height: 70vh;
-  width: 100vw;
+
   overflow: hidden;
 `;
 
