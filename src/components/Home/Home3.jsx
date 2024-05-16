@@ -11,7 +11,6 @@ const MainContainer = styled.div`
   flex-direction: column;
   width: 100%;
   align-items: center;
-  height: 70vh;
 `;
 
 const StyledLabel = styled.div`

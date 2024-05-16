@@ -85,19 +85,27 @@ function Home2() {
 export default Home2;
 
 const ContentContainer = styled.div`
-  margin-top: -20px;
+  margin-top: 150px;
+  @media (max-width: 780px) {
+    margin-top: -100px;
+  }
 `;
 const StyledBox = styled.div`
   position: absolute; /* 배경 이미지를 절대 위치로 고정 */
   top: 0;
   left: 0;
   width: 100%;
-  height: 80%;
+  height: 90%;
   z-index: 0;
-
+  @media (max-width: 780px) {
+    margin-top: -40px;
+  }
   & .mask-group {
     width: 100%;
     height: 100%;
+    @media (max-width: 480px) {
+      height: 80%;
+    }
   }
 
   /* 위쪽 그라데이션 */
@@ -141,17 +149,17 @@ const Content = styled.div`
   margin-right: auto; /* 가운데 정렬 */
 
   .image-container {
-    margin-bottom: 20px;
+    margin-bottom: -90px;
   }
 
   & img.tiktok-image {
     max-width: 150%; /* 부모인 Content의 너비에 맞춰 조정 */
     height: auto;
-    margin-top: 30px; /* 원하는 만큼 내리기 위해 margin-top을 추가 */
+    margin-top: 40px; /* 원하는 만큼 내리기 위해 margin-top을 추가 */
   }
 
   @media (max-width: 480px) {
-    margin-top: 120px;
+    margin-top: 60px;
     margin-bottom: 30px;
   }
 `;
@@ -175,17 +183,20 @@ const Content2 = styled.div`
     max-width: 150%; /* 부모인 Content의 너비에 맞춰 조정 */
     height: auto;
     margin-top: 0px;
+    @media (max-width: 800px) {
+      margin-top: 80px;
+    }
   }
 
   @media (max-width: 800px) {
-    margin-top: 100px;
-    margin-bottom: 30px;
+    margin-top: 10px;
+
     width: 50%;
   }
 
   @media (max-width: 480px) {
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 45px;
     margin-left: 60px;
   }
 `;

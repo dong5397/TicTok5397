@@ -63,18 +63,13 @@ const StyledBox5 = styled.div`
 
   & .dot-img {
     margin-right: 8px;
+    margin-top: -40px;
 
     @media (max-width: 768px) {
       width: 8px;
       height: 8px;
       margin-left: 10px;
-    }
-
-    @media (max-width: 480px) {
-      width: 8px;
-      height: 8px;
-      margin-left: 10px;
-      margin-top: -25px;
+      margin-top: -20px;
     }
   }
 

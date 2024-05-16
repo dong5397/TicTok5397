@@ -15,15 +15,15 @@ const StyledNotificationLabel = styled.div`
     letter-spacing: 0;
     line-height: normal;
     margin-bottom: 5px;
-
+    margin-top: -5px;
     @media (max-width: 768px) {
       font-size: 9px;
-      margin-top: -5px;
+
       margin-left: 20px;
     }
   }
   & .indent {
-    margin-left: 15px; /* 들여쓰기 간격 */
+    margin-left: 17px; /* 들여쓰기 간격 */
 
     @media (max-width: 768px) {
       margin-left: 30px;

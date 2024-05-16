@@ -82,13 +82,7 @@ const StyledBox2 = styled.div`
     display: flex;
 
     @media (max-width: 768px) {
-      font-size: 18px;
-      margin-right: 20px;
-    }
-
-    @media (max-width: 480px) {
-      font-size: 16px;
-
+      font-size: 13px;
       margin-right: 20px;
     }
   }
@@ -104,24 +98,13 @@ const StyledBox2 = styled.div`
     margin-left: 15px;
 
     @media (max-width: 768px) {
-      font-size: 18px;
-      margin-left: 28px;
-      margin-right: 20px;
-    }
-
-    @media (max-width: 480px) {
-      font-size: 16px;
+      font-size: 13px;
       margin-left: 24px;
       margin-right: 20px;
     }
   }
 
   @media (max-width: 768px) {
-    width: 90%;
-    margin-left: 0;
-  }
-
-  @media (max-width: 480px) {
     width: 100%;
     margin-left: 0;
   }

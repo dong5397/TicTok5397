@@ -182,6 +182,7 @@ const MainContainer = styled.div`
   width: 100%;
   overflow: hidden;
   margin-top: 100px;
+  margin-bottom: 100px;
 
   @media (max-width: 768px) {
     margin-top: 50px;
