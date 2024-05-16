@@ -103,13 +103,7 @@ const StyledBox4 = styled.div`
     margin-left: 20px;
 
     @media (max-width: 768px) {
-      font-size: 18px;
-      margin-left: 30px;
-      margin-right: 20px;
-    }
-
-    @media (max-width: 480px) {
-      font-size: 16px;
+      font-size: 12px;
       margin-left: 35px;
       margin-right: 20px;
     }
@@ -181,7 +175,7 @@ function StyleBox4() {
             <br />
             대전 : 7월 4일 목요일, 목원대학교
             <br />
-            광주 : 7월 5일 금요일
+            광주 : 7월 5일 금요일, 추후 공개
           </div>
         </div>
       </AnimatedBox>
@@ -201,7 +195,7 @@ function StyleBox4() {
             <br />
             대전 : 8월 7일 목요일, 목원대학교
             <br />
-            광주 : 8월 8일 금요일
+            광주 : 8월 8일 금요일, 추후 공개
           </div>
         </div>
       </AnimatedBox>

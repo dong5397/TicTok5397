@@ -18,7 +18,7 @@ const MainContainer = styled.div`
   }
 
   @media (max-width: 480px) {
-    margin-top: 60px;
+    margin-top: 200px;
   }
 `;
 
@@ -66,7 +66,7 @@ const StyledLabel = styled.div`
 const Styleline = styled.div`
   width: 90%;
   max-width: 800px;
-  margin-top: 10px;
+
   margin-left: 30px;
 
   & .vector {

@@ -65,10 +65,6 @@ const StyledLabel = styled.div`
 
     /* 반응형 미디어 쿼리 */
     @media (max-width: 768px) {
-      font-size: 15px;
-    }
-
-    @media (max-width: 480px) {
       font-size: 12px;
     }
   }

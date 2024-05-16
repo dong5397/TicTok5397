@@ -56,12 +56,7 @@ const StyledBox5 = styled.div`
     margin-bottom: 10px;
 
     @media (max-width: 768px) {
-      font-size: 24px;
-      margin-right: 10px;
-    }
-
-    @media (max-width: 480px) {
-      font-size: 20px;
+      font-size: 15px;
       margin-right: 10px;
     }
   }
@@ -94,13 +89,7 @@ const StyledBox5 = styled.div`
     margin-left: 20px;
 
     @media (max-width: 768px) {
-      font-size: 19px;
-      margin-left: 30px;
-      margin-right: 20px;
-    }
-
-    @media (max-width: 480px) {
-      font-size: 15px;
+      font-size: 13px;
       margin-left: 25px;
       margin-right: 20px;
     }
@@ -162,7 +151,7 @@ function StyleBox5() {
         <div className="group">
           <div className="text-wrapper">
             <img className="dot-img" src={Dot} alt="점" />총 미션 8개 (필수 5개,
-            선택 3개) 중 8개 이상 수행
+            선택 3개) <br />중 8개 이상 수행
           </div>
           <div className="div">
             <h3>8개 미만 필터 발행자는 수상에서 제외</h3>
@@ -174,7 +163,8 @@ function StyleBox5() {
         <div className="group">
           <div className="text-wrapper">
             <img className="dot-img" src={Dot} alt="점" />
-            수상기준 : 발행한 모든 필터의 글로벌 사용량 60%
+            수상기준 : 발행한 모든 필터의
+            <br /> 글로벌 사용량 60%
           </div>
           <div className="div">
             <h3>+ 조회수 20% + 참여도(발행량) 20%</h3>
