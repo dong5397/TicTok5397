@@ -3,7 +3,7 @@ import styled from "styled-components";
 import img1 from "../../../images/Home/q.png";
 import line from "../../../images/Home/line.png";
 import StyledBox4 from "../Box/StyledBox4";
-
+import BackIcon3 from "../../../images/Home/backgroundIcon/BK2.svg";
 const MainContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -103,10 +103,17 @@ const Img = styled.img`
     margin-top: 25px;
   }
 `;
-
+const BackIcon = styled.img`
+  width: 449px;
+  height: 413.8px;
+  position: relative;
+  right: 520px;
+  top: 430px;
+`;
 function Home6() {
   return (
     <MainContainer>
+      <BackIcon src={BackIcon3} alt="HeartIcon" />
       <StyledLabel>
         <div className="label-container">
           <Img src={img1} alt="Icon" />
