@@ -93,7 +93,6 @@ const StyledBox = styled.div`
   & .mask-group {
     width: 100%;
     height: 100%;
-    object-fit: cover;
   }
 
   /* 위쪽 그라데이션 */

@@ -43,10 +43,6 @@ const MainContainer = styled.div`
   @media (max-width: 768px) {
     height: auto;
   }
-
-  @media (max-width: 480px) {
-    height: auto;
-  }
 `;
 
 const StyledLabel = styled.div`
@@ -55,9 +51,8 @@ const StyledLabel = styled.div`
   align-items: flex-start;
   height: auto;
   width: 100%;
-  width: 730px;
-  margin-left: 80px;
-
+  max-width: 800px;
+  margin-left: 120px;
   .row-wrapper {
     display: flex;
     justify-content: space-between;
@@ -66,11 +61,7 @@ const StyledLabel = styled.div`
     margin-top: 30px;
 
     @media (max-width: 768px) {
-    }
-
-    @media (max-width: 480px) {
-      padding: 0 10px;
-      margin-top: 20px;
+      margin-left: -55px;
     }
   }
 
@@ -93,11 +84,6 @@ const StyledLabel = styled.div`
         width: 10px;
         height: 10px;
       }
-
-      @media (max-width: 480px) {
-        width: 8px;
-        height: 8px;
-      }
     }
   }
 
@@ -106,10 +92,6 @@ const StyledLabel = styled.div`
 
     @media (max-width: 768px) {
       font-size: 18px;
-    }
-
-    @media (max-width: 480px) {
-      font-size: 16px;
     }
   }
 `;
@@ -136,11 +118,5 @@ const StyledInput = styled.input`
     width: 100%;
     height: 60px;
     margin-left: 20px;
-  }
-
-  @media (max-width: 480px) {
-    width: 100%;
-    height: 50px;
-    margin-left: 10px;
   }
 `;

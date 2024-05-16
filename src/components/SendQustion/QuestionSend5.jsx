@@ -1,15 +1,6 @@
 import React from "react";
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import star from "../../../images/Question/star.png";
-
-const slideIn = keyframes`
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-`;
 
 function QuestionSend5() {
   return (
@@ -33,14 +24,9 @@ const MainContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-
   overflow: hidden;
 
   @media (max-width: 768px) {
-    height: auto;
-  }
-
-  @media (max-width: 480px) {
     height: auto;
   }
 `;
@@ -51,22 +37,17 @@ const StyledLabel = styled.div`
   align-items: flex-start;
   height: auto;
   width: 100%;
-  width: 800px;
-
+  max-width: 800px;
+  margin-left: 120px;
   .row-wrapper {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 0 70px;
+
     margin-top: 30px;
 
     @media (max-width: 768px) {
-      padding: 0 20px;
-    }
-
-    @media (max-width: 480px) {
-      padding: 0 10px;
-      margin-top: 20px;
+      margin-left: -55px;
     }
   }
 
@@ -89,11 +70,6 @@ const StyledLabel = styled.div`
         width: 10px;
         height: 10px;
       }
-
-      @media (max-width: 480px) {
-        width: 8px;
-        height: 8px;
-      }
     }
   }
 
@@ -102,10 +78,6 @@ const StyledLabel = styled.div`
 
     @media (max-width: 768px) {
       font-size: 18px;
-    }
-
-    @media (max-width: 480px) {
-      font-size: 16px;
     }
   }
 `;
@@ -133,11 +105,5 @@ const StyledTextarea = styled.textarea`
     width: 100%;
     height: 250px;
     margin-left: 20px;
-  }
-
-  @media (max-width: 480px) {
-    width: 100%;
-    height: 200px;
-    margin-left: 10px;
   }
 `;

@@ -94,10 +94,6 @@ const MainContainer = styled.div`
   @media (max-width: 768px) {
     height: auto;
   }
-
-  @media (max-width: 480px) {
-    height: auto;
-  }
 `;
 
 const StyledLabel = styled.div`
@@ -105,21 +101,17 @@ const StyledLabel = styled.div`
   flex-direction: column;
   align-items: flex-start;
   height: auto;
-  margin-left: 60px;
-  width: 100%;
-  width: 720px;
 
+  width: 100%;
+  margin-left: 120px;
+  max-width: 800px;
   .row-wrapper {
     display: flex;
     justify-content: space-between;
     width: 100%;
 
     @media (max-width: 768px) {
-      padding: 0 20px;
-    }
-
-    @media (max-width: 480px) {
-      padding: 0 10px;
+      margin-left: -55px;
     }
   }
 
@@ -143,11 +135,6 @@ const StyledLabel = styled.div`
         width: 10px;
         height: 10px;
       }
-
-      @media (max-width: 480px) {
-        width: 8px;
-        height: 8px;
-      }
     }
   }
 
@@ -157,16 +144,12 @@ const StyledLabel = styled.div`
     @media (max-width: 768px) {
       font-size: 18px;
     }
-
-    @media (max-width: 480px) {
-      font-size: 16px;
-    }
   }
 `;
 
 const InputBox = styled.div`
   height: 74px;
-  width: 235px;
+  width: calc((100% - 20px) / 3);
 
   .rectangle {
     border: 2px solid #ffffff80;
@@ -190,12 +173,6 @@ const InputBox = styled.div`
     height: 60px;
     margin-bottom: 10px;
   }
-
-  @media (max-width: 480px) {
-    width: 100%;
-    height: 50px;
-    margin-bottom: 10px;
-  }
 `;
 
 const InputContainer = styled.div`
@@ -209,14 +186,7 @@ const InputContainer = styled.div`
   width: 730px;
 
   @media (max-width: 768px) {
-    flex-direction: column;
-    gap: 5px;
-    margin-left: 0;
-    width: 100%;
-  }
-
-  @media (max-width: 480px) {
-    flex-direction: column;
+    flex-direction: row;
     gap: 5px;
     margin-left: 0;
     width: 100%;
@@ -230,15 +200,11 @@ const InputDivider = styled.span`
   @media (max-width: 768px) {
     font-size: 20px;
   }
-
-  @media (max-width: 480px) {
-    font-size: 18px;
-  }
 `;
 
 const DomainSelector = styled.select`
   height: 74px;
-  width: 235px;
+  width: calc((100% - 20px) / 3);
   border: 2px solid #ffffff80;
   border-radius: 10px;
   background-color: transparent;
@@ -256,10 +222,5 @@ const DomainSelector = styled.select`
   @media (max-width: 768px) {
     width: 100%;
     height: 60px;
-  }
-
-  @media (max-width: 480px) {
-    width: 100%;
-    height: 50px;
   }
 `;

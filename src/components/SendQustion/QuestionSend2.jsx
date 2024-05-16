@@ -57,10 +57,6 @@ const MainContainer = styled.div`
   @media (max-width: 768px) {
     height: auto;
   }
-
-  @media (max-width: 480px) {
-    height: auto;
-  }
 `;
 
 const StyledLabel = styled.div`
@@ -69,8 +65,9 @@ const StyledLabel = styled.div`
   align-items: flex-start;
   height: auto;
   width: 100%;
-  width: 720px;
-  margin-left: 70px;
+  max-width: 800px;
+
+  margin-left: 120px;
   .row-wrapper {
     display: flex;
     justify-content: space-between;
@@ -79,10 +76,7 @@ const StyledLabel = styled.div`
     margin-top: 20px;
 
     @media (max-width: 768px) {
-    }
-
-    @media (max-width: 480px) {
-      margin-top: 10px;
+      margin-left: -55px;
     }
   }
 
@@ -95,6 +89,11 @@ const StyledLabel = styled.div`
     font-weight: 700;
     margin-top: 10px;
 
+    @media (max-width: 768px) {
+      font-size: 30px;
+      margin-left: -0px;
+    }
+
     .star-icon {
       width: 12px;
       height: 12px;
@@ -104,11 +103,7 @@ const StyledLabel = styled.div`
       @media (max-width: 768px) {
         width: 10px;
         height: 10px;
-      }
-
-      @media (max-width: 480px) {
-        width: 8px;
-        height: 8px;
+        margin-left: -0;
       }
     }
   }
@@ -118,10 +113,7 @@ const StyledLabel = styled.div`
 
     @media (max-width: 768px) {
       font-size: 18px;
-    }
-
-    @media (max-width: 480px) {
-      font-size: 16px;
+      margin-left: -0;
     }
   }
 `;
@@ -150,11 +142,7 @@ const InputBox = styled.div`
   @media (max-width: 768px) {
     width: 100%;
     height: 60px;
-  }
-
-  @media (max-width: 480px) {
-    width: 100%;
-    height: 50px;
+    margin-left: -0px;
   }
 `;
 
@@ -174,13 +162,6 @@ const InputContainer = styled.div`
     margin-left: 0;
     width: 100%;
   }
-
-  @media (max-width: 480px) {
-    flex-direction: column;
-    gap: 5px;
-    margin-left: 0;
-    width: 100%;
-  }
 `;
 
 const InputDivider = styled.span`
@@ -188,10 +169,7 @@ const InputDivider = styled.span`
   font-size: 24px;
 
   @media (max-width: 768px) {
+    margin-left: -0px;
     font-size: 20px;
-  }
-
-  @media (max-width: 480px) {
-    font-size: 18px;
   }
 `;

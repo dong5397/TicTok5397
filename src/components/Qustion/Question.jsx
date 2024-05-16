@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import Faq from "../../../images/Question/FAQ.png";
+import FAQ from "../../../images/Question/FAQ.png";
 import on from "../../../images/Question/on.png";
 import off from "../../../images/Question/off.png";
 
@@ -51,7 +51,7 @@ function Question() {
   return (
     <MainContainer>
       <StyledImage>
-        <img className="img" alt="Untitled" src={Faq} />
+        <img className="img" alt="Untitled" src={FAQ} />
       </StyledImage>
       {questions1.map((q) => (
         <QuestionContainer key={q.id}>
@@ -80,27 +80,18 @@ export default Question;
 
 const MainContainer = styled.div`
   max-width: 800px;
+  width: 90%;
   margin: 0 auto;
-  padding: 20px;
 `;
 
 const QuestionContainer = styled.div`
-  margin-top: 20px;
+  margin-top: 50px;
 `;
 
 const QuestionBox = styled.div`
   cursor: pointer;
-  padding: 20px;
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 10px;
-
-  @media (min-width: 480px) {
-    padding: 30px;
-  }
-
-  @media (min-width: 768px) {
-    padding: 20px;
-  }
 `;
 
 const QuestionTitle = styled.div`
@@ -109,31 +100,20 @@ const QuestionTitle = styled.div`
   justify-content: space-between;
   font-weight: bold;
   color: white;
-  font-size: 23px;
+  font-size: 18px; /* 모바일에서 타이틀 폰트 크기 조절 */
   margin-top: 10px;
-
-  @media (min-width: 480px) {
-    font-size: 16px;
-  }
-
-  @media (min-width: 768px) {
-    font-size: 23px;
-  }
 `;
 
 const Answer = styled.div`
-  padding: 20px 0;
+  padding: 20px;
   margin-top: 10px;
   color: #25f4ee;
   display: ${({ isOpen }) => (isOpen ? "block" : "none")};
-  font-size: 18px;
+  font-size: 14px; /* 모바일에서 답변 폰트 크기 조절 */
+  padding-left: 32px;
 
-  @media (min-width: 480px) {
-    font-size: 14px;
-  }
-
-  @media (min-width: 768px) {
-    font-size: 18px;
+  @media (max-width: 760px) {
+    padding-left: 25px;
   }
 `;
 
@@ -142,8 +122,8 @@ const Divider = styled.div`
   height: 2px;
   background: linear-gradient(
     to right,
-    rgba(16, 216, 196, 0.37),
-    rgba(233, 17, 60, 0.8)
+    rgba(233, 17, 60, 0.8),
+    rgba(16, 216, 196, 0.37)
   );
   margin: 20px 0;
 `;

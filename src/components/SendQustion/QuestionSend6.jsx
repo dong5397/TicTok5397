@@ -51,10 +51,6 @@ const MainContainer = styled.div`
   @media (max-width: 768px) {
     height: auto;
   }
-
-  @media (max-width: 480px) {
-    height: auto;
-  }
 `;
 
 const StyledLabel = styled.div`
@@ -63,20 +59,16 @@ const StyledLabel = styled.div`
   align-items: flex-start;
   height: auto;
   width: 100%;
-  width: 800px;
-
+  margin-left: 120px;
+  max-width: 800px;
   .row-wrapper {
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    padding: 0 70px;
+
     margin-top: 30px;
 
     @media (max-width: 768px) {
-    }
-
-    @media (max-width: 480px) {
-      margin-top: 20px;
+      margin-left: -55px;
     }
   }
 
@@ -98,11 +90,6 @@ const StyledLabel = styled.div`
       @media (max-width: 768px) {
         width: 10px;
         height: 10px;
-      }
-
-      @media (max-width: 480px) {
-        width: 8px;
-        height: 8px;
       }
     }
   }
@@ -143,13 +130,6 @@ const StyledFileInput = styled.input`
     margin-left: 20px;
     line-height: 60px;
   }
-
-  @media (max-width: 480px) {
-    width: 100%;
-    height: 50px;
-    margin-left: 10px;
-    line-height: 50px;
-  }
 `;
 
 const StyledLabel2 = styled.div`
@@ -179,10 +159,5 @@ const StyledLabel2 = styled.div`
   @media (max-width: 768px) {
     width: 100%;
     margin-left: 20px;
-  }
-
-  @media (max-width: 480px) {
-    width: 100%;
-    margin-left: 10px;
   }
 `;

@@ -57,10 +57,6 @@ const MainContainer = styled.div`
   @media (max-width: 768px) {
     height: auto;
   }
-
-  @media (max-width: 480px) {
-    height: auto;
-  }
 `;
 
 const StyledLabel = styled.div`
@@ -78,10 +74,7 @@ const StyledLabel = styled.div`
 
     @media (max-width: 768px) {
       align-items: flex-start;
-    }
-
-    @media (max-width: 480px) {
-      align-items: flex-start;
+      margin-left: 10px;
     }
   }
 
@@ -95,12 +88,7 @@ const StyledLabel = styled.div`
 
     @media (max-width: 768px) {
       font-size: 30px;
-      margin-left: 10px;
-    }
-
-    @media (max-width: 480px) {
-      font-size: 24px;
-      margin-left: 20px;
+      margin-left: -0px;
     }
   }
 
@@ -131,11 +119,7 @@ const StyledLabel = styled.div`
       @media (max-width: 768px) {
         width: 10px;
         height: 10px;
-      }
-
-      @media (max-width: 480px) {
-        width: 8px;
-        height: 8px;
+        margin-left: 0px;
       }
     }
 
@@ -149,11 +133,6 @@ const StyledLabel = styled.div`
         width: 10px;
         height: 10px;
       }
-
-      @media (max-width: 480px) {
-        width: 8px;
-        height: 8px;
-      }
     }
   }
 
@@ -162,12 +141,7 @@ const StyledLabel = styled.div`
 
     @media (max-width: 768px) {
       font-size: 15px;
-      margin-right: 70px;
-    }
-
-    @media (max-width: 480px) {
-      font-size: 10px;
-      margin-right: 70px;
+      margin-left: 5px;
     }
   }
 
@@ -176,12 +150,7 @@ const StyledLabel = styled.div`
 
     @media (max-width: 768px) {
       font-size: 15px;
-      margin-right: 70px;
-    }
-
-    @media (max-width: 480px) {
-      font-size: 10px;
-      margin-right: 70px;
+      margin-right: 0px;
     }
   }
 
@@ -200,14 +169,11 @@ const StyledLine = styled.div`
   .vector {
     width: 100%;
     height: 2px;
-
-    @media (max-width: 768px) {
-      margin-left: -50px;
-    }
-
-    @media (max-width: 480px) {
-      margin-left: -50px;
-    }
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 60px;
+    margin-left: 0px;
   }
 `;
 
@@ -233,12 +199,6 @@ const StyledInput = styled.input`
   @media (max-width: 768px) {
     width: 100%;
     height: 60px;
-    margin-right: 50px;
-  }
-
-  @media (max-width: 480px) {
-    width: 100%;
-    height: 50px;
-    margin-right: 50px;
+    margin-right: 40px;
   }
 `;

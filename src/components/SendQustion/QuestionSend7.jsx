@@ -126,14 +126,11 @@ const MainContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  width: 800px;
+
   margin: 0 auto;
 
-  @media (max-width: 768px) {
-  }
-
-  @media (max-width: 480px) {
+  @media (max-width: 100%) {
+    max-width: 400px;
   }
 `;
 
@@ -142,21 +139,15 @@ const StyledLabel = styled.div`
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
-  width: 800px;
-  margin-left: 130px;
-
+  margin-left: 290px;
+  margin-right: 180px;
+  max-width: 800px;
   .row-wrapper {
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    margin-top: 30px;
 
     @media (max-width: 768px) {
-      margin-top: 20px;
-    }
-
-    @media (max-width: 480px) {
-      margin-top: 10px;
+      margin-top: 15px;
     }
   }
 
@@ -167,20 +158,17 @@ const StyledLabel = styled.div`
     color: #ffffff;
     font-family: "Inter-SemiBold", Helvetica;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 18px;
+    @media (max-width: 768px) {
+      margin-left: -50px;
+    }
 
     .star-icon {
-      width: 12px;
-      height: 12px;
-      margin-bottom: 5px;
+      width: 10px;
+      height: 10px;
       margin-left: 5px;
 
       @media (max-width: 768px) {
-        width: 10px;
-        height: 10px;
-      }
-
-      @media (max-width: 480px) {
         width: 8px;
         height: 8px;
       }
@@ -190,18 +178,19 @@ const StyledLabel = styled.div`
 
 const StyledContent = styled.div`
   width: 100%;
+  margin-right: 160px;
   max-width: 700px;
-  height: 350px;
+  height: 400px; /* 세로 길이 증가 */
   border: 2px solid #ffffff80;
   border-radius: 10px;
   background-color: transparent;
   color: white;
   padding: 15px;
-  font-size: 16px;
+  font-size: 14px;
   outline: none;
   margin-top: 10px;
   overflow-y: scroll;
-  margin-left: 50px;
+  margin-left: 200px;
 
   & p {
     margin: 0;
@@ -228,12 +217,9 @@ const StyledContent = styled.div`
   }
 
   @media (max-width: 768px) {
-    height: 250px;
-  }
-
-  @media (max-width: 480px) {
-    margin-right: 110px;
-    height: 200px;
+    max-width: 400px;
+    height: 350px;
+    margin-left: 160px;
   }
 `;
 
@@ -242,9 +228,9 @@ const CheckboxContainer = styled.div`
   align-items: center;
   margin-top: 10px;
   width: 100%;
-  max-width: 700px;
   color: white;
-
+  margin-left: 100px;
+  max-width: 800px;
   & input[type="checkbox"] {
     margin-right: 10px;
     accent-color: #ffffff80;
@@ -252,12 +238,6 @@ const CheckboxContainer = styled.div`
 
   @media (max-width: 768px) {
     margin-top: 10px;
-    margin-right: 50px;
-  }
-
-  @media (max-width: 480px) {
-    margin-top: 5px;
-    margin-right: 50px;
   }
 `;
 
@@ -265,32 +245,24 @@ const WarningMessage = styled.div`
   color: #ff4444;
   margin-top: 10px;
   width: 100%;
-  max-width: 700px;
   font-family: "Inter-Medium", Helvetica;
   font-size: 14px;
+  max-width: 800px;
 
   @media (max-width: 768px) {
     margin-top: 10px;
-  }
-
-  @media (max-width: 480px) {
-    margin-top: 5px;
   }
 `;
 
 const StyledLabel2 = styled.div`
   color: #ffffff;
   font-family: "Inter-Bold", Helvetica;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
   text-align: center;
 
   @media (max-width: 768px) {
-    font-size: 20px;
-  }
-
-  @media (max-width: 480px) {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   ${({ disabled }) =>
@@ -305,10 +277,10 @@ const StyledBox2 = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 108px;
+  height: 120px; /* 세로 길이 증가 */
   width: 100%;
-  max-width: 408px;
-  margin-top: 60px;
+  max-width: 400px; /* 가로 길이 제한 */
+  margin-top: 40px;
   position: relative;
   transition: all 0.3s ease;
 
@@ -335,12 +307,7 @@ const StyledBox2 = styled.div`
   }
 
   @media (max-width: 768px) {
-    height: 90px;
-    max-width: 350px;
-  }
-
-  @media (max-width: 480px) {
-    height: 72px;
-    max-width: 300px;
+    height: 100px;
+    max-width: 250px;
   }
 `;
