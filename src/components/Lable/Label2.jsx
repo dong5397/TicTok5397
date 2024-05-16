@@ -15,16 +15,10 @@ const StyledLabel = styled.div`
     line-height: normal;
     position: fixed;
     top: 0;
-    margin-top: 180px;
 
     @media (max-width: 768px) {
-      font-size: 9px;
-      margin-top: 160px;
-    }
-
-    @media (max-width: 480px) {
       font-size: 8px;
-      margin-top: 170px;
+      margin-top: 110px;
     }
   }
 `;

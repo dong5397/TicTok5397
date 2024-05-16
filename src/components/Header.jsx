@@ -48,10 +48,7 @@ const LogoImage = styled.img`
 
   @media (max-width: 768px) {
     width: 100px;
-  }
-
-  @media (max-width: 480px) {
-    width: 80px;
+    margin-left: 15px;
   }
 `;
 
@@ -63,12 +60,7 @@ const NavLinks = styled.nav`
 
   @media (max-width: 768px) {
     gap: 20px;
-    margin-right: 5%;
-  }
-
-  @media (max-width: 480px) {
-    gap: 15px;
-    margin-right: 5%;
+    margin-right: 25px;
   }
 `;
 

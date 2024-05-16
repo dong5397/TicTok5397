@@ -12,7 +12,6 @@ const MainContainer = styled.div`
   width: 100%;
   align-items: center;
   height: 70vh;
-  overflow: hidden;
 `;
 
 const StyledLabel = styled.div`
@@ -50,7 +49,7 @@ const StyledLabel = styled.div`
 const Styleline = styled.div`
   width: 90%;
   max-width: 800px;
-  margin-top: 10px;
+
   margin-left: 30px;
 
   & .vector {

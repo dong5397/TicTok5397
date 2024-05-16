@@ -18,11 +18,8 @@ const StyledNotificationLabel = styled.div`
 
     @media (max-width: 768px) {
       font-size: 9px;
+      margin-top: -5px;
       margin-left: 20px;
-    }
-
-    @media (max-width: 480px) {
-      font-size: 8px;
     }
   }
   & .indent {
@@ -30,10 +27,6 @@ const StyledNotificationLabel = styled.div`
 
     @media (max-width: 768px) {
       margin-left: 30px;
-    }
-
-    @media (max-width: 480px) {
-      margin-left: 28px;
     }
   }
 `;

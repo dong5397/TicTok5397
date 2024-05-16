@@ -61,11 +61,13 @@ const StyledLabel = styled.div`
 const Styleline = styled.div`
   width: 90%;
   max-width: 800px;
-  margin-top: 10px;
+
   margin-left: 30px;
+
   & .vector {
     width: 100%;
     height: 2px;
+
     @media (max-width: 768px) {
       width: 90%;
       margin-right: 20px;

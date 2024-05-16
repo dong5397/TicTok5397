@@ -5,7 +5,7 @@ const StyledBox = styled.div`
   height: 143px;
   width: 800px;
   position: relative;
-  border: 2px solid rgb(254, 44, 85);
+  border: 1px solid rgb(254, 44, 85);
   border-radius: 10px;
   background: linear-gradient(
     220deg,

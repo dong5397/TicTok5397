@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import styled from "styled-components";
 import Home2Image from "../../../images/Home/Home2.png";
-import TicTokImage from "../../../images/Home/TicTok.png";
+import TicTokImage from "../../../images/Home/TicTok.svg";
 import MakertoneImage from "../../../images/Home/Home3.png";
 
 function Home2() {
@@ -42,14 +42,19 @@ function Home2() {
       </StyledBox>
       <ContentContainer>
         <Content>
-          <img className="tiktok-image" alt="TicTok Logo" src={TicTokImage} />
-          <br />
-          <img
-            className="makertone-image"
-            alt="Makertone"
-            src={MakertoneImage}
-          />
+          <div className="image-container">
+            <img className="tiktok-image" alt="TicTok Logo" src={TicTokImage} />
+          </div>
         </Content>
+        <Content2>
+          <div className="image-container">
+            <img
+              className="makertone-image"
+              alt="Makertone"
+              src={MakertoneImage}
+            />
+          </div>
+        </Content2>
         <StyledLabel>
           <div className="flexcontainer">
             <p className="text" ref={(el) => (textRefs.current[0] = el)}>
@@ -80,7 +85,7 @@ function Home2() {
 export default Home2;
 
 const ContentContainer = styled.div`
-  margin-top: 30px;
+  margin-top: -20px;
 `;
 const StyledBox = styled.div`
   position: absolute; /* 배경 이미지를 절대 위치로 고정 */
@@ -125,32 +130,63 @@ const StyledBox = styled.div`
 `;
 
 const Content = styled.div`
-  position: relative; /* 컨텐츠를 백그라운드 위로 올리기 위해 상대 위치 설정 */
+  position: relative;
   z-index: 2;
   color: white;
-  margin-top: 250px;
+  margin-bottom: 150px;
+  text-align: center;
+
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto; /* 가운데 정렬 */
+
+  .image-container {
+    margin-bottom: 20px;
+  }
+
+  & img.tiktok-image {
+    max-width: 150%; /* 부모인 Content의 너비에 맞춰 조정 */
+    height: auto;
+    margin-top: 30px; /* 원하는 만큼 내리기 위해 margin-top을 추가 */
+  }
+
+  @media (max-width: 480px) {
+    margin-top: 120px;
+    margin-bottom: 30px;
+  }
+`;
+
+const Content2 = styled.div`
+  position: relative;
+  z-index: 2;
+  color: white;
+  margin-top: 150px;
   text-align: center;
   margin-bottom: 30px;
   max-width: 80%; /* 이미지가 화면에 꽉 차지 않도록 제한 */
   margin-left: auto;
   margin-right: auto; /* 가운데 정렬 */
 
-  & img {
-    max-width: 100%; /* 부모인 Content의 너비에 맞춰 조정 */
+  .image-container {
+    margin-bottom: 20px;
+  }
+
+  & img.makertone-image {
+    max-width: 150%; /* 부모인 Content의 너비에 맞춰 조정 */
     height: auto;
     margin-top: 0px;
-    margin-bottom: 20px; /* 이미지 사이에 간격을 추가 */
   }
 
   @media (max-width: 800px) {
-    margin-top: 150px;
-    margin-bottom: 60px;
+    margin-top: 100px;
+    margin-bottom: 30px;
     width: 50%;
   }
 
   @media (max-width: 480px) {
-    margin-top: 120px;
-    margin-bottom: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 60px;
   }
 `;
 
@@ -159,17 +195,13 @@ const MainContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 130vh;
-  width: 100;
+  height: 100vh; /* 높이를 100vh로 제한 */
+  width: 100%;
   overflow: hidden;
-  @media (max-width: 768px) {
-    margin-top: 200px;
-    height: 100vh;
-  }
 
-  @media (max-width: 480px) {
-    margin-top: 150px;
-    height: 100vh;
+  @media (max-width: 768px) {
+    margin-top: 100px;
+    margin-bottom: -220px;
   }
 `;
 

@@ -180,10 +180,7 @@ function StyleBox3() {
             <img className="dot-img" src={Dot} alt="점" />
             등록방법
           </div>
-          <div className="div">
-            학회 홈페이지 진행행사 안내페이지(QR 삽입 - 지원하러가기)
-          </div>
-          <Label3 />
+          <div className="div">학회 홈페이지 진행행사 안내페이지</div>
         </div>
       </AnimatedBox>
     </StyledBox2Container>
