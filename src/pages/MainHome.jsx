@@ -8,7 +8,7 @@ import Home5 from "../components/Home/Home5";
 import Home6 from "../components/Home/Home6";
 import Home7 from "../components/Home/Home7";
 import Home8 from "../components/Home/Home8";
-import Home9 from "../components/Home/Home9";
+
 import Home10 from "../components/Home/Home10";
 import Home11 from "../components/Home/Home11";
 function MainHome() {

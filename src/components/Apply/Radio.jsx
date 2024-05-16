@@ -58,8 +58,8 @@ const StyledRadio = styled.input`
   @media (max-width: 768px) {
     position: relative;
     appearance: none;
-    width: 40px;
-    height: 25px;
+    width: 35px;
+    height: 21px;
     border-radius: 50%;
     border: 2px solid #fe2c55;
     background-color: black;
@@ -85,7 +85,7 @@ const StyledRadio = styled.input`
 `;
 const StyledLabel = styled.div`
   height: 24px;
-  width: 79px;
+  width: 90px;
   margin-top: 2px;
 
   @media (max-width: 768px) {

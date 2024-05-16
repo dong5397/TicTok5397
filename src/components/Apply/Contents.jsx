@@ -1,8 +1,7 @@
+import React, { useState, createContext } from "react";
 import styled from "styled-components";
-import icon from "../../../images/Apply/caution.png";
-import BackIcon from "../../../images/Apply/ball.svg";
 
-import { useState, createContext } from "react";
+import BackIcon from "../../../images/Apply/ball.png";
 
 import Radio from "./Radio";
 import RadioGroup from "./RadioGruop";
@@ -28,90 +27,108 @@ function Contents() {
   const radioContextValue = { selectedRadio, handleRadioChange };
 
   return (
-    <Container>
-      <Section1>
-        <TitleLabel>
-          <div className="text-wrapper">등록기간</div>
-          <Dot src={BackIcon} alt="DotIcon" />
-        </TitleLabel>
-        <SubLabel>
-          <div className="text-wrapper">5월 6일(월)부터 6월 16일(일)까지</div>
-        </SubLabel>
-      </Section1>
+    <>
+      <Section>
+        <Dot src={BackIcon} alt="DotIcon" />
+        <TitleContainer>
+          <TitleLabel>
+            <div className="text-wrapper">등록기간</div>
+          </TitleLabel>
+        </TitleContainer>
+        <SubContainer>
+          <SubLabel>
+            <div className="text-wrapper">5월 6일(월)부터 6월 16일(일)까지</div>
+          </SubLabel>
+        </SubContainer>
+      </Section>
 
-      <Section2>
-        <TitleLabel>
-          <div className="text-wrapper">대상</div>
-          <Dot2 src={BackIcon} alt="DotIcon" />
-        </TitleLabel>
-        <SubLabel>
-          <div className="text-wrapper">
-            한국에 거주하는 분(18세부터 26세까지)
-          </div>
-        </SubLabel>
-      </Section2>
+      <Section>
+        <Dot src={BackIcon} alt="DotIcon" />
+        <TitleContainer>
+          <TitleLabel>
+            <div className="text-wrapper">대상</div>
+          </TitleLabel>
+        </TitleContainer>
+        <SubContainer>
+          <SubLabel>
+            <div className="text-wrapper">
+              한국에 거주하는 분(18세부터 26세까지)
+            </div>
+          </SubLabel>
+        </SubContainer>
+      </Section>
 
-      <Section3>
-        <div className="container">
-          <SeoulLabel>
-            <div className="text-wrapper">서울/경기</div>
-            <div className="text-wrapper">
-              선착순 100명(1회차 50명, 2회차, 50명)
-            </div>
-          </SeoulLabel>
-          <EtcLocationLabel>
-            <div className="text-wrapper">대전</div>
-            <div className="text-wrapper">선착순 50명</div>
-          </EtcLocationLabel>
-          <EtcLocationLabel>
-            <div className="text-wrapper">광주</div>
-            <div className="text-wrapper">선착순 50명</div>
-          </EtcLocationLabel>
-          <EtcLocationLabel>
-            <div className="text-wrapper">
-              ※ 팀 참가 인원 포함 총 200명 모집
-            </div>
-          </EtcLocationLabel>
-        </div>
-      </Section3>
-      <Section4>
-        <TitleLabel>
-          <div className="text-wrapper">참가방법</div>
-          <Dot src={BackIcon} alt="DotIcon" />
-        </TitleLabel>
-        <SubLabel>
-          <div className="text-wrapper">
-            개인 또는 2인팀(디자이너 1인, 개발자 1인)
+      <Section>
+        <TitleContainer>
+          <div className="location_container">
+            <SubSection className="seoul">
+              <div className="text-wrapper">서울/경기</div>
+              <div className="text-wrapper">
+                선착순 100명(1회차 50명, 2회차, 50명)
+              </div>
+            </SubSection>
+            <SubSection className="daejeon">
+              <div className="text-wrapper">대전</div>
+              <div className="text-wrapper">선착순 50명</div>
+            </SubSection>
+            <SubSection className="gwangju">
+              <div className="text-wrapper">광주</div>
+              <div className="text-wrapper">선착순 50명</div>
+            </SubSection>
+            <SubSection className="note">
+              <div className="text-wrapper">
+                ※ 팀 참가 인원 포함 총 200명 모집
+              </div>
+            </SubSection>
           </div>
-        </SubLabel>
-      </Section4>
-      <Section5>
-        <TitleLabel>
-          <div className="text-wrapper">신청지역</div>
-          <Dot src={BackIcon} alt="DotIcon" />
-        </TitleLabel>
+        </TitleContainer>
+      </Section>
+
+      <Section>
+        <Dot src={BackIcon} alt="DotIcon" />
+        <TitleContainer>
+          <TitleLabel>
+            <div className="text-wrapper">참가방법</div>
+          </TitleLabel>
+        </TitleContainer>
+        <SubContainer>
+          <SubLabel>
+            <div className="text-wrapper">
+              개인 또는 2인팀(디자이너 1인, 개발자 1인)
+            </div>
+          </SubLabel>
+        </SubContainer>
+      </Section>
+
+      <ButtonSection>
+        <TitleContainer>
+          <TitleLabel>
+            <div className="text-wrapper">신청지역</div>
+          </TitleLabel>
+        </TitleContainer>
         <StyledBox>
-          <Button
+          <LocationButton
             className={selectedButton === "서울" ? "choice" : "default"}
             onClick={() => handleButtonClick("서울")}
           >
             <h2>서울</h2>
-          </Button>
-          <Button
+          </LocationButton>
+          <LocationButton
             className={selectedButton === "대전" ? "choice" : "default"}
             onClick={() => handleButtonClick("대전")}
           >
             <h2>대전</h2>
-          </Button>
-          <Button
+          </LocationButton>
+          <LocationButton
             className={selectedButton === "광주" ? "choice" : "default"}
             onClick={() => handleButtonClick("광주")}
           >
             <h2>광주</h2>
-          </Button>
+          </LocationButton>
         </StyledBox>
-      </Section5>
-      <Section6>
+      </ButtonSection>
+
+      <Section>
         <RadioContext.Provider value={radioContextValue}>
           <form
             onSubmit={(e) => {
@@ -133,95 +150,230 @@ function Contents() {
             />
           </form>
         </RadioContext.Provider>
-      </Section6>
-    </Container>
+      </Section>
+    </>
   );
 }
 
 export default Contents;
 
-const Container = styled.div`
+const Section = styled.section`
+  position: relative;
   display: flex;
-  align-items: center;
   flex-direction: column;
+  margin-bottom: 100px;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
 
+  /* 작은 태블릿 */
+  @media (min-width: 481px) and (max-width: 767px) {
+    margin-bottom: 50px;
+  }
   @media (max-width: 768px) {
-    padding: 10px;
+    margin-bottom: 50px;
   }
 
   @media (max-width: 480px) {
-    padding: 5px;
+    margin-bottom: 20px;
   }
 `;
 
-const Section1 = styled.section`
+const ButtonSection = styled.section`
+  position: relative;
   display: flex;
-  width: 587px;
-  gap: 15px;
   flex-direction: column;
-  margin-bottom: 100px;
+  align-items: center;
+  margin-top: 50px;
+  gap: 20px;
+  width: 100%;
+  overflow: hidden;
+
+  @media (max-width: 768px) {
+    gap: 15px;
+  }
+
+  /* 작은 태블릿 */
+  @media (min-width: 481px) and (max-width: 767px) {
+    gap: 15px;
+  }
+
+  @media (max-width: 480px) {
+    gap: 10px;
+  }
 `;
 
-const Section2 = styled.section`
+const TitleContainer = styled.div`
   display: flex;
   width: 587px;
-  gap: 15px;
-  flex-direction: column;
-  margin-bottom: 50px;
+  align-items: center;
+  gap: 10px;
 
-  & .text-wrapper {
+  /* 작은 태블릿 */
+  @media (min-width: 481px) and (max-width: 767px) {
+    height: auto;
+    width: 292px;
+  }
+
+  .location_container {
+    @media (max-width: 425px) {
+      margin-top: 30px;
+      margin-bottom: 5px;
+    }
+  }
+
+  @media (max-width: 425px) {
+    width: 255px;
+    height: auto;
+  }
+`;
+
+const TitleLabel = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  .text-wrapper {
     color: #ffffff;
     font-family: "Inter-SemiBold", Helvetica;
     font-size: 35px;
     font-weight: 600;
-    white-space: nowrap;
+
+    /* 작은 태블릿 */
+    @media (min-width: 481px) and (max-width: 767px) {
+      font-size: 40px;
+    }
+    /* 태블릿 */
+    @media (min-width: 768px) and (max-width: 1024px) {
+      font-size: 42px;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 32px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 18px;
+    }
   }
 `;
 
-const Section3 = styled.section`
+const SubContainer = styled.div`
   display: flex;
   width: 587px;
-  gap: 15px;
-  flex-direction: column;
-  height: 200px;
-  margin-bottom: 50px;
+  align-items: center;
 
-  & .container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  /* 작은 태블릿 */
+  @media (min-width: 481px) and (max-width: 767px) {
+    height: auto;
+    width: 292px;
+  }
+
+  @media (max-width: 425px) {
+    height: auto;
+    width: 255px;
   }
 `;
 
-const Section4 = styled.section`
-  display: flex;
-  width: 587px;
+const SubLabel = styled.div`
+  .text-wrapper {
+    color: #ffffff;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-size: 23px;
+    font-weight: 600;
 
-  flex-direction: column;
-  height: 200px;
+    /* 태블릿 */
+    @media (min-width: 768px) and (max-width: 1024px) {
+      font-size: 28px;
+    }
+
+    /* 작은 태블릿 */
+    @media (min-width: 481px) and (max-width: 767px) {
+      font-size: 16px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 12px;
+    }
+  }
 `;
 
-const Section5 = styled.section`
+const SubSection = styled.div`
+  margin-bottom: 5px;
   display: flex;
-  width: 587px;
-  gap: 55px;
-  flex-direction: column;
-  height: 200px;
-  margin-bottom: 50px;
-`;
+  gap: ${({ className }) =>
+    className === "seoul"
+      ? "50px"
+      : className === "daejeon" || className === "gwangju"
+      ? "85px"
+      : "10px"};
 
-const Section6 = styled.section`
-  display: flex;
-  width: 256px;
-  gap: 55px;
-  flex-direction: column;
+  /* 데스크탑 */
+  @media (min-width: 1024px) {
+    gap: ${({ className }) =>
+      className === "seoul"
+        ? "25px"
+        : className === "daejeon" || className === "gwangju"
+        ? "66px"
+        : "20px"};
+  }
+
+  /* 태블릿 */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    gap: ${({ className }) =>
+      className === "seoul"
+        ? "25px"
+        : className === "daejeon" || className === "gwangju"
+        ? "66px"
+        : "20px"};
+  }
+
+  /* 작은 태블릿 */
+  @media (min-width: 481px) and (max-width: 767px) {
+    gap: ${({ className }) =>
+      className === "seoul"
+        ? "43px"
+        : className === "daejeon" || className === "gwangju"
+        ? "66px"
+        : "20px"};
+  }
+
+  @media (max-width: 480px) {
+    gap: ${({ className }) =>
+      className === "seoul"
+        ? "46px"
+        : className === "daejeon" || className === "gwangju"
+        ? "66px"
+        : "20px"};
+  }
+
+  .text-wrapper {
+    color: #ffffffad;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-size: 18px;
+    font-weight: 600;
+
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
+
+    /* 작은 태블릿 */
+    @media (min-width: 481px) and (max-width: 767px) {
+      font-size: 10px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 9px;
+    }
+  }
 `;
 
 const StyledBox = styled.div`
   display: flex;
-  gap: 20px;
+  gap: 10px;
 
-  & .default {
+  .default {
     background-color: black;
     border: 2px solid #fe2c55;
     border-radius: 10px;
@@ -237,9 +389,28 @@ const StyledBox = styled.div`
       font-size: 25px;
       font-weight: 600;
     }
+
+    /* 작은 태블릿 */
+    @media (min-width: 481px) and (max-width: 767px) {
+      width: 90px;
+      height: 54px;
+
+      h2 {
+        font-size: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      width: 86px;
+      height: 39px;
+
+      h2 {
+        font-size: 15px;
+      }
+    }
   }
 
-  & .choice {
+  .choice {
     background-color: #fe2c55;
     border: 2px solid #fe2c55;
     border-radius: 10px;
@@ -255,20 +426,28 @@ const StyledBox = styled.div`
       font-size: 25px;
       font-weight: 600;
     }
+
+    @media (max-width: 480px) {
+      width: 96px;
+      height: 39px;
+
+      h2 {
+        font-size: 15px;
+      }
+    }
   }
 `;
 
-const Button = styled.button`
+const LocationButton = styled.button`
   height: 69px;
   width: 176px;
-  border: none;
+  border: 2px solid #fe2c55;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: ${({ className }) =>
     className === "choice" ? "#fe2c55" : "#ffffff"};
-  border: 2px solid #fe2c55;
   cursor: pointer;
 
   h2 {
@@ -278,164 +457,19 @@ const Button = styled.button`
     font-size: 25px;
     font-weight: 600;
   }
-
-
-    h2 {
-      color: #ffffff;
-    }
-  }
 `;
 
-const TitleLabel = styled.div`
-  display: flex;
-  width: 200px;
-  height: 50px;
-  flex-direction: row;
-  align-items: flex-start;
-
-  & .text-wrapper {
-    color: #ffffff;
-    font-family: "Inter-SemiBold", Helvetica;
-    font-size: 35px;
-    font-weight: 600;
-    white-space: nowrap;
-  }
-`;
-
-const SubLabel = styled.div`
-  display: flex;
-  width: 600px;
-  height: 80px;
-  gap: 20px;
-  flex-direction: row;
-  align-items: flex-start;
-
-  & .text-wrapper {
-    color: #ffffff;
-    font-family: "Inter-SemiBold", Helvetica;
-    font-size: 30px;
-    font-weight: 600;
-    white-space: nowrap;
-  }
-`;
-
-const SeoulLabel = styled.div`
-  display: flex;
-  width: 82px;
-  height: 24px;
-  gap: 20px;
-  flex-direction: row;
-  align-items: flex-start;
-
-  & .text-wrapper {
-    color: #ffffffad;
-    font-family: "Inter-SemiBold", Helvetica;
-    font-size: 20px;
-    font-weight: 600;
-    white-space: nowrap;
-
-    @media (max-width: 768px) {
-      font-size: 25px;
-    }
-
-    @media (max-width: 480px) {
-      font-size: 20px;
-    }
-  }
-  }
-`;
-
-const EtcLocationLabel = styled.div`
-  display: flex;
-  width: 600px;
-  height: 100%;
-  gap: 60px;
-  flex-direction: row;
-  align-items: flex-start;
-
-  @media (max-width: 768px) {
-    width: 90%;
-  }
-
-  @media (max-width: 480px) {
-    width: 100%;
-  }
-
-  & .text-wrapper {
-    color: #ffffffad;
-    font-family: "Inter-SemiBold", Helvetica;
-    font-size: 20px;
-    font-weight: 600;
-    white-space: nowrap;
-
-    @media (max-width: 768px) {
-      font-size: 25px;
-    }
-
-    @media (max-width: 480px) {
-      font-size: 20px;
-    }
-  }
-`;
-
-const EtcLabel = styled.div`
-  display: flex;
-  width: 600px;
-  height: 80px;
-  gap: 20px;
-  flex-direction: row;
-  align-items: flex-start;
-
-  @media (max-width: 768px) {
-    width: 90%;
-  }
-
-  @media (max-width: 480px) {
-    width: 100%;
-  }
-
-  & .text-wrapper {
-    color: #ffffffad;
-    font-family: "Inter-SemiBold", Helvetica;
-    font-size: 20px;
-    font-weight: 600;
-    white-space: nowrap;
-
-    @media (max-width: 768px) {
-      font-size: 25px;
-    }
-
-    @media (max-width: 480px) {
-      font-size: 20px;
-    }
-  }
-`;
-const Icon = styled.img`
-  width: 24px;
-  height: 24px;
-
-  @media (max-width: 768px) {
-    width: 20px;
-    height: 20px;
-  }
+const Dot = styled.img`
+  width: 26px;
+  height: 26px;
+  position: relative;
+  right: 300px;
+  top: 20px;
 
   @media (max-width: 480px) {
     width: 16px;
     height: 16px;
+    right: 135px;
+    top: 20px;
   }
-`;
-const Dot = styled.img`
-  width: 26px;
-  height: 26px;
-  bottom: 24px;
-  right: 150px;
-  position: relative;
-`;
-
-const Dot2 = styled.img`
-  width: 26px;
-
-  bottom: 20px;
-  right: 90px;
-  position: relative;
 `;

@@ -1,3 +1,4 @@
+// index.jsx
 import React from "react";
 import styled from "styled-components";
 
@@ -20,11 +21,11 @@ const StyledLabel = styled.div`
     color: #ffffff;
     font-family: "Inter-Bold", Helvetica;
     font-size: 22px;
-    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    margin-top: -0px;
     font-weight: 700;
     letter-spacing: 0;
-    line-height: 1.5;
-    margin-bottom: 20px;
 
     @media (max-width: 768px) {
       font-size: 20px;
@@ -39,11 +40,10 @@ const StyledLabel = styled.div`
     color: #ffffff;
     font-family: "Inter-Regular", Helvetica;
     font-size: 20px;
-    margin-left: 10px;
+    margin-left: 30px;
     font-weight: 500;
     letter-spacing: 0;
     line-height: 1.4;
-    margin-bottom: 70px;
 
     @media (max-width: 768px) {
       font-size: 15px;
@@ -82,9 +82,9 @@ const StyledBox = styled.div`
 
   & .rectangle {
     background: linear-gradient(
-      220deg,
+      260deg,
       ${(props) => props.gradientStart} 0%,
-      ${(props) => props.gradientEnd} 100%
+      ${(props) => props.gradientEnd} 32%
     );
     border: 1px solid transparent;
     border-image: linear-gradient(
@@ -93,6 +93,7 @@ const StyledBox = styled.div`
         ${(props) => props.gradientEndTransparent}
       )
       1;
+
     border-radius: 16px;
     border: 2px solid ${(props) => props.gradientEnd}; /* 수정 */
     height: 100%;
@@ -121,7 +122,7 @@ const StyledBox = styled.div`
 
 const StyledBox1 = () => (
   <StyledBox
-    gradientStart="rgba(0, 0, 0, 0) 2.87%"
+    gradientStart="rgba(0, 0, 0, 0)"
     gradientEnd="rgb(254, 44, 85)"
     gradientEndTransparent="rgba(254, 44, 85, 0.1)"
     reverse={false}
@@ -136,7 +137,7 @@ const StyledBox1 = () => (
 
 const StyledBox2 = () => (
   <StyledBox
-    gradientStart="rgba(0, 0, 0, 0) 2.87%"
+    gradientStart="rgba(0, 0, 0, 0)"
     gradientEnd="rgba(37, 244, 238, 0.8)"
     gradientEndTransparent="rgba(37, 244, 238, 0.1)"
     reverse={true}
@@ -149,7 +150,7 @@ const StyledBox2 = () => (
   </StyledBox>
 );
 
-const StyledBox2Container = () => {
+const StyledBoxContainer = () => {
   return (
     <BoxContainerStyle>
       <StyledBox1 />
@@ -158,4 +159,4 @@ const StyledBox2Container = () => {
   );
 };
 
-export default StyledBox2Container;
+export default StyledBoxContainer;

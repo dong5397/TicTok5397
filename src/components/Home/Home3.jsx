@@ -3,7 +3,7 @@ import styled from "styled-components";
 import img1 from "../../../images/Home/q.png";
 import line from "../../../images/Home/line.png";
 import StyleBox from "../Box/StyleBox";
-import BackIcon1 from "../../../images/Home/backgroundIcon/BKI1.svg";
+import BackIcon1 from "../../../images/Home/backgroundIcon/BKI1.png";
 import { Label } from "../Lable/Label";
 
 const MainContainer = styled.div`

@@ -3,7 +3,7 @@ import styled from "styled-components";
 import img1 from "../../../images/Home/q.png";
 import line from "../../../images/Home/line.png";
 import StyledBox4 from "../Box/StyledBox4";
-import BackIcon3 from "../../../images/Home/backgroundIcon/BK2.svg";
+import BackIcon3 from "../../../images/Home/backgroundIcon/BK2.png";
 const MainContainer = styled.div`
   display: flex;
   flex-direction: column;
