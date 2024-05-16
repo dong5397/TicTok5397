@@ -10,7 +10,7 @@ import Home7 from "../components/Home/Home7";
 import Home8 from "../components/Home/Home8";
 import Home9 from "../components/Home/Home9";
 import Home10 from "../components/Home/Home10";
-
+import Home11 from "../components/Home/Home11";
 function MainHome() {
   return (
     <div>
@@ -22,7 +22,7 @@ function MainHome() {
       <Home6 />
       <Home7 />
       <Home8 />
-      <Home9 />
+      <Home11 />
       <Home10 />
     </div>
   );

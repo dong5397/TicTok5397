@@ -127,7 +127,7 @@ const MainContainer = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  max-width: 800px;
+  width: 800px;
   margin: 0 auto;
 
   @media (max-width: 768px) {
@@ -142,6 +142,8 @@ const StyledLabel = styled.div`
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
+  width: 800px;
+  margin-left: 130px;
 
   .row-wrapper {
     display: flex;
@@ -199,6 +201,7 @@ const StyledContent = styled.div`
   outline: none;
   margin-top: 10px;
   overflow-y: scroll;
+  margin-left: 50px;
 
   & p {
     margin: 0;
@@ -229,6 +232,7 @@ const StyledContent = styled.div`
   }
 
   @media (max-width: 480px) {
+    margin-right: 110px;
     height: 200px;
   }
 `;
@@ -248,10 +252,12 @@ const CheckboxContainer = styled.div`
 
   @media (max-width: 768px) {
     margin-top: 10px;
+    margin-right: 50px;
   }
 
   @media (max-width: 480px) {
     margin-top: 5px;
+    margin-right: 50px;
   }
 `;
 

@@ -52,8 +52,6 @@ const MainContainer = styled.div`
   flex-direction: column;
   align-items: center;
 
-  width: 100vw;
-
   overflow: hidden;
 
   @media (max-width: 768px) {
@@ -71,8 +69,8 @@ const StyledLabel = styled.div`
   align-items: flex-start;
   height: auto;
   width: 100%;
-  max-width: 800px;
-
+  width: 720px;
+  margin-left: 70px;
   .row-wrapper {
     display: flex;
     justify-content: space-between;
@@ -130,7 +128,7 @@ const StyledLabel = styled.div`
 
 const InputBox = styled.div`
   height: 74px;
-  width: 215px;
+  width: 225px;
 
   .rectangle {
     border: 2px solid #ffffff80;

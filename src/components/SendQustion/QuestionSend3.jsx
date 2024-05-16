@@ -105,8 +105,9 @@ const StyledLabel = styled.div`
   flex-direction: column;
   align-items: flex-start;
   height: auto;
+  margin-left: 60px;
   width: 100%;
-  max-width: 800px;
+  width: 720px;
 
   .row-wrapper {
     display: flex;
@@ -205,7 +206,7 @@ const InputContainer = styled.div`
   margin-bottom: 20px;
   margin-top: 10px;
   margin-left: 50px;
-  width: 800px;
+  width: 730px;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -237,7 +238,7 @@ const InputDivider = styled.span`
 
 const DomainSelector = styled.select`
   height: 74px;
-  width: 180px;
+  width: 235px;
   border: 2px solid #ffffff80;
   border-radius: 10px;
   background-color: transparent;

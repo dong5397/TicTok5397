@@ -100,6 +100,7 @@ const StyledLabel = styled.div`
 
     @media (max-width: 480px) {
       font-size: 24px;
+      margin-left: 20px;
     }
   }
 
@@ -120,7 +121,7 @@ const StyledLabel = styled.div`
     font-family: "Inter-SemiBold", Helvetica;
     font-weight: 700;
     margin-top: 10px; /* 이전의 20px에서 10px로 변경 */
-
+    margin-left: 70px;
     .star-icon {
       width: 12px;
       height: 12px;
@@ -160,11 +161,13 @@ const StyledLabel = styled.div`
     font-size: 20px;
 
     @media (max-width: 768px) {
-      font-size: 30px;
+      font-size: 15px;
+      margin-right: 70px;
     }
 
     @media (max-width: 480px) {
-      font-size: 24px;
+      font-size: 10px;
+      margin-right: 70px;
     }
   }
 
@@ -172,11 +175,13 @@ const StyledLabel = styled.div`
     font-size: 15px;
 
     @media (max-width: 768px) {
-      font-size: 30px;
+      font-size: 15px;
+      margin-right: 70px;
     }
 
     @media (max-width: 480px) {
-      font-size: 24px;
+      font-size: 10px;
+      margin-right: 70px;
     }
   }
 
@@ -207,8 +212,10 @@ const StyledLine = styled.div`
 `;
 
 const StyledInput = styled.input`
+  width: 720px;
   height: 74px;
-  width: 680px;
+  margin-left: 50px;
+  max-width: 800px;
   border: 2px solid #ffffff80;
   border-radius: 10px;
   background-color: transparent;
@@ -226,10 +233,12 @@ const StyledInput = styled.input`
   @media (max-width: 768px) {
     width: 100%;
     height: 60px;
+    margin-right: 50px;
   }
 
   @media (max-width: 480px) {
     width: 100%;
     height: 50px;
+    margin-right: 50px;
   }
 `;

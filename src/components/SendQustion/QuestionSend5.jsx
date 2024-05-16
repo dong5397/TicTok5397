@@ -33,7 +33,7 @@ const MainContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100vw;
+
   overflow: hidden;
 
   @media (max-width: 768px) {
@@ -51,7 +51,7 @@ const StyledLabel = styled.div`
   align-items: flex-start;
   height: auto;
   width: 100%;
-  max-width: 800px;
+  width: 800px;
 
   .row-wrapper {
     display: flex;
@@ -112,7 +112,7 @@ const StyledLabel = styled.div`
 
 const StyledTextarea = styled.textarea`
   height: 350px;
-  width: 680px;
+  width: 700px;
   max-width: 100%;
   border: 2px solid #ffffff80;
   border-radius: 10px;

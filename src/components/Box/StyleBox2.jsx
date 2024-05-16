@@ -10,24 +10,28 @@ const StyledLabel = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 20px;
+
+  background: rgba(0, 0, 0, 0.3); /* 텍스트 가독성 향상 */
+  border-radius: 16px;
+  z-index: 10;
   transition: all 0.3s;
 
   & .element {
     color: #ffffff;
     font-family: "Inter-Bold", Helvetica;
     font-size: 22px;
+    margin-left: 10px;
     font-weight: 700;
     letter-spacing: 0;
     line-height: 1.5;
     margin-bottom: 20px;
 
     @media (max-width: 768px) {
-      font-size: 15px;
+      font-size: 20px;
     }
 
     @media (max-width: 480px) {
-      font-size: 16px;
+      font-size: 20px;
     }
   }
 
@@ -35,18 +39,19 @@ const StyledLabel = styled.div`
     color: #ffffff;
     font-family: "Inter-Regular", Helvetica;
     font-size: 20px;
+    margin-left: 10px;
     font-weight: 500;
     letter-spacing: 0;
     line-height: 1.4;
     margin-bottom: 70px;
 
     @media (max-width: 768px) {
-      font-size: 10px;
+      font-size: 15px;
       margin-right: 2px;
     }
 
     @media (max-width: 480px) {
-      font-size: 10px;
+      font-size: 15px;
       margin-right: 2px;
     }
   }
@@ -60,10 +65,12 @@ const BoxContainerStyle = styled.div`
 
   @media (max-width: 768px) {
     gap: 15px;
+    flex-direction: column;
   }
 
   @media (max-width: 480px) {
     gap: 10px;
+    flex-direction: column;
   }
 `;
 
@@ -104,9 +111,11 @@ const StyledBox = styled.div`
   }
 
   @media (max-width: 768px) {
+    width: 90%;
   }
 
   @media (max-width: 480px) {
+    width: 100%;
   }
 `;
 
