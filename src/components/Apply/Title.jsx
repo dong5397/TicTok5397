@@ -1,4 +1,4 @@
-import BackIcon1 from "../../../images/Home/backgroundIcon/BKI1.svg";
+import BackIcon1 from "../../../images/Home/backgroundIcon/BK1.png";
 import React from "react";
 import TicTokImage from "../../../images/Home/TicTok.png";
 import AR from "../../../images/Apply/AR.png";
