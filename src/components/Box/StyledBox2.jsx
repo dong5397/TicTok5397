@@ -87,25 +87,53 @@ const StyledBox2 = styled.div`
     margin-left: 15px;
 
     @media (max-width: 768px) {
-      font-size: 18px;
-      margin-left: 28px;
-      margin-right: 20px;
-    }
-
-    @media (max-width: 480px) {
       font-size: 16px;
       margin-left: 24px;
-      margin-right: 20px;
+      margin-right: 10px;
+      max-width: 372px;
+    }
+  }
+  & .div1,
+  .div2 {
+    color: #ffffff;
+    font-family: "Inter-Medium", Helvetica;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 1.5;
+    position: relative;
+    margin-left: 15px;
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+      width: 100%;
+      margin-left: 24px;
+      max-width: 304px;
+      margin-right: 10px;
     }
   }
 
-  @media (max-width: 768px) {
-    width: 90%;
-    margin-left: 0;
-  }
+  & .div3 {
+    color: #ffffff;
+    font-family: "Inter-Medium", Helvetica;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 1.5;
+    position: relative;
+    margin-left: 15px;
 
-  @media (max-width: 480px) {
+    @media (max-width: 768px) {
+      font-size: 16px;
+      width: 100%;
+      margin-left: 24px;
+      max-width: 352px;
+      margin-right: 10px;
+    }
+  }
+  @media (max-width: 768px) {
     width: 100%;
+    max-width: 390px;
     margin-left: 0;
   }
 `;
@@ -183,12 +211,16 @@ function StyleBox2() {
             <img className="dot-img" src={Dot} alt="점" />
             추천 전공
           </div>
-          <div className="div">
+          <div className="div1">
             디지털콘텐츠학과, 예술공학과, 시각디자인학과, 컴퓨터디자인학과,
-            <br />
+          </div>
+          <div className="div2">
             공업디자인학과, 패션디자인학과, 웹디자인학과, 멀티미디어공학과,
             컴퓨터공학과
-            <br /> 등 (AR 필터 분야에 관심 많은 다른 전공 대학생도 환영)
+          </div>
+          <div className="div3">
+            {" "}
+            등 (AR 필터 분야에 관심 많은 다른 전공 대학생도 환영)
           </div>
         </div>
       </AnimatedBox>

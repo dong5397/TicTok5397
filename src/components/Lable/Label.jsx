@@ -23,10 +23,8 @@ const StyledNotificationLabel = styled.div`
     }
   }
   & .indent {
-    margin-left: 17px; /* 들여쓰기 간격 */
-
     @media (max-width: 768px) {
-      margin-left: 30px;
+      margin-left: 28px;
     }
   }
 `;

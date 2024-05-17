@@ -103,7 +103,7 @@ const StyledBox4 = styled.div`
     margin-left: 20px;
 
     @media (max-width: 768px) {
-      font-size: 12px;
+      font-size: 16px;
       margin-left: 35px;
       margin-right: 20px;
     }

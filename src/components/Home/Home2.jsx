@@ -58,20 +58,20 @@ function Home2() {
         <StyledLabel>
           <div className="flexcontainer">
             <p className="text" ref={(el) => (textRefs.current[0] = el)}>
-              <span className="text-wrapper">
+              <span className="text-wrapper1">
                 대학생 AR 특수 효과 산업 이해도 상승, AR 필터 제작 기술 습득,
                 취업 옵션 확장 지원
                 <br />
               </span>
             </p>
             <p className="text" ref={(el) => (textRefs.current[1] = el)}>
-              <span className="text-wrapper">
+              <span className="text-wrapper2">
                 틱톡의 Effect House 홍보, AR 필터 크리에이터 영입 및 육성
                 <br />
               </span>
             </p>
             <p className="text" ref={(el) => (textRefs.current[2] = el)}>
-              <span className="text-wrapper">
+              <span className="text-wrapper3">
                 프로젝트 완료 후 지속적으로 틱톡 Effect House 프로그램 필터
                 크리에이터 활동
               </span>
@@ -92,24 +92,23 @@ const ContentContainer = styled.div`
   }
 `;
 const StyledBox = styled.div`
-  position: absolute; /* 배경 이미지를 절대 위치로 고정 */
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 90%;
   z-index: 0;
   @media (max-width: 780px) {
-    margin-top: -40px;
+    margin-top: -25px;
   }
   & .mask-group {
     width: 100%;
     height: 100%;
-    @media (max-width: 480px) {
+    @media (max-width: 760px) {
       height: 80%;
     }
   }
 
-  /* 위쪽 그라데이션 */
   &::before {
     content: "";
     position: absolute;
@@ -125,7 +124,6 @@ const StyledBox = styled.div`
     z-index: 1;
   }
 
-  /* 아래쪽 그라데이션 */
   &::after {
     content: "";
     position: absolute;
@@ -147,21 +145,32 @@ const Content = styled.div`
 
   max-width: 80%;
   margin-left: auto;
-  margin-right: auto; /* 가운데 정렬 */
+  margin-right: auto;
 
   .image-container {
-    margin-bottom: -90px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -100px;
   }
 
   & img.tiktok-image {
-    max-width: 150%; /* 부모인 Content의 너비에 맞춰 조정 */
+    max-width: 100%;
     height: auto;
-    margin-top: 40px; /* 원하는 만큼 내리기 위해 margin-top을 추가 */
+    margin-top: 40px;
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: 760px) {
     margin-top: 60px;
     margin-bottom: 30px;
+
+    .image-container {
+      margin-bottom: -50px;
+    }
+
+    & img.tiktok-image {
+      max-width: 80%;
+      margin-bottom: -30px;
+    }
   }
 `;
 
@@ -172,16 +181,18 @@ const Content2 = styled.div`
   margin-top: 150px;
   text-align: center;
   margin-bottom: 30px;
-  max-width: 80%; /* 이미지가 화면에 꽉 차지 않도록 제한 */
+  max-width: 80%;
   margin-left: auto;
-  margin-right: auto; /* 가운데 정렬 */
+  margin-right: auto;
 
   .image-container {
+    display: flex;
+    justify-content: center;
     margin-bottom: 20px;
   }
 
   & img.makertone-image {
-    max-width: 150%; /* 부모인 Content의 너비에 맞춰 조정 */
+    max-width: 100%;
     height: auto;
     margin-top: -20px;
     @media (max-width: 800px) {
@@ -191,14 +202,20 @@ const Content2 = styled.div`
 
   @media (max-width: 800px) {
     margin-top: 10px;
-
-    width: 50%;
+    width: 100%;
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: 760px) {
     margin-top: 30px;
     margin-bottom: 45px;
-    margin-left: 60px;
+
+    .image-container {
+      margin-bottom: -10px;
+    }
+
+    & img.makertone-image {
+      max-width: 90%;
+    }
   }
 `;
 
@@ -207,7 +224,7 @@ const MainContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 80vh; /* 높이를 100vh로 제한 */
+  height: 80vh;
   width: 100%;
   overflow: hidden;
 
@@ -231,7 +248,7 @@ const StyledLabel = styled.div`
       margin: 0;
     }
 
-    @media (max-width: 480px) {
+    @media (max-width: 760px) {
       gap: 6px;
       margin: 0;
     }
@@ -258,20 +275,52 @@ const StyledLabel = styled.div`
     transform: translateY(0);
   }
 
-  & .text-wrapper {
+  & .text-wrapper1 {
     width: 800px;
     color: #ffffff;
     font-family: "Inter-SemiBold", Helvetica;
     font-size: 18px;
     font-weight: 600;
     display: inline-block;
-    text-align: center; /* 모바일 화면에서 가운데 정렬 */
+    text-align: center;
 
     @media (max-width: 768px) {
       font-size: 14px;
       width: 90%;
-      max-width: 410px;
-      margin: 0 auto; /* 모바일 화면에서 가운데 정렬 */
+      max-width: 300px;
+      margin: 0 auto;
+    }
+  }
+  & .text-wrapper2 {
+    width: 800px;
+    color: #ffffff;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-size: 18px;
+    font-weight: 600;
+    display: inline-block;
+    text-align: center;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+      width: 90%;
+      max-width: 275px;
+      margin: 0 auto;
+    }
+  }
+  & .text-wrapper3 {
+    width: 800px;
+    color: #ffffff;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-size: 18px;
+    font-weight: 600;
+    display: inline-block;
+    text-align: center;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+      width: 90%;
+      max-width: 280px;
+      margin: 0 auto;
     }
   }
 `;

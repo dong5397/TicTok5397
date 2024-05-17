@@ -96,7 +96,7 @@ function Header() {
           </LogoContainer>
           <NavLinks>
             <NavLink to="/">HOME</NavLink>
-            <NavLink to="/Apply">Apply</NavLink>
+            <NavLink to="/Apply">APPLY</NavLink>
             <NavLink to="/Question">FAQ</NavLink>
           </NavLinks>
         </InnerContainer>
