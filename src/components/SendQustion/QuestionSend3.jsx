@@ -93,6 +93,7 @@ const MainContainer = styled.div`
 
   @media (max-width: 768px) {
     height: auto;
+    margin-left: 2%;
   }
 `;
 
@@ -123,7 +124,6 @@ const StyledLabel = styled.div`
     font-family: "Inter-SemiBold", Helvetica;
     font-weight: 700;
     margin-top: 20px;
-    margin-right: 90px;
 
     .star-icon {
       width: 12px;
@@ -158,7 +158,7 @@ const InputBox = styled.div`
     width: 100%;
     background-color: transparent;
     color: white;
-    padding: 0 15px;
+
     font-size: 16px;
     outline: none;
     box-sizing: border-box;
@@ -169,7 +169,7 @@ const InputBox = styled.div`
   }
 
   @media (max-width: 768px) {
-    width: 100%;
+    width: 90%;
     height: 60px;
     margin-bottom: 10px;
   }
@@ -186,10 +186,9 @@ const InputContainer = styled.div`
   width: 730px;
 
   @media (max-width: 768px) {
-    flex-direction: row;
-    gap: 5px;
-    margin-left: 0;
-    width: 100%;
+    width: 99%;
+    height: 60px;
+    margin-left: 1%;
   }
 `;
 
@@ -220,7 +219,9 @@ const DomainSelector = styled.select`
   }
 
   @media (max-width: 768px) {
-    width: 100%;
+    width: 80%;
     height: 60px;
+    margin-right: 1%;
+    margin-top: -10px;
   }
 `;

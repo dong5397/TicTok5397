@@ -35,10 +35,7 @@ const StyledBox2 = styled.div`
 
     @media (max-width: 768px) {
       width: 100%;
-    }
-
-    @media (max-width: 480px) {
-      width: 100%;
+      max-width: 404px;
     }
   }
 
@@ -78,14 +75,6 @@ const StyledBox2 = styled.div`
       margin-left: 10px;
     }
   }
-  & .elgbl {
-    display: flex;
-
-    @media (max-width: 768px) {
-      font-size: 13px;
-      margin-right: 20px;
-    }
-  }
 
   & .div {
     color: #ffffff;
@@ -98,13 +87,24 @@ const StyledBox2 = styled.div`
     margin-left: 15px;
 
     @media (max-width: 768px) {
-      font-size: 13px;
+      font-size: 18px;
+      margin-left: 28px;
+      margin-right: 20px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 16px;
       margin-left: 24px;
       margin-right: 20px;
     }
   }
 
   @media (max-width: 768px) {
+    width: 90%;
+    margin-left: 0;
+  }
+
+  @media (max-width: 480px) {
     width: 100%;
     margin-left: 0;
   }
@@ -156,9 +156,14 @@ function StyleBox2() {
             대상
           </div>
           <div className="div">
-            <div className="elgbl"> 한국에 거주하시는 분.</div>{" "}
-            <div className="elgbl">국적 상관 없음.</div>{" "}
-            <div className="elgbl">졸업생도 상관없음.</div>
+            한국에 거주하는 분(18세부터 26세까지)
+            <br />
+            서울/경기: 선착순 100명 (1회차 50명, 2회차 50명)
+            <br />
+            대전: 선착순 50명
+            <br />
+            광주: 선착순 50명
+            <br />
             <Label2 />
           </div>
         </div>
@@ -179,20 +184,11 @@ function StyleBox2() {
             추천 전공
           </div>
           <div className="div">
-            <div className="elgbl">
-              디지털콘텐츠학과, 예술공학과, 시각디자인학과,
-            </div>
-            <div className="elgbl">
-              컴퓨터디자인학과,공업디자인학과, 패션디자인학과,
-            </div>
-
-            <div className="elgbl">
-              {" "}
-              웹디자인학과, 멀티미디어공학과, 컴퓨터공학과 등
-            </div>
-            <div className="elgbl">
-              (AR 필터 분야에 관심 많은 다른 전공 대학생도 환영)
-            </div>
+            디지털콘텐츠학과, 예술공학과, 시각디자인학과, 컴퓨터디자인학과,
+            <br />
+            공업디자인학과, 패션디자인학과, 웹디자인학과, 멀티미디어공학과,
+            컴퓨터공학과
+            <br /> 등 (AR 필터 분야에 관심 많은 다른 전공 대학생도 환영)
           </div>
         </div>
       </AnimatedBox>

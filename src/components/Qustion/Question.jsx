@@ -3,7 +3,7 @@ import styled from "styled-components";
 import FAQ from "../../../images/Question/FAQ.png";
 import on from "../../../images/Question/on.png";
 import off from "../../../images/Question/off.png";
-
+import line from "../../../images/Home/line.png";
 const questions1 = [
   {
     id: 1,
@@ -69,7 +69,9 @@ function Question() {
             </QuestionTitle>
             <Answer isOpen={expandedIds.includes(q.id)}>{q.answer}</Answer>
           </QuestionBox>
-          <Divider />
+          <Styleline>
+            <img className="vector" src={line} alt="Line" />
+          </Styleline>
         </QuestionContainer>
       ))}
     </MainContainer>
@@ -77,7 +79,22 @@ function Question() {
 }
 
 export default Question;
+const Styleline = styled.div`
+  width: 100%;
+  max-width: 800px;
+  margin-top: 30px;
+  margin-left: 5px;
 
+  & .vector {
+    width: 100%;
+    height: 2px;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      margin-right: 20px;
+    }
+  }
+`;
 const MainContainer = styled.div`
   max-width: 800px;
   width: 90%;
@@ -85,7 +102,10 @@ const MainContainer = styled.div`
 `;
 
 const QuestionContainer = styled.div`
-  margin-top: 50px;
+  margin-top: 30px;
+  @media (max-width: 760px) {
+    margin-top: 40px;
+  }
 `;
 
 const QuestionBox = styled.div`
@@ -101,31 +121,21 @@ const QuestionTitle = styled.div`
   font-weight: bold;
   color: white;
   font-size: 18px; /* 모바일에서 타이틀 폰트 크기 조절 */
-  margin-top: 10px;
+  margin-top: 20px;
 `;
 
 const Answer = styled.div`
-  padding: 20px;
+  padding-top: 30px;
   margin-top: 10px;
   color: #25f4ee;
   display: ${({ isOpen }) => (isOpen ? "block" : "none")};
   font-size: 14px; /* 모바일에서 답변 폰트 크기 조절 */
-  padding-left: 32px;
+  padding-left: 23px;
 
   @media (max-width: 760px) {
     padding-left: 25px;
+    margin-top: -20px;
   }
-`;
-
-const Divider = styled.div`
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(
-    to right,
-    rgba(233, 17, 60, 0.8),
-    rgba(16, 216, 196, 0.37)
-  );
-  margin: 20px 0;
 `;
 
 const StyledImage = styled.div`
@@ -133,8 +143,14 @@ const StyledImage = styled.div`
 
   margin-bottom: 40px;
   padding-top: 150px;
+  @media (max-width: 760px) {
+    margin-top: -10px;
+  }
 
   img {
     max-width: 600px;
+    @media (max-width: 760px) {
+      width: 100px;
+    }
   }
 `;

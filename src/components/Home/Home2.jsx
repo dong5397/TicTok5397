@@ -67,6 +67,7 @@ function Home2() {
             <p className="text" ref={(el) => (textRefs.current[1] = el)}>
               <span className="text-wrapper">
                 틱톡의 Effect House 홍보, AR 필터 크리에이터 영입 및 육성
+                <br />
               </span>
             </p>
             <p className="text" ref={(el) => (textRefs.current[2] = el)}>
@@ -182,7 +183,7 @@ const Content2 = styled.div`
   & img.makertone-image {
     max-width: 150%; /* 부모인 Content의 너비에 맞춰 조정 */
     height: auto;
-    margin-top: 0px;
+    margin-top: -20px;
     @media (max-width: 800px) {
       margin-top: 80px;
     }
@@ -206,20 +207,19 @@ const MainContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh; /* 높이를 100vh로 제한 */
+  height: 80vh; /* 높이를 100vh로 제한 */
   width: 100%;
   overflow: hidden;
 
   @media (max-width: 768px) {
     margin-top: 100px;
-    margin-bottom: -220px;
+    margin-bottom: -320px;
   }
 `;
 
 const StyledLabel = styled.div`
   position: relative;
   z-index: 2;
-
   text-align: center;
 
   & .flexcontainer {
@@ -228,11 +228,12 @@ const StyledLabel = styled.div`
     @media (max-width: 768px) {
       text-align: center;
       gap: 8px;
-      margin: 0px;
+      margin: 0;
     }
 
     @media (max-width: 480px) {
       gap: 6px;
+      margin: 0;
     }
   }
 
@@ -247,11 +248,6 @@ const StyledLabel = styled.div`
     transform: translateY(20px);
 
     @media (max-width: 768px) {
-      font-size: 16px;
-      line-height: 1.3;
-    }
-
-    @media (max-width: 480px) {
       font-size: 14px;
       line-height: 1.2;
     }
@@ -272,14 +268,10 @@ const StyledLabel = styled.div`
     text-align: center; /* 모바일 화면에서 가운데 정렬 */
 
     @media (max-width: 768px) {
-      font-size: 16px;
-      width: 90%;
-      margin: 0 auto; /* 모바일 화면에서 가운데 정렬 */
-    }
-
-    @media (max-width: 480px) {
       font-size: 14px;
-      margin: 0;
+      width: 90%;
+      max-width: 410px;
+      margin: 0 auto; /* 모바일 화면에서 가운데 정렬 */
     }
   }
 `;

@@ -56,6 +56,7 @@ const MainContainer = styled.div`
 
   @media (max-width: 768px) {
     height: auto;
+    margin-left: 1%;
   }
 `;
 
@@ -76,7 +77,7 @@ const StyledLabel = styled.div`
     margin-top: 20px;
 
     @media (max-width: 768px) {
-      margin-left: -55px;
+      margin-left: -12%;
     }
   }
 
@@ -129,7 +130,7 @@ const InputBox = styled.div`
     width: 100%;
     background-color: transparent;
     color: white;
-    padding: 0 15px;
+
     font-size: 16px;
     outline: none;
     box-sizing: border-box;
@@ -157,19 +158,13 @@ const InputContainer = styled.div`
   max-width: 800px;
 
   @media (max-width: 768px) {
-    flex-direction: column;
-    gap: 5px;
-    margin-left: 0;
-    width: 100%;
+    width: 97%;
+    height: 60px;
+    margin-left: 1%;
   }
 `;
 
 const InputDivider = styled.span`
   color: white;
   font-size: 24px;
-
-  @media (max-width: 768px) {
-    margin-left: -0px;
-    font-size: 20px;
-  }
 `;

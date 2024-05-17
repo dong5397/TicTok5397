@@ -4,8 +4,8 @@ import styled from "styled-components";
 
 const StyledLabel = styled.div`
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 2px;
+  left: 1px;
   height: 100%;
   width: 100%;
   display: flex;
@@ -65,11 +65,6 @@ const BoxContainerStyle = styled.div`
 
   @media (max-width: 768px) {
     gap: 15px;
-    flex-direction: column;
-  }
-
-  @media (max-width: 480px) {
-    gap: 10px;
     flex-direction: column;
   }
 `;

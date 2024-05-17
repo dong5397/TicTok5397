@@ -11,14 +11,10 @@ const MainContainer = styled.div`
   height: 100%;
   width: 100%;
   overflow: hidden;
-  margin-top: 100px;
+  margin-top: 250px;
 
   @media (max-width: 768px) {
-    margin-top: 80px;
-  }
-
-  @media (max-width: 480px) {
-    margin-top: 200px;
+    margin-top: 180px;
   }
 `;
 

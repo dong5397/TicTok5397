@@ -33,13 +33,8 @@ const StyledBox = styled.div`
   /* 반응형 미디어 쿼리 */
   @media (max-width: 768px) {
     width: 90%;
-    height: 120px;
-    margin-left: 20px;
-  }
-
-  @media (max-width: 480px) {
-    width: 90%;
     height: 100px;
+    max-width: 410px;
     margin-left: 20px;
   }
 `;

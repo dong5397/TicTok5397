@@ -126,7 +126,7 @@ const MainContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  overflow: hidden;
   margin: 0 auto;
 
   @media (max-width: 100%) {
@@ -140,7 +140,7 @@ const StyledLabel = styled.div`
   align-items: flex-start;
   width: 100%;
   margin-left: 290px;
-  margin-right: 180px;
+
   max-width: 800px;
   .row-wrapper {
     display: flex;
@@ -160,7 +160,7 @@ const StyledLabel = styled.div`
     font-weight: 700;
     font-size: 18px;
     @media (max-width: 768px) {
-      margin-left: -50px;
+      margin-left: -80%;
     }
 
     .star-icon {
@@ -178,14 +178,14 @@ const StyledLabel = styled.div`
 
 const StyledContent = styled.div`
   width: 100%;
-  margin-right: 160px;
+
   max-width: 700px;
   height: 400px; /* 세로 길이 증가 */
   border: 2px solid #ffffff80;
   border-radius: 10px;
   background-color: transparent;
   color: white;
-  padding: 15px;
+
   font-size: 14px;
   outline: none;
   margin-top: 10px;
@@ -217,9 +217,10 @@ const StyledContent = styled.div`
   }
 
   @media (max-width: 768px) {
-    max-width: 400px;
+    max-width: 95%;
     height: 350px;
-    margin-left: 160px;
+    margin-left: 0%;
+    padding: 1%;
   }
 `;
 
@@ -232,12 +233,12 @@ const CheckboxContainer = styled.div`
   margin-left: 100px;
   max-width: 800px;
   & input[type="checkbox"] {
-    margin-right: 10px;
     accent-color: #ffffff80;
   }
 
   @media (max-width: 768px) {
     margin-top: 10px;
+    margin-left: 3%;
   }
 `;
 
@@ -307,7 +308,8 @@ const StyledBox2 = styled.div`
   }
 
   @media (max-width: 768px) {
-    height: 100px;
-    max-width: 250px;
+    height: 60px;
+    max-width: 200px;
+    margin-bottom: 10px;
   }
 `;

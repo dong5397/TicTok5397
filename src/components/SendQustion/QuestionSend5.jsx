@@ -28,6 +28,7 @@ const MainContainer = styled.div`
 
   @media (max-width: 768px) {
     height: auto;
+    margin-left: 3%;
   }
 `;
 
@@ -47,7 +48,7 @@ const StyledLabel = styled.div`
     margin-top: 30px;
 
     @media (max-width: 768px) {
-      margin-left: -55px;
+      margin-left: -14%;
     }
   }
 
@@ -90,7 +91,7 @@ const StyledTextarea = styled.textarea`
   border-radius: 10px;
   background-color: transparent;
   color: white;
-  padding: 15px;
+
   font-size: 16px;
   outline: none;
   margin-left: 50px;
@@ -102,8 +103,8 @@ const StyledTextarea = styled.textarea`
   }
 
   @media (max-width: 768px) {
-    width: 100%;
-    height: 250px;
-    margin-left: 20px;
+    width: 98%;
+    height: 60px;
+    margin-left: 0%;
   }
 `;

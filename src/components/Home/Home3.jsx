@@ -11,6 +11,8 @@ const MainContainer = styled.div`
   flex-direction: column;
   width: 100%;
   align-items: center;
+  @media (max-width: 768px) {
+  }
 `;
 
 const StyledLabel = styled.div`

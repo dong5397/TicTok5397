@@ -56,6 +56,7 @@ const MainContainer = styled.div`
 
   @media (max-width: 768px) {
     height: auto;
+    margin-left: 3%;
   }
 `;
 
@@ -127,7 +128,6 @@ const StyledLabel = styled.div`
       width: 12px;
       height: 12px;
       margin-bottom: 5px;
-      margin-right: 15px;
 
       @media (max-width: 768px) {
         width: 10px;
@@ -140,8 +140,8 @@ const StyledLabel = styled.div`
     font-size: 20px;
 
     @media (max-width: 768px) {
-      font-size: 15px;
-      margin-left: 5px;
+      font-size: 18px;
+      margin-left: 1%;
     }
   }
 
@@ -150,7 +150,6 @@ const StyledLabel = styled.div`
 
     @media (max-width: 768px) {
       font-size: 15px;
-      margin-right: 0px;
     }
   }
 
@@ -197,8 +196,8 @@ const StyledInput = styled.input`
   }
 
   @media (max-width: 768px) {
-    width: 100%;
+    width: 98%;
     height: 60px;
-    margin-right: 40px;
+    margin-left: 0%;
   }
 `;

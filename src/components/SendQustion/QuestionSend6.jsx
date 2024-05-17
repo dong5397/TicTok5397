@@ -45,11 +45,10 @@ const MainContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-
   overflow: hidden;
-
   @media (max-width: 768px) {
     height: auto;
+    margin-left: 1%;
   }
 `;
 
@@ -68,7 +67,7 @@ const StyledLabel = styled.div`
     margin-top: 30px;
 
     @media (max-width: 768px) {
-      margin-left: -55px;
+      margin-left: -11%;
     }
   }
 
@@ -106,7 +105,7 @@ const StyledFileInput = styled.input`
   border-radius: 10px;
   background-color: transparent;
   color: #ffffff;
-  padding: 0 15px;
+
   font-size: 16px;
   outline: none;
   margin-left: 50px;
@@ -118,16 +117,16 @@ const StyledFileInput = styled.input`
     background-color: #ffffff80;
     border: none;
     border-radius: 5px;
-    padding: 10px;
+
     cursor: pointer;
     color: #000;
     font-weight: bold;
   }
 
   @media (max-width: 768px) {
-    width: 100%;
+    width: 96%;
     height: 60px;
-    margin-left: 20px;
+    margin-left: 1%;
     line-height: 60px;
   }
 `;
@@ -157,7 +156,7 @@ const StyledLabel2 = styled.div`
   }
 
   @media (max-width: 768px) {
-    width: 100%;
-    margin-left: 20px;
+    width: 85%;
+    margin-left: -9%;
   }
 `;

@@ -11,21 +11,14 @@ const MainContainer = styled.div`
   height: 100%;
   width: 100%;
   overflow: hidden;
-  margin-top: 100px;
+
   margin-bottom: 100px;
 
   @media (max-width: 768px) {
-    margin-top: 80px;
+    margin-top: -80px;
     width: 100%;
 
     margin-bottom: 80px;
-  }
-
-  @media (max-width: 480px) {
-    margin-top: 60px;
-    width: 100%;
-
-    margin-bottom: 60px;
   }
 `;
 

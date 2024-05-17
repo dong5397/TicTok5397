@@ -13,6 +13,7 @@ const MainContainer = styled.div`
   overflow: hidden;
 
   @media (max-width: 768px) {
+    margin-top: -100px;
   }
 
   @media (max-width: 480px) {
