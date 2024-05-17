@@ -78,7 +78,7 @@ const StyledLabel = styled.div`
     color: #ffffff;
     font-family: "Inter-SemiBold", Helvetica;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 15px;
 
     .star-icon {
       width: 12px;
@@ -89,6 +89,7 @@ const StyledLabel = styled.div`
       @media (max-width: 768px) {
         width: 10px;
         height: 10px;
+        font-size: 9px;
       }
     }
   }
@@ -143,6 +144,10 @@ const StyledLabel2 = styled.div`
     font-weight: 500;
     line-height: 1.2;
     margin: 0;
+    @media (max-width: 768px) {
+      font-size: 9px;
+      margin-left: 22%;
+    }
   }
 
   & .text-wrapper3 {
@@ -153,10 +158,9 @@ const StyledLabel2 = styled.div`
     padding-left: 15px;
     line-height: 1.2;
     margin: 0;
-  }
-
-  @media (max-width: 768px) {
-    width: 85%;
-    margin-left: -9%;
+    @media (max-width: 768px) {
+      font-size: 9px;
+      margin-left: 21%;
+    }
   }
 `;
