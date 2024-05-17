@@ -85,13 +85,14 @@ const StyledLabel = styled.div`
 
 const StyledTextarea = styled.textarea`
   height: 350px;
-  width: 700px;
+  width: 720px;
   max-width: 100%;
   border: 2px solid #ffffff80;
   border-radius: 10px;
   background-color: transparent;
   color: white;
-
+  padding-left: 10px;
+  padding-top: 10px;
   font-size: 16px;
   outline: none;
   margin-left: 50px;

@@ -128,6 +128,7 @@ const InputBox = styled.div`
     border-radius: 10px;
     height: 100%;
     width: 100%;
+    padding-left: 10px;
     background-color: transparent;
     color: white;
 

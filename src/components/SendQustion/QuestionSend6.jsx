@@ -100,7 +100,7 @@ const StyledLabel = styled.div`
 
 const StyledFileInput = styled.input`
   height: 74px;
-  width: 700px;
+  width: 735px;
   border: 2px solid #ffffff80;
   border-radius: 10px;
   background-color: transparent;
@@ -133,7 +133,7 @@ const StyledFileInput = styled.input`
 
 const StyledLabel2 = styled.div`
   width: 680px;
-  margin-left: 50px;
+
   margin-top: 10px;
 
   & .text-wrapper {

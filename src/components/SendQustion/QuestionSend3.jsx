@@ -152,6 +152,7 @@ const InputBox = styled.div`
   width: calc((100% - 20px) / 3);
 
   .rectangle {
+    padding-left: 10px;
     border: 2px solid #ffffff80;
     border-radius: 10px;
     height: 100%;

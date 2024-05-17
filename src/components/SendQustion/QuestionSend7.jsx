@@ -139,7 +139,7 @@ const StyledLabel = styled.div`
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
-  margin-left: 290px;
+  margin-left: 120px;
 
   max-width: 800px;
   .row-wrapper {
@@ -178,8 +178,8 @@ const StyledLabel = styled.div`
 
 const StyledContent = styled.div`
   width: 100%;
-
-  max-width: 700px;
+  margin-left: 45px;
+  max-width: 730px;
   height: 400px; /* 세로 길이 증가 */
   border: 2px solid #ffffff80;
   border-radius: 10px;
@@ -190,7 +190,6 @@ const StyledContent = styled.div`
   outline: none;
   margin-top: 10px;
   overflow-y: scroll;
-  margin-left: 200px;
 
   & p {
     margin: 0;

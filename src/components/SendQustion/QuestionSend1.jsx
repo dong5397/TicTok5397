@@ -189,7 +189,7 @@ const StyledInput = styled.input`
 
   font-size: 16px;
   outline: none;
-
+  padding-left: 10px;
   margin-top: 10px; /* 이전의 20px에서 10px로 변경 */
 
   ::placeholder {
@@ -197,7 +197,7 @@ const StyledInput = styled.input`
   }
 
   @media (max-width: 768px) {
-    width: 95%;
+    width: 93%;
     height: 60px;
     margin-left: -1%;
   }

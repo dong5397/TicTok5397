@@ -98,24 +98,24 @@ const StyledLabel = styled.div`
 
 const StyledInput = styled.input`
   height: 74px;
-  width: 700px;
+  width: 720px;
   max-width: 100%;
   border: 2px solid #ffffff80;
   border-radius: 10px;
   background-color: transparent;
   color: white;
-  padding: 0 15px;
+
   font-size: 16px;
   outline: none;
   margin-left: 50px;
   margin-top: 10px;
-
+  padding-left: 10px;
   ::placeholder {
     color: #ffffff80;
   }
 
   @media (max-width: 768px) {
-    width: 88%;
+    width: 90%;
     height: 60px;
     margin-left: 3%;
   }
