@@ -81,13 +81,13 @@ const StyledBox5 = styled.div`
 
   & .dot-img {
     margin-right: 8px;
-    margin-top: -40px;
+    margin-bottom: 10px;
 
     @media (max-width: 768px) {
       width: 8px;
       height: 8px;
       margin-left: 10px;
-      margin-top: -20px;
+      margin-bottom: -0px;
     }
   }
 
@@ -111,7 +111,7 @@ const StyledBox5 = styled.div`
   & .div1 {
     color: #ffffff;
     font-family: "Inter-Medium", Helvetica;
-    font-size: 30px;
+    font-size: 25px;
     letter-spacing: 0;
     line-height: 1.5;
     position: relative;

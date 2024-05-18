@@ -78,10 +78,10 @@ const StyledLabel = styled.div`
   flex-direction: column;
   align-items: flex-start;
   height: auto;
-  width: 100%;
-  max-width: 800px;
 
-  margin-left: 120px;
+  max-width: 800px;
+  margin-left: -570px;
+
   .row-wrapper {
     display: flex;
     justify-content: space-between;
@@ -90,7 +90,7 @@ const StyledLabel = styled.div`
     margin-top: 20px;
 
     @media (max-width: 768px) {
-      margin-left: -12%;
+      margin-left: 180px;
     }
   }
 

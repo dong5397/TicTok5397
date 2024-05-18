@@ -142,8 +142,8 @@ const StyledLabel = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 100%;
-  margin-left: 120px;
+
+  margin-left: -500px;
 
   max-width: 800px;
   .row-wrapper {
@@ -151,7 +151,7 @@ const StyledLabel = styled.div`
     justify-content: space-between;
 
     @media (max-width: 768px) {
-      margin-top: 15px;
+      margin-left: 480px;
     }
   }
 
@@ -162,7 +162,7 @@ const StyledLabel = styled.div`
     color: #ffffff;
     font-family: "Inter-SemiBold", Helvetica;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 20px;
     @media (max-width: 768px) {
       margin-left: -80%;
     }
@@ -181,7 +181,6 @@ const StyledLabel = styled.div`
 `;
 
 const StyledContent = styled.div`
-  width: 100%;
   margin-left: 45px;
   max-width: 730px;
   height: 400px; /* 세로 길이 증가 */
@@ -231,9 +230,9 @@ const CheckboxContainer = styled.div`
   display: flex;
   align-items: center;
   margin-top: 10px;
-  width: 100%;
+  margin-left: -430px;
   color: white;
-  margin-left: 100px;
+
   max-width: 800px;
   & input[type="checkbox"] {
     accent-color: #ffffff80;
@@ -241,7 +240,7 @@ const CheckboxContainer = styled.div`
 
   @media (max-width: 768px) {
     margin-top: 10px;
-    margin-left: 3%;
+    margin-left: -240px;
   }
 `;
 
@@ -282,7 +281,7 @@ const StyledBox2 = styled.div`
   justify-content: center;
   align-items: center;
   height: 120px; /* 세로 길이 증가 */
-  width: 100%;
+
   max-width: 400px; /* 가로 길이 제한 */
   margin-top: 40px;
   position: relative;
@@ -295,8 +294,8 @@ const StyledBox2 = styled.div`
       rgb(254, 44, 85) 100%
     );
     border-radius: 20px;
-    height: 100%;
-    width: 100%;
+    height: 72px;
+    width: 300px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
     display: flex;

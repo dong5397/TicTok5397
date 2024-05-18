@@ -66,43 +66,31 @@ const StyledLabel = styled.div`
 `;
 
 const Styleline = styled.div`
-  width: 90%;
+  width: 85%;
   max-width: 800px;
 
-  margin-left: 30px;
+  margin-left: 60px;
 
   & .vector {
     width: 100%;
     height: 2px;
 
     @media (max-width: 768px) {
-      width: 90%;
-      margin-right: 20px;
-    }
-
-    @media (max-width: 480px) {
-      width: 90%;
-      margin-right: 20px;
+      width: 85%;
     }
   }
 `;
 
 const Img = styled.img`
-  width: 50px;
-  height: 50px;
-  margin-top: 20px;
+  width: 77px;
+  height: 80px;
+  margin-top: -5px;
 
   @media (max-width: 768px) {
-    width: 25px;
-    height: 25px;
-    margin-top: 20px;
+    width: 47px;
+    height: 50px;
+    margin-top: 10px;
     margin-left: 5px;
-  }
-
-  @media (max-width: 480px) {
-    width: 25px;
-    height: 25px;
-    margin-top: 25px;
   }
 `;
 const BackIcon = styled.img`

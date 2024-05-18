@@ -52,9 +52,9 @@ const StyledBox = styled.div`
       rgb(37, 244, 238) 0%,
       rgb(254, 44, 85) 100%
     );
-    border-radius: 20px;
-    height: 108px;
-    width: 408px;
+    border-radius: 15px;
+    height: 72px;
+    width: 300px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
     display: flex;

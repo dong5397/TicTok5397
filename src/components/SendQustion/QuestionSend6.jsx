@@ -49,8 +49,8 @@ const StyledLabel = styled.div`
   flex-direction: column;
   align-items: flex-start;
   height: auto;
-  width: 100%;
-  margin-left: 120px;
+
+  margin-left: -590px;
   max-width: 800px;
   .row-wrapper {
     display: flex;
@@ -59,7 +59,7 @@ const StyledLabel = styled.div`
     margin-top: 30px;
 
     @media (max-width: 768px) {
-      margin-left: -11%;
+      margin-left: 210px;
     }
   }
 
@@ -70,7 +70,7 @@ const StyledLabel = styled.div`
     color: #ffffff;
     font-family: "Inter-SemiBold", Helvetica;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 20px;
 
     .star-icon {
       width: 12px;
@@ -125,10 +125,9 @@ const StyledFileInput = styled.input`
 `;
 
 const StyledLabel2 = styled.div`
-  width: 680px;
-
   margin-top: 10px;
-
+  margin-left: -200px;
+  margin-bottom: 50px;
   & .text-wrapper {
     color: #25f4eead;
     font-family: "Inter-Medium", Helvetica;
@@ -138,7 +137,7 @@ const StyledLabel2 = styled.div`
     margin: 0;
     @media (max-width: 768px) {
       font-size: 9px;
-      margin-left: 22%;
+      margin-left: 10px;
     }
   }
 
@@ -152,7 +151,7 @@ const StyledLabel2 = styled.div`
     margin: 0;
     @media (max-width: 768px) {
       font-size: 9px;
-      margin-left: 21%;
+      margin-left: 5px;
     }
   }
 `;

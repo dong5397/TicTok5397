@@ -174,7 +174,7 @@ const StyledLine = styled.div`
     height: 2px;
   }
   @media (max-width: 768px) {
-    width: 100%;
+    width: 97%;
     height: 60px;
     margin-left: 0px;
   }
@@ -200,7 +200,7 @@ const StyledInput = styled.input`
   }
 
   @media (max-width: 768px) {
-    width: 93%;
+    width: 95%;
     height: 60px;
     margin-left: -1%;
   }

@@ -99,7 +99,7 @@ const MainContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+
   overflow: hidden;
 
   @media (max-width: 768px) {
@@ -110,20 +110,17 @@ const MainContainer = styled.div`
 
 const StyledLabel = styled.div`
   display: flex;
-  flex-direction: column;
   align-items: flex-start;
   height: auto;
+  margin-left: -590px;
 
-  width: 100%;
-  margin-left: 120px;
   max-width: 800px;
   .row-wrapper {
     display: flex;
     justify-content: space-between;
-    width: 100%;
 
     @media (max-width: 768px) {
-      margin-left: -55px;
+      margin-left: 180px;
     }
   }
 
@@ -181,7 +178,7 @@ const InputBox = styled.div`
   }
 
   @media (max-width: 768px) {
-    width: 90%;
+    width: 94%;
     height: 60px;
     margin-bottom: 10px;
   }
@@ -198,7 +195,7 @@ const InputContainer = styled.div`
   width: 730px;
 
   @media (max-width: 768px) {
-    width: 99%;
+    width: 98%;
     height: 60px;
     margin-left: 1%;
   }

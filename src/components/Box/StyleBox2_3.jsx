@@ -24,13 +24,13 @@ const StyledLink = styled(Link)`
 const StyledLabel = styled.div`
   color: #ffffff;
   font-family: "Inter-Bold", Helvetica;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
   text-align: center;
-  padding: 30px;
+  padding: 20px;
 
   @media (max-width: 768px) {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   @media (max-width: 480px) {
@@ -39,8 +39,8 @@ const StyledLabel = styled.div`
 `;
 
 const StyledBox = styled.div`
-  height: 300px;
-  width: 408px;
+  height: 200px;
+  width: 300px;
   position: relative;
   transition: all 0.3s ease;
 
@@ -50,9 +50,9 @@ const StyledBox = styled.div`
       rgb(37, 244, 238) 0%,
       rgb(254, 44, 85) 100%
     );
-    border-radius: 20px;
-    height: 100px;
-    width: 408px;
+    border-radius: 15px;
+    height: 72px;
+    width: 300px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
     display: flex;
@@ -66,22 +66,22 @@ const StyledBox = styled.div`
   }
 
   @media (max-width: 768px) {
-    height: 300px;
-    width: 350px;
+    height: 180px;
+    width: 280px;
 
     & .rectangle {
-      height: 100px;
-      width: 350px;
+      height: 64px;
+      width: 280px;
     }
   }
 
   @media (max-width: 480px) {
-    height: 200px;
-    width: 300px;
+    height: 160px;
+    width: 260px;
 
     & .rectangle {
-      height: 72px;
-      width: 300px;
+      height: 56px;
+      width: 260px;
     }
   }
 `;

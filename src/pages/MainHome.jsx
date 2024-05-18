@@ -11,6 +11,7 @@ import Home8 from "../components/Home/Home8";
 
 import Home10 from "../components/Home/Home10";
 import Home11 from "../components/Home/Home11";
+import LastPage from "../components/LastPage";
 function MainHome() {
   return (
     <div>
@@ -24,6 +25,7 @@ function MainHome() {
       <Home8 />
       <Home11 />
       <Home10 />
+      <LastPage />
     </div>
   );
 }

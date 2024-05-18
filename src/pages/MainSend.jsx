@@ -7,7 +7,7 @@ import QuestionSend4 from "../components/SendQustion/QuestionSend4";
 import QuestionSend5 from "../components/SendQustion/QuestionSend5";
 import QuestionSend6 from "../components/SendQustion/QuestionSend6";
 import QuestionSend7 from "../components/SendQustion/QuestionSend7";
-
+import LastPage from "../components/LastPage";
 function MainSend() {
   const [inquirerName, setInquirerName] = useState("");
   const [phoneNumber, setPhoneNumber] = useState({
@@ -105,6 +105,7 @@ function MainSend() {
         onAgreementChange={handleAgreementChange}
         onSubmit={submitQuestion}
       />
+      <LastPage />
     </PageContainer>
   );
 }
@@ -112,18 +113,5 @@ function MainSend() {
 export default MainSend;
 
 const PageContainer = styled.div`
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  background-color: #202020;
-  color: white;
-  min-height: 100vh;
-  gap: 20px;
-
-  @media (max-width: 768px) {
-    padding: 10px;
-    gap: 10px;
-  }
 `;
