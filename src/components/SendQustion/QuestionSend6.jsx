@@ -1,5 +1,5 @@
 import React from "react";
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import star from "../../../images/Question/star.png";
 
 function QuestionSend6({ onFileChange }) {
@@ -38,6 +38,7 @@ const MainContainer = styled.div`
   flex-direction: column;
   align-items: center;
   overflow: hidden;
+
   @media (max-width: 768px) {
     height: auto;
     margin-left: 1%;
@@ -49,17 +50,21 @@ const StyledLabel = styled.div`
   flex-direction: column;
   align-items: flex-start;
   height: auto;
-
-  margin-left: -590px;
+  width: 100%;
   max-width: 800px;
+  margin-left: 130px;
+  @media (max-width: 768px) {
+    font-size: 18px;
+    margin-right: 130px;
+  }
   .row-wrapper {
     display: flex;
     justify-content: space-between;
-
+    width: 100%;
     margin-top: 30px;
 
     @media (max-width: 768px) {
-      margin-left: 210px;
+      margin-left: 0;
     }
   }
 
@@ -81,13 +86,13 @@ const StyledLabel = styled.div`
       @media (max-width: 768px) {
         width: 10px;
         height: 10px;
-        font-size: 9px;
       }
     }
-  }
 
-  .img {
-    margin-bottom: 200px;
+    @media (max-width: 768px) {
+      font-size: 18px;
+      margin-left: 10px;
+    }
   }
 `;
 
@@ -98,7 +103,6 @@ const StyledFileInput = styled.input`
   border-radius: 10px;
   background-color: transparent;
   color: #ffffff;
-
   font-size: 16px;
   outline: none;
   margin-left: 50px;
@@ -110,7 +114,6 @@ const StyledFileInput = styled.input`
     background-color: #ffffff80;
     border: none;
     border-radius: 5px;
-
     cursor: pointer;
     color: #000;
     font-weight: bold;
@@ -119,39 +122,42 @@ const StyledFileInput = styled.input`
   @media (max-width: 768px) {
     width: 96%;
     height: 60px;
-    margin-left: 1%;
+    margin-left: 0;
     line-height: 60px;
   }
 `;
 
 const StyledLabel2 = styled.div`
   margin-top: 10px;
-  margin-left: -200px;
   margin-bottom: 50px;
-  & .text-wrapper {
+  width: 100%;
+  text-align: left;
+  margin-left: 380px;
+  .text-wrapper {
     color: #25f4eead;
     font-family: "Inter-Medium", Helvetica;
     font-size: 15px;
     font-weight: 500;
     line-height: 1.2;
     margin: 0;
+
     @media (max-width: 768px) {
-      font-size: 9px;
-      margin-left: 10px;
+      font-size: 12px;
+      margin-left: -180px;
     }
   }
 
-  & .text-wrapper3 {
+  .text-wrapper3 {
     color: #25f4eead;
     font-family: "Inter-Medium", Helvetica;
     font-size: 15px;
     font-weight: 500;
-    padding-left: 15px;
     line-height: 1.2;
     margin: 0;
+    margin-left: 15px;
     @media (max-width: 768px) {
-      font-size: 9px;
-      margin-left: 5px;
+      font-size: 12px;
+      margin-left: -168px;
     }
   }
 `;

@@ -132,9 +132,10 @@ const MainContainer = styled.div`
   align-items: center;
   overflow: hidden;
   margin: 0 auto;
+  max-width: 800px;
 
-  @media (max-width: 100%) {
-    max-width: 400px;
+  @media (max-width: 768px) {
+    width: 100%;
   }
 `;
 
@@ -142,16 +143,21 @@ const StyledLabel = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
-  margin-left: -500px;
-
+  width: 100%;
   max-width: 800px;
+  margin-left: 130px;
+  @media (max-width: 768px) {
+    font-size: 18px;
+    margin-right: 130px;
+  }
   .row-wrapper {
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    margin-top: 30px;
 
     @media (max-width: 768px) {
-      margin-left: 480px;
+      margin-left: 10px;
     }
   }
 
@@ -163,36 +169,39 @@ const StyledLabel = styled.div`
     font-family: "Inter-SemiBold", Helvetica;
     font-weight: 700;
     font-size: 20px;
-    @media (max-width: 768px) {
-      margin-left: -80%;
-    }
 
     .star-icon {
-      width: 10px;
-      height: 10px;
+      width: 12px;
+      height: 12px;
       margin-left: 5px;
 
       @media (max-width: 768px) {
-        width: 8px;
-        height: 8px;
+        width: 10px;
+        height: 10px;
       }
+    }
+
+    @media (max-width: 768px) {
+      font-size: 18px;
+      margin-left: 0;
     }
   }
 `;
 
 const StyledContent = styled.div`
-  margin-left: 45px;
+  width: 100%;
   max-width: 730px;
-  height: 400px; /* 세로 길이 증가 */
+  height: 400px;
   border: 2px solid #ffffff80;
   border-radius: 10px;
   background-color: transparent;
   color: white;
-
   font-size: 14px;
   outline: none;
   margin-top: 10px;
   overflow-y: scroll;
+  padding: 10px;
+  margin-left: 50px;
 
   & p {
     margin: 0;
@@ -221,26 +230,44 @@ const StyledContent = styled.div`
   @media (max-width: 768px) {
     max-width: 95%;
     height: 350px;
-    margin-left: 0%;
-    padding: 1%;
+    padding: 10px;
+    margin-right: 40px;
   }
 `;
 
 const CheckboxContainer = styled.div`
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   margin-top: 10px;
-  margin-left: -430px;
-  color: white;
-
+  width: 100%;
   max-width: 800px;
+  color: white;
+  margin-left: 90px;
+
   & input[type="checkbox"] {
-    accent-color: #ffffff80;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #ffffff80;
+    border-radius: 4px;
+    margin-right: 8px;
+    cursor: pointer;
+
+    &:checked {
+      background-color: #ffffff80;
+    }
+  }
+
+  & label {
+    font-size: 16px;
   }
 
   @media (max-width: 768px) {
+    align-items: flex-start;
     margin-top: 10px;
-    margin-left: -240px;
+    margin-right: 80px;
   }
 `;
 
@@ -253,7 +280,7 @@ const WarningMessage = styled.div`
   max-width: 800px;
 
   @media (max-width: 768px) {
-    margin-top: 10px;
+    font-size: 12px;
   }
 `;
 
@@ -280,14 +307,10 @@ const StyledBox2 = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 120px; /* 세로 길이 증가 */
-
-  max-width: 400px; /* 가로 길이 제한 */
+  height: 120px;
   margin-top: 40px;
-  position: relative;
-  transition: all 0.3s ease;
 
-  & .rectangle {
+  .rectangle {
     background: linear-gradient(
       240deg,
       rgb(37, 244, 238) 0%,
@@ -297,21 +320,21 @@ const StyledBox2 = styled.div`
     height: 72px;
     width: 300px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-  }
-
-  &:hover .rectangle {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-    transform: scale(1.05);
+    transition: all 0.3s ease;
+    text-align: left;
+    &:hover {
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+      transform: scale(1.05);
+    }
   }
 
   @media (max-width: 768px) {
     height: 60px;
-    max-width: 200px;
+    width: 100%;
     margin-bottom: 10px;
   }
 `;

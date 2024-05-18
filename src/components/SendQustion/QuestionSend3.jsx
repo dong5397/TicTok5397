@@ -15,9 +15,11 @@ const emailDomains = [
 function QuestionSend3({ onEmailChange }) {
   const [selectedDomain, setSelectedDomain] = useState("");
   const [customDomain, setCustomDomain] = useState("");
+
   const handleLocalChange = (e) => {
     onEmailChange("local", e.target.value);
   };
+
   const handleDomainChange = (e) => {
     const value = e.target.value;
     if (value === "직접 입력") {
@@ -35,7 +37,7 @@ function QuestionSend3({ onEmailChange }) {
     const value = e.target.value;
     setSelectedDomain("");
     setCustomDomain(value);
-    setCustomDomain(e.target.value);
+    onEmailChange("domain", value);
   };
 
   return (
@@ -99,7 +101,6 @@ const MainContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-
   overflow: hidden;
 
   @media (max-width: 768px) {
@@ -110,17 +111,23 @@ const MainContainer = styled.div`
 
 const StyledLabel = styled.div`
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
   height: auto;
-  margin-left: -590px;
-
+  width: 100%;
   max-width: 800px;
+  margin-left: 130px;
+  @media (max-width: 768px) {
+    font-size: 18px;
+    margin-right: 130px;
+  }
   .row-wrapper {
     display: flex;
-    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
 
     @media (max-width: 768px) {
-      margin-left: 180px;
+      margin-left: 0;
     }
   }
 
@@ -132,6 +139,7 @@ const StyledLabel = styled.div`
     font-family: "Inter-SemiBold", Helvetica;
     font-weight: 700;
     margin-top: 20px;
+    font-size: 20px;
 
     .star-icon {
       width: 12px;
@@ -144,10 +152,6 @@ const StyledLabel = styled.div`
         height: 10px;
       }
     }
-  }
-
-  .text-wrapper2 {
-    font-size: 20px;
 
     @media (max-width: 768px) {
       font-size: 18px;
@@ -167,7 +171,6 @@ const InputBox = styled.div`
     width: 100%;
     background-color: transparent;
     color: white;
-
     font-size: 16px;
     outline: none;
     box-sizing: border-box;
@@ -178,7 +181,7 @@ const InputBox = styled.div`
   }
 
   @media (max-width: 768px) {
-    width: 94%;
+    width: 100%;
     height: 60px;
     margin-bottom: 10px;
   }
@@ -191,13 +194,14 @@ const InputContainer = styled.div`
   gap: 10px;
   margin-bottom: 20px;
   margin-top: 10px;
-  margin-left: 50px;
   width: 730px;
-
+  margin-left: 45px;
   @media (max-width: 768px) {
-    width: 98%;
-    height: 60px;
-    margin-left: 1%;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 0;
   }
 `;
 
@@ -217,7 +221,6 @@ const DomainSelector = styled.select`
   border-radius: 10px;
   background-color: transparent;
   color: white;
-
   font-size: 16px;
   outline: none;
   box-sizing: border-box;
@@ -228,9 +231,8 @@ const DomainSelector = styled.select`
   }
 
   @media (max-width: 768px) {
-    width: 80%;
+    width: 100%;
     height: 60px;
-    margin-right: 1%;
-    margin-top: -10px;
+    margin-top: 10px;
   }
 `;

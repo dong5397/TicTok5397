@@ -42,7 +42,7 @@ const StyledLabel = styled.div`
 
 const StyledBox = styled.div`
   height: 200px;
-  width: 408px;
+
   position: relative;
   transition: all 0.3s ease;
 

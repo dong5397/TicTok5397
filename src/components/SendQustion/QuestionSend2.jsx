@@ -1,5 +1,5 @@
 import React from "react";
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import star from "../../../images/Question/star.png";
 
 function QuestionSend2({ phoneNumber, onPhoneChange }) {
@@ -78,35 +78,27 @@ const StyledLabel = styled.div`
   flex-direction: column;
   align-items: flex-start;
   height: auto;
-
+  width: 100%;
   max-width: 800px;
-  margin-left: -570px;
-
+  margin-left: 130px;
+  @media (max-width: 768px) {
+    font-size: 18px;
+    margin-right: 130px;
+  }
   .row-wrapper {
     display: flex;
-    justify-content: space-between;
     width: 100%;
-
     margin-top: 20px;
-
-    @media (max-width: 768px) {
-      margin-left: 180px;
-    }
   }
 
   .text-wrapper2 {
     display: flex;
     align-items: center;
-    position: relative;
     color: #ffffff;
     font-family: "Inter-SemiBold", Helvetica;
     font-weight: 700;
     margin-top: 10px;
-
-    @media (max-width: 768px) {
-      font-size: 30px;
-      margin-left: -0px;
-    }
+    font-size: 20px;
 
     .star-icon {
       width: 12px;
@@ -117,17 +109,13 @@ const StyledLabel = styled.div`
       @media (max-width: 768px) {
         width: 10px;
         height: 10px;
-        margin-left: -0;
+        margin-left: 10px;
       }
     }
-  }
-
-  .text-wrapper2 {
-    font-size: 20px;
 
     @media (max-width: 768px) {
       font-size: 18px;
-      margin-left: -0;
+      margin-left: 15px;
     }
   }
 `;
@@ -144,7 +132,6 @@ const InputBox = styled.div`
     padding-left: 10px;
     background-color: transparent;
     color: white;
-
     font-size: 16px;
     outline: none;
     box-sizing: border-box;
@@ -157,7 +144,6 @@ const InputBox = styled.div`
   @media (max-width: 768px) {
     width: 100%;
     height: 60px;
-    margin-left: -0px;
   }
 `;
 
@@ -168,13 +154,11 @@ const InputContainer = styled.div`
   gap: 10px;
   margin-bottom: 20px;
   margin-top: 10px;
-  margin-left: 50px;
   max-width: 800px;
-
+  margin-left: 45px;
   @media (max-width: 768px) {
     width: 97%;
-    height: 60px;
-    margin-left: 1%;
+    margin-right: 40px;
   }
 `;
 

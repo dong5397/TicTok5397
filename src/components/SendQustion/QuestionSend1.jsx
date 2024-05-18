@@ -73,7 +73,7 @@ const StyledLabel = styled.div`
 
   .label-container {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
     gap: 10px;
 
     @media (max-width: 768px) {
