@@ -14,7 +14,7 @@ const fadeIn = keyframes`
 `;
 
 const StyledBox2Container = styled.div`
-  margin-top: 30px;
+  margin-top: 50px;
   max-width: 800px;
   width: 100%;
   display: flex;
@@ -95,7 +95,7 @@ const StyledBox4 = styled.div`
   & .div {
     color: #ffffff;
     font-family: "Inter-Medium", Helvetica;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 500;
     letter-spacing: 0;
     line-height: 1.5;

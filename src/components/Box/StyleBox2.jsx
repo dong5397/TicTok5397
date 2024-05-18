@@ -10,8 +10,7 @@ const StyledLabel = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-
+  padding-top: 10px;
   background: rgba(0, 0, 0, 0.3); /* 텍스트 가독성 향상 */
   border-radius: 16px;
   z-index: 10;
@@ -20,10 +19,9 @@ const StyledLabel = styled.div`
   & .element {
     color: #ffffff;
     font-family: "Inter-Bold", Helvetica;
-    font-size: 22px;
+    font-size: 25px;
     margin-bottom: 10px;
     margin-left: 30px;
-    margin-top: -0px;
     font-weight: 700;
     letter-spacing: 0;
 
@@ -62,7 +60,7 @@ const BoxContainerStyle = styled.div`
   justify-content: center;
   align-items: center;
   gap: 20px;
-
+  margin-top: 50px;
   @media (max-width: 768px) {
     gap: 15px;
     flex-direction: column;

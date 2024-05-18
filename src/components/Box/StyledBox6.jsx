@@ -14,7 +14,7 @@ const fadeIn = keyframes`
 `;
 
 const StyledBox2Container = styled.div`
-  margin-top: 30px;
+  margin-top: 50px;
   max-width: 800px;
   width: 100%;
   display: flex;
@@ -66,11 +66,7 @@ const StyledBox6 = styled.div`
     align-items: center;
     margin-bottom: 10px;
 
-    @media (max-width: 768px) {
-      font-size: 24px;
-    }
-
-    @media (max-width: 480px) {
+    @media (max-width: 760px) {
       font-size: 20px;
     }
   }

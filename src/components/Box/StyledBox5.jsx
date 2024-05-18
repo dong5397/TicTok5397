@@ -3,7 +3,7 @@ import styled, { keyframes } from "styled-components";
 import Dot from "../../../images/Home/Dot.png";
 
 const StyledBox2Container = styled.div`
-  margin-top: 30px;
+  margin-top: 50px;
   max-width: 800px;
   width: 100%;
   display: flex;
@@ -54,10 +54,28 @@ const StyledBox5 = styled.div`
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-
+    display: inline;
     @media (max-width: 768px) {
-      font-size: 15px;
-      margin-right: 10px;
+      display: inline;
+      font-size: 20px;
+    }
+  }
+  & .text-wrapper1 {
+    color: #ffffff;
+    font-family: "Inter-Bold", Helvetica;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    display: inline;
+    @media (max-width: 768px) {
+      display: inline-block;
+      font-size: 20px;
+      margin-left: 25px;
     }
   }
 
@@ -76,7 +94,7 @@ const StyledBox5 = styled.div`
   & .div {
     color: #ffffff;
     font-family: "Inter-Medium", Helvetica;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 500;
     letter-spacing: 0;
     line-height: 1.5;
@@ -84,12 +102,27 @@ const StyledBox5 = styled.div`
     margin-left: 20px;
 
     @media (max-width: 768px) {
-      font-size: 13px;
+      font-size: 20px;
+      margin-left: 25px;
+      font-weight: 500;
+      margin-right: 20px;
+    }
+  }
+  & .div1 {
+    color: #ffffff;
+    font-family: "Inter-Medium", Helvetica;
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: 1.5;
+    position: relative;
+    margin-left: 20px;
+
+    @media (max-width: 768px) {
+      font-size: 15px;
       margin-left: 25px;
       margin-right: 20px;
     }
   }
-
   @media (max-width: 768px) {
     width: 90%;
     margin-left: 0;
@@ -146,11 +179,10 @@ function StyleBox5() {
         <div className="group">
           <div className="text-wrapper">
             <img className="dot-img" src={Dot} alt="점" />총 미션 8개 (필수 5개,
-            선택 3개) <br />중 8개 이상 수행
+            선택 3개){" "}
           </div>
-          <div className="div">
-            <h3>8개 미만 필터 발행자는 수상에서 제외</h3>
-          </div>
+          <div className="text-wrapper1">중 8개 이상 수행</div>
+          <div className="div1">8개 미만 필터 발행자는 수상에서 제외</div>
         </div>
       </AnimatedBox>
 
@@ -159,11 +191,9 @@ function StyleBox5() {
           <div className="text-wrapper">
             <img className="dot-img" src={Dot} alt="점" />
             수상기준 : 발행한 모든 필터의
-            <br /> 글로벌 사용량 60%
-          </div>
-          <div className="div">
-            <h3>+ 조회수 20% + 참여도(발행량) 20%</h3>
-          </div>
+          </div>{" "}
+          <div className="text-wrapper1">글로벌 사용량 60%</div>
+          <div className="div">+ 조회수 20% + 참여도(발행량) 20%</div>
         </div>
       </AnimatedBox>
     </StyledBox2Container>
