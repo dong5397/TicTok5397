@@ -2,16 +2,7 @@ import React from "react";
 import styled, { keyframes } from "styled-components";
 import star from "../../../images/Question/star.png";
 
-const slideIn = keyframes`
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-`;
-
-function QuestionSend6() {
+function QuestionSend6({ onFileChange }) {
   return (
     <MainContainer>
       <StyledLabel>
@@ -27,6 +18,7 @@ function QuestionSend6() {
         className="file-input"
         type="file"
         placeholder="파일을 첨부하세요"
+        onChange={onFileChange}
       />
       <StyledLabel2>
         <p className="text-wrapper">※ 500MB를 초과할 수 없습니다.</p>

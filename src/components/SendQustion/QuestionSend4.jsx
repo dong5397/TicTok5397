@@ -1,17 +1,8 @@
 import React from "react";
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import star from "../../../images/Question/star.png";
 
-const slideIn = keyframes`
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-`;
-
-function QuestionSend4() {
+function QuestionSend4({ title, onTitleChange }) {
   return (
     <MainContainer>
       <StyledLabel>
@@ -25,7 +16,9 @@ function QuestionSend4() {
       <StyledInput
         className="rectangle"
         type="text"
+        value={title}
         placeholder="제목을 입력하세요"
+        onChange={onTitleChange}
       />
     </MainContainer>
   );

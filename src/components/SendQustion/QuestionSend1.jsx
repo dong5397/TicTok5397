@@ -12,7 +12,7 @@ const slideIn = keyframes`
   }
 `;
 
-function QuestionSend() {
+function QuestionSend({ inquirerName, onInquirerNameChange }) {
   return (
     <MainContainer>
       <StyledLabel>
@@ -35,10 +35,13 @@ function QuestionSend() {
           </div>
         </div>
       </StyledLabel>
+
       <StyledInput
-        className="rectangle"
+        id="inquirerName"
         type="text"
-        placeholder="문의 내용을 입력하세요"
+        placeholder="문의자 명을 입력하세요"
+        value={inquirerName}
+        onChange={onInquirerNameChange}
       />
     </MainContainer>
   );
@@ -98,7 +101,7 @@ const StyledLabel = styled.div`
     justify-content: space-between;
     width: 100%;
 
-    margin-top: 30px; /* 이전의 50px에서 30px로 변경 */
+    margin-top: 30px;
   }
 
   .text-wrapper2,
@@ -109,7 +112,7 @@ const StyledLabel = styled.div`
     color: #ffffff;
     font-family: "Inter-SemiBold", Helvetica;
     font-weight: 700;
-    margin-top: 10px; /* 이전의 20px에서 10px로 변경 */
+    margin-top: 10px;
     margin-left: 70px;
     .star-icon {
       width: 12px;
@@ -190,7 +193,7 @@ const StyledInput = styled.input`
   font-size: 16px;
   outline: none;
   padding-left: 10px;
-  margin-top: 10px; /* 이전의 20px에서 10px로 변경 */
+  margin-top: 10px;
 
   ::placeholder {
     color: #ffffff80;

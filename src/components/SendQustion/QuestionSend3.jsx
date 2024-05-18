@@ -12,23 +12,29 @@ const emailDomains = [
   "hotmail.com",
 ];
 
-function QuestionSend3() {
+function QuestionSend3({ onEmailChange }) {
   const [selectedDomain, setSelectedDomain] = useState("");
   const [customDomain, setCustomDomain] = useState("");
-
+  const handleLocalChange = (e) => {
+    onEmailChange("local", e.target.value);
+  };
   const handleDomainChange = (e) => {
     const value = e.target.value;
     if (value === "직접 입력") {
       setSelectedDomain("");
       setCustomDomain("");
+      onEmailChange("domain", "");
     } else {
       setSelectedDomain(value);
       setCustomDomain("");
+      onEmailChange("domain", value);
     }
   };
 
   const handleCustomDomainChange = (e) => {
+    const value = e.target.value;
     setSelectedDomain("");
+    setCustomDomain(value);
     setCustomDomain(e.target.value);
   };
 
@@ -44,7 +50,12 @@ function QuestionSend3() {
       </StyledLabel>
       <InputContainer>
         <InputBox>
-          <input className="rectangle" type="text" placeholder="example" />
+          <input
+            className="rectangle"
+            type="text"
+            placeholder="example"
+            onChange={handleLocalChange}
+          />
         </InputBox>
         <InputDivider>@</InputDivider>
         <InputBox>

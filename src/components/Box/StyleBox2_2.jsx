@@ -17,7 +17,7 @@ const waveAnimation = keyframes`
 `;
 
 // 애니메이션 적용 여부를 동적으로 설정하는 스타일 컴포넌트
-const Image = styled.img`
+const StyledImage = styled.img`
   width: 10px;
   height: 10px;
   margin-top: 10px;
@@ -43,6 +43,11 @@ const Image = styled.img`
   }
 `;
 
+// 구조 분해 할당을 통해 불필요한 속성을 DOM 요소로 전달하지 않음
+const DelayedImage = ({ delay, isVisible, ...rest }) => {
+  return <StyledImage delay={delay} isVisible={isVisible} {...rest} />;
+};
+
 const Container = styled.div`
   display: flex;
   flex-direction: column; /* 세로 정렬 */
@@ -59,10 +64,6 @@ const Container = styled.div`
     margin-top: 100px;
   }
 `;
-
-const DelayedImage = ({ delay, src, alt, isVisible }) => {
-  return <Image delay={delay} src={src} alt={alt} isVisible={isVisible} />;
-};
 
 const TestBox = () => {
   const [isVisible, setIsVisible] = useState(false);

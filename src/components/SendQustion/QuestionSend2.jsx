@@ -2,7 +2,11 @@ import React from "react";
 import styled, { keyframes } from "styled-components";
 import star from "../../../images/Question/star.png";
 
-function QuestionSend2() {
+function QuestionSend2({ phoneNumber, onPhoneChange }) {
+  const handleInputChange = (part, e) => {
+    onPhoneChange(part, e.target.value);
+  };
+
   return (
     <MainContainer>
       <StyledLabel>
@@ -17,27 +21,36 @@ function QuestionSend2() {
         <InputBox>
           <input
             className="rectangle"
+            id="part1"
             type="text"
             maxLength="3"
             placeholder="010"
+            value={phoneNumber.part1}
+            onChange={(e) => handleInputChange("part1", e)}
           />
         </InputBox>
         <InputDivider>-</InputDivider>
         <InputBox>
           <input
             className="rectangle"
+            id="part2"
             type="text"
             maxLength="4"
             placeholder="1234"
+            value={phoneNumber.part2}
+            onChange={(e) => handleInputChange("part2", e)}
           />
         </InputBox>
         <InputDivider>-</InputDivider>
         <InputBox>
           <input
             className="rectangle"
+            id="part3"
             type="text"
             maxLength="4"
             placeholder="5678"
+            value={phoneNumber.part3}
+            onChange={(e) => handleInputChange("part3", e)}
           />
         </InputBox>
       </InputContainer>

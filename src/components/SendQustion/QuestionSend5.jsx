@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import star from "../../../images/Question/star.png";
 
-function QuestionSend5() {
+function QuestionSend5({ content, onContentChange }) {
   return (
     <MainContainer>
       <StyledLabel>
@@ -13,7 +13,12 @@ function QuestionSend5() {
           </div>
         </div>
       </StyledLabel>
-      <StyledTextarea className="rectangle" placeholder="내용을 입력하세요" />
+      <StyledTextarea
+        className="rectangle"
+        placeholder="내용을 입력하세요"
+        value={content}
+        onChange={onContentChange}
+      />
     </MainContainer>
   );
 }

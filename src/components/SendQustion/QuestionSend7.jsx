@@ -1,20 +1,24 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import star from "../../../images/Question/star.png";
 import StyleBox2_2 from "../Box/StyleBox2_2";
 
-function QuestionSend7() {
-  const [isAgreed, setIsAgreed] = useState(false);
+function QuestionSend7({ agreed, onAgreementChange, onSubmit }) {
   const [showWarning, setShowWarning] = useState(false);
 
-  const handleCheckboxChange = () => {
-    setIsAgreed(!isAgreed);
+  useEffect(() => {
     setShowWarning(false);
+  }, [agreed]);
+
+  const handleCheckboxChange = (e) => {
+    onAgreementChange(e.target.checked);
   };
 
   const handleSubmitClick = () => {
-    if (!isAgreed) {
+    if (!agreed) {
       setShowWarning(true);
+    } else {
+      onSubmit();
     }
   };
 
@@ -102,7 +106,7 @@ function QuestionSend7() {
         <input
           type="checkbox"
           id="agreement"
-          checked={isAgreed}
+          checked={agreed}
           onChange={handleCheckboxChange}
         />
         <label htmlFor="agreement">개인정보 처리방침에 동의합니다</label>
@@ -113,7 +117,7 @@ function QuestionSend7() {
       <StyleBox2_2 />
       <StyledBox2>
         <div className="rectangle" onClick={handleSubmitClick}>
-          <StyledLabel2 disabled={!isAgreed}>제출하기</StyledLabel2>
+          <StyledLabel2 disabled={!agreed}>제출하기</StyledLabel2>
         </div>
       </StyledBox2>
     </MainContainer>

@@ -59,22 +59,22 @@ function Home2() {
           <div className="flexcontainer">
             <p className="text" ref={(el) => (textRefs.current[0] = el)}>
               <span className="text-wrapper1">
-                대학생 AR 특수 효과 산업 이해도 상승, AR 필터 제작 기술 습득,
-                취업 옵션 확장 지원
-                <br />
+                대학생 AR 특수 효과 산업 이해도 상승,&nbsp;
+              </span>
+              <span className="text-wrapper1-1">
+                AR 필터 제작 기술 습득, 취업 옵션 확장 지원
               </span>
             </p>
             <p className="text" ref={(el) => (textRefs.current[1] = el)}>
               <span className="text-wrapper2">
                 틱톡의 Effect House 홍보, AR 필터 크리에이터 영입 및 육성
-                <br />
               </span>
             </p>
             <p className="text" ref={(el) => (textRefs.current[2] = el)}>
               <span className="text-wrapper3">
-                프로젝트 완료 후 지속적으로 틱톡 Effect House 프로그램 필터
-                크리에이터 활동
+                프로젝트 완료 후 지속적으로 틱톡 Effect House 프로그램{" "}
               </span>
+              <span className="text-wrapper3-1"> 필터크리에이터 활동</span>
             </p>
           </div>
         </StyledLabel>
@@ -281,10 +281,28 @@ const StyledLabel = styled.div`
     font-family: "Inter-SemiBold", Helvetica;
     font-size: 18px;
     font-weight: 600;
-    display: inline-block;
+    display: inline;
+    text-align: center;
+    max-width: 500px;
+    @media (max-width: 768px) {
+      display: inline-block;
+      font-size: 14px;
+      width: 90%;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+  }
+  & .text-wrapper1-1 {
+    width: 800px;
+    color: #ffffff;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-size: 18px;
+    font-weight: 600;
+    display: inline;
     text-align: center;
 
     @media (max-width: 768px) {
+      display: inline-block;
       font-size: 14px;
       width: 90%;
       max-width: 300px;
@@ -303,7 +321,7 @@ const StyledLabel = styled.div`
     @media (max-width: 768px) {
       font-size: 14px;
       width: 90%;
-      max-width: 275px;
+      max-width: 400px;
       margin: 0 auto;
     }
   }
@@ -313,14 +331,32 @@ const StyledLabel = styled.div`
     font-family: "Inter-SemiBold", Helvetica;
     font-size: 18px;
     font-weight: 600;
-    display: inline-block;
+    display: inline;
     text-align: center;
 
     @media (max-width: 768px) {
       font-size: 14px;
       width: 90%;
-      max-width: 280px;
+      max-width: 500px;
       margin: 0 auto;
+      display: inline-block;
+    }
+  }
+  & .text-wrapper3-1 {
+    width: 800px;
+    color: #ffffff;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-size: 18px;
+    font-weight: 600;
+    display: inline;
+    text-align: center;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+      width: 90%;
+      max-width: 500px;
+      margin: 0 auto;
+      display: inline-block;
     }
   }
 `;
