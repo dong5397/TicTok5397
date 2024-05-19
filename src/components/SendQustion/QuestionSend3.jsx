@@ -123,7 +123,7 @@ const StyledLabel = styled.div`
     width: 100%;
 
     @media (max-width: 768px) {
-      margin-left: -55px;
+      margin-left: -45px;
     }
   }
 
@@ -181,7 +181,7 @@ const InputBox = styled.div`
   }
 
   @media (max-width: 768px) {
-    width: 90%;
+    width: 87%;
     height: 60px;
     margin-bottom: 10px;
   }
@@ -198,7 +198,7 @@ const InputContainer = styled.div`
   width: 730px;
 
   @media (max-width: 768px) {
-    width: 99%;
+    width: 98%;
     height: 60px;
     margin-left: 1%;
   }

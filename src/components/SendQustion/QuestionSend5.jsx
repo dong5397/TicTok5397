@@ -47,7 +47,7 @@ const StyledLabel = styled.div`
   margin-left: 120px;
   @media (max-width: 768px) {
     font-size: 18px;
-    margin-right: 130px;
+    margin-right: 110px;
   }
   .row-wrapper {
     display: flex;
@@ -110,6 +110,6 @@ const StyledTextarea = styled.textarea`
   @media (max-width: 768px) {
     width: 96%;
     height: auto;
-    margin-right: 60px;
+    margin-left: 1%;
   }
 `;

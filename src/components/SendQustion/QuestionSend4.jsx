@@ -54,7 +54,7 @@ const StyledLabel = styled.div`
     margin-top: 30px;
 
     @media (max-width: 768px) {
-      margin-left: -10%;
+      margin-left: -7%;
     }
   }
 
@@ -108,8 +108,8 @@ const StyledInput = styled.input`
   }
 
   @media (max-width: 768px) {
-    width: 90%;
+    width: 93%;
     height: 60px;
-    margin-left: 3%;
+    margin-left: 4%;
   }
 `;

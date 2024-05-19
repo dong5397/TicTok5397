@@ -64,7 +64,7 @@ const StyledLabel = styled.div`
     margin-top: 30px;
 
     @media (max-width: 768px) {
-      margin-left: 0;
+      margin-left: 10px;
     }
   }
 
@@ -122,7 +122,7 @@ const StyledFileInput = styled.input`
   @media (max-width: 768px) {
     width: 96%;
     height: 60px;
-    margin-left: 0;
+    margin-left: 10px;
     line-height: 60px;
   }
 `;
@@ -132,7 +132,7 @@ const StyledLabel2 = styled.div`
   margin-bottom: 50px;
   width: 100%;
   text-align: left;
-  margin-left: 380px;
+  margin-left: 850px;
   .text-wrapper {
     color: #25f4eead;
     font-family: "Inter-Medium", Helvetica;
@@ -143,7 +143,7 @@ const StyledLabel2 = styled.div`
 
     @media (max-width: 768px) {
       font-size: 12px;
-      margin-left: -180px;
+      margin-left: -410px;
     }
   }
 
@@ -157,7 +157,7 @@ const StyledLabel2 = styled.div`
     margin-left: 15px;
     @media (max-width: 768px) {
       font-size: 12px;
-      margin-left: -168px;
+      margin-left: -400px;
     }
   }
 `;

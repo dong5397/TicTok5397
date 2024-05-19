@@ -90,7 +90,7 @@ const StyledLabel = styled.div`
     margin-top: 20px;
 
     @media (max-width: 768px) {
-      margin-left: -12%;
+      margin-left: -7%;
     }
   }
 
