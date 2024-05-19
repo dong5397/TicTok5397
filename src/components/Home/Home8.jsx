@@ -77,6 +77,7 @@ const Styleline = styled.div`
 
     @media (max-width: 768px) {
       width: 85%;
+      margin-left: -25px;
     }
   }
 `;

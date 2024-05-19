@@ -2,59 +2,6 @@
 import React from "react";
 import styled from "styled-components";
 
-const StyledLabel = styled.div`
-  position: absolute;
-  top: 2px;
-  left: 1px;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  padding-top: 10px;
-  background: rgba(0, 0, 0, 0.3); /* 텍스트 가독성 향상 */
-  border-radius: 16px;
-  z-index: 10;
-  transition: all 0.3s;
-
-  & .element {
-    color: #ffffff;
-    font-family: "Inter-Bold", Helvetica;
-    font-size: 25px;
-    margin-bottom: 10px;
-    margin-left: 30px;
-    font-weight: 700;
-    letter-spacing: 0;
-
-    @media (max-width: 768px) {
-      font-size: 20px;
-    }
-
-    @media (max-width: 480px) {
-      font-size: 20px;
-    }
-  }
-
-  & .h3 {
-    color: #ffffff;
-    font-family: "Inter-Regular", Helvetica;
-    font-size: 20px;
-    margin-left: 30px;
-    font-weight: 500;
-    letter-spacing: 0;
-    line-height: 1.4;
-
-    @media (max-width: 768px) {
-      font-size: 15px;
-      margin-right: 2px;
-    }
-
-    @media (max-width: 480px) {
-      font-size: 15px;
-      margin-right: 2px;
-    }
-  }
-`;
-
 const BoxContainerStyle = styled.div`
   display: flex;
   justify-content: center;
@@ -91,11 +38,25 @@ const StyledBox = styled.div`
     border: 2px solid ${(props) => props.gradientEnd}; /* 수정 */
     height: 100%;
     width: 100%;
+    font-weight: bold;
+    color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: all 0.3s;
-    display: flex;
+    display: inline-block;
     justify-content: center;
     align-items: center;
+    & .element {
+      display: block;
+      font-size: 25px;
+      margin-left: 28px;
+      margin-bottom: 5px;
+      padding-top: 15px;
+    }
+    & .h3 {
+      display: inline-block;
+      font-size: 20px;
+      margin-left: 28px;
+    }
   }
 
   &:hover {
@@ -120,11 +81,11 @@ const StyledBox1 = () => (
     gradientEndTransparent="rgba(254, 44, 85, 0.1)"
     reverse={false}
   >
-    <div className="rectangle"></div>
-    <StyledLabel>
+    <div className="rectangle">
+      {" "}
       <p className="element">일정</p>
       <div className="h3">2024년 12월경(상세일정 추후 공지)</div>
-    </StyledLabel>
+    </div>
   </StyledBox>
 );
 
@@ -135,11 +96,10 @@ const StyledBox2 = () => (
     gradientEndTransparent="rgba(37, 244, 238, 0.1)"
     reverse={true}
   >
-    <div className="rectangle"></div>
-    <StyledLabel>
+    <div className="rectangle">
       <p className="element">장소</p>
       <div className="h3">서울 (상세 장소 추후 공지)</div>
-    </StyledLabel>
+    </div>
   </StyledBox>
 );
 

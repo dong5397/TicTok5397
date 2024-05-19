@@ -87,7 +87,7 @@ const Styleline = styled.div`
 
   & .vector {
     width: 100%;
-    height: 2px;
+    height: 1px;
 
     @media (max-width: 768px) {
       width: 100%;
