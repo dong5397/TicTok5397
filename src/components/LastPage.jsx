@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Home1 from "../../images/LastPage.png";
+import Home1 from "../../images/LastPage.svg";
 
 function Home() {
   return (

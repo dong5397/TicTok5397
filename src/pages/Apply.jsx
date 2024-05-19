@@ -2,7 +2,7 @@ import styled, { keyframes } from "styled-components";
 import React, { useEffect } from "react";
 import Title from "../components/Apply/layout/Title";
 import Contents from "../components/Apply/layout/Contents";
-
+import LastPage from "../components/LastPage";
 function Apply() {
   useEffect(() => {
     // 페이지가 로드될 때 스크롤을 맨 위로 이동
@@ -14,6 +14,7 @@ function Apply() {
         <Title />
         <Contents />
       </ContentContainer>
+      <LastPage />
     </div>
   );
 }
