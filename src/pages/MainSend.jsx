@@ -71,7 +71,7 @@ function MainSend() {
 
     try {
       const response = await fetch(
-        "https://makterbackend.fly.dev/api/questions",
+        "https://tiktokbackendtest2.fly.dev/api/questions",
         {
           method: "POST",
           body: formData,

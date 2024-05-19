@@ -184,13 +184,13 @@ function StyleBox2() {
             대상
           </div>
           <div className="div">
-            한국에 거주하는 분(18세부터 26세까지)
+            한국에 거주하는 분 (18세부터 26세까지)
             <br />
-            서울/경기: 선착순 100명 (1회차 50명, 2회차 50명)
+            서울/경기 : 선착순 100명 (1회차 50명, 2회차 50명)
             <br />
-            대전: 선착순 50명
+            대전 : 선착순 50명
             <br />
-            광주: 선착순 50명
+            광주 : 선착순 50명
             <br />
             <Label2 />
           </div>
@@ -202,7 +202,7 @@ function StyleBox2() {
             <img className="dot-img" src={Dot} alt="점" />
             참가 방법
           </div>
-          <div className="div">개인 또는 2인팀(디자이너 1인, 개발자 1인)</div>
+          <div className="div">개인 또는 2인팀 (디자이너 1인, 개발자 1인)</div>
         </div>
       </AnimatedBox>
       <AnimatedBox delay={0.2}>
@@ -216,11 +216,11 @@ function StyleBox2() {
           </div>
           <div className="div2">
             공업디자인학과, 패션디자인학과, 웹디자인학과, 멀티미디어공학과,
-            컴퓨터공학과
+            컴퓨터공학과 등
           </div>
           <div className="div3">
             {" "}
-            등 (AR 필터 분야에 관심 많은 다른 전공 대학생도 환영)
+            (AR 필터 분야에 관심 많은 다른 전공 대학생도 환영)
           </div>
         </div>
       </AnimatedBox>
@@ -231,7 +231,11 @@ function StyleBox2() {
             필수 자격
           </div>
           <div className="div">
-            한국에 거주하시는 분. 국적 상관없음. 졸업생도 상관없음.
+            한국에 거주하시는 분.
+            <br />
+            국적 상관없음.
+            <br />
+            졸업생도 상관없음.
           </div>
         </div>
       </AnimatedBox>

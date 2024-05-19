@@ -194,7 +194,7 @@ const Content2 = styled.div`
   & img.makertone-image {
     max-width: 100%;
     height: auto;
-    margin-top: -20px;
+    margin-top: -30px;
     @media (max-width: 800px) {
       margin-top: 80px;
     }
@@ -241,6 +241,7 @@ const StyledLabel = styled.div`
 
   & .flexcontainer {
     flex-direction: column;
+    margin-bottom: -10px;
 
     @media (max-width: 768px) {
       text-align: center;
