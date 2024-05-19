@@ -23,7 +23,7 @@ const StyledBox2 = styled.div`
   height: auto;
   position: relative;
   width: 800px;
-  margin-left: 60px;
+  margin-left: 90px;
   opacity: ${(props) => (props.isVisible ? 1 : 0)};
   transform: ${(props) =>
     props.isVisible ? "translateY(0)" : "translateY(-20px)"};

@@ -24,7 +24,7 @@ const StyledBox5 = styled.div`
   height: auto;
   position: relative;
   width: 800px;
-  margin-left: 60px;
+  margin-left: 90px;
   opacity: ${(props) => (props.isVisible ? 1 : 0)};
   transform: ${(props) =>
     props.isVisible ? "translateY(0)" : "translateY(-20px)"};
@@ -116,6 +116,7 @@ const StyledBox5 = styled.div`
     line-height: 1.5;
     position: relative;
     margin-left: 20px;
+    margin-top: 16px;
 
     @media (max-width: 768px) {
       font-size: 15px;
@@ -190,10 +191,12 @@ function StyleBox5() {
         <div className="group">
           <div className="text-wrapper">
             <img className="dot-img" src={Dot} alt="점" />
-            수상기준 : 발행한 모든 필터의
+            수상기준
           </div>{" "}
-          <div className="text-wrapper1">글로벌 사용량 60%</div>
-          <div className="div">+ 조회수 20% + 참여도(발행량) 20%</div>
+          <div className="div1">
+            발행한 모든 필터의 글로벌 사용량 60%
+            <br />+ 조회수 20% + 참여도(발행량) 20%
+          </div>
         </div>
       </AnimatedBox>
     </StyledBox2Container>

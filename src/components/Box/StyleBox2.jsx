@@ -1,7 +1,7 @@
 // index.jsx
 import React from "react";
 import styled from "styled-components";
-
+import HomeDot from "../../../images/Home/HomeDot.png";
 const BoxContainerStyle = styled.div`
   display: flex;
   justify-content: center;
@@ -24,9 +24,8 @@ const StyledBox = styled.div`
     background: linear-gradient(
       260deg,
       ${(props) => props.gradientStart} 0%,
-      ${(props) => props.gradientEnd} 32%
+      ${(props) => props.gradientEnd} 80%
     );
-    border: 1px solid transparent;
     border-image: linear-gradient(
         ${(props) => (props.reverse ? "to right" : "to left")},
         ${(props) => props.gradientEnd},
@@ -35,7 +34,7 @@ const StyledBox = styled.div`
       1;
 
     border-radius: 16px;
-    border: 2px solid ${(props) => props.gradientEnd}; /* 수정 */
+    border: 1px solid ${(props) => props.gradientEnd}; /* 수정 */
     height: 100%;
     width: 100%;
     font-weight: bold;
@@ -50,12 +49,17 @@ const StyledBox = styled.div`
       font-size: 25px;
       margin-left: 28px;
       margin-bottom: 5px;
-      padding-top: 15px;
     }
     & .h3 {
       display: inline-block;
       font-size: 20px;
       margin-left: 28px;
+    }
+    & .img {
+      display: inline-block;
+      font-size: 20px;
+      margin-left: 28px;
+      margin-top: 10px;
     }
   }
 
@@ -83,6 +87,7 @@ const StyledBox1 = () => (
   >
     <div className="rectangle">
       {" "}
+      <img className="img" src={HomeDot} />
       <p className="element">일정</p>
       <div className="h3">2024년 12월경(상세일정 추후 공지)</div>
     </div>
@@ -97,6 +102,7 @@ const StyledBox2 = () => (
     reverse={true}
   >
     <div className="rectangle">
+      <img className="img" src={HomeDot} />
       <p className="element">장소</p>
       <div className="h3">서울 (상세 장소 추후 공지)</div>
     </div>

@@ -89,7 +89,7 @@ const StyledBox = styled.div`
 export const StyleBox2_3 = () => {
   return (
     <CenterContainer>
-      <StyledLink to="/Submit">
+      <StyledLink to="/Apply">
         <StyledBox>
           <div className="rectangle">
             <StyledLabel>참가신청</StyledLabel>
