@@ -7,11 +7,16 @@ function JoinButton({ selectedButton, selectedRadio }) {
   useEffect(() => {
     if (selectedButton === "서울" && selectedRadio === "Team") {
       setRedirectUrl(
-        "https://docs.google.com/forms/d/e/1FAIpQLScUzMtsokD_sEKVc3Ws6Vvx_E2VPUVkwi-Cmo_RLbwMsyK9iw/formResponse"
+        "https://docs.google.com/forms/d/1nCTw4xQaW7Z3svAMFR5m3ek54dQHR2aktn5GI25tJsk/viewform?edit_requested=true"
       );
-    } else {
-      setRedirectUrl("");
-      console.log("none");
+    } else if (selectedButton === "대전" && selectedRadio === "Team") {
+      setRedirectUrl(
+        "https://docs.google.com/forms/d/1_wNZfRHhcUVeJB_YLILwJ1q5lPlHftNmvqRysw56SB4/viewform?edit_requested=true"
+      );
+    } else if (selectedButton === "광주" && selectedRadio === "Team") {
+      setRedirectUrl(
+        "https://docs.google.com/forms/d/17Y29gQ994vg0S50TSKkgKWuG1PVoKNQv3-5e1B1Rp4c/viewform?edit_requested=true"
+      );
     }
   }, [selectedButton, selectedRadio]);
 
@@ -35,20 +40,23 @@ const CenterContainer = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: 100px;
+  margin-bottom: 150px;
 
   @media (max-width: 768px) {
     margin-top: 50px;
+    margin-bottom: 100px;
   }
 
   @media (max-width: 480px) {
     margin-top: 50px;
+    margin-bottom: 50px;
   }
 `;
 
 const StyledLabel = styled.div`
   color: #ffffff;
   font-family: "Inter-Bold", Helvetica;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
   text-align: center;
   padding: 30px;
@@ -59,7 +67,7 @@ const StyledLabel = styled.div`
   }
 
   @media (max-width: 480px) {
-    font-size: 16px;
+    font-size: 18px;
     padding: 15px;
   }
 `;

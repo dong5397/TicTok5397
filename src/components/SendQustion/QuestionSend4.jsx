@@ -30,6 +30,7 @@ const MainContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
   overflow: hidden;
 
   @media (max-width: 768px) {
@@ -43,20 +44,17 @@ const StyledLabel = styled.div`
   align-items: flex-start;
   height: auto;
   width: 100%;
-  margin-left: 130px;
   max-width: 800px;
-  @media (max-width: 768px) {
-    font-size: 18px;
-    margin-right: 130px;
-  }
+  margin-left: 120px;
   .row-wrapper {
     display: flex;
     justify-content: space-between;
     width: 100%;
+
     margin-top: 30px;
 
     @media (max-width: 768px) {
-      margin-left: 15px;
+      margin-left: -10%;
     }
   }
 
@@ -68,7 +66,6 @@ const StyledLabel = styled.div`
     font-family: "Inter-SemiBold", Helvetica;
     font-weight: 700;
     margin-top: 10px;
-    font-size: 20px;
 
     .star-icon {
       width: 12px;
@@ -81,6 +78,10 @@ const StyledLabel = styled.div`
         height: 10px;
       }
     }
+  }
+
+  .text-wrapper2 {
+    font-size: 20px;
 
     @media (max-width: 768px) {
       font-size: 18px;
@@ -96,18 +97,19 @@ const StyledInput = styled.input`
   border-radius: 10px;
   background-color: transparent;
   color: white;
+
   font-size: 16px;
   outline: none;
+  margin-left: 50px;
   margin-top: 10px;
   padding-left: 10px;
-  margin-left: 50px;
   ::placeholder {
     color: #ffffff80;
   }
 
   @media (max-width: 768px) {
-    width: 94%;
+    width: 90%;
     height: 60px;
-    margin-right: 50px;
+    margin-left: 3%;
   }
 `;

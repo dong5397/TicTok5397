@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { RadioContext } from "./Contents";
+import { RadioContext } from ".././Apply/layout/Contents";
 import styled from "styled-components";
 
 function RadioGroup({ label, children }) {

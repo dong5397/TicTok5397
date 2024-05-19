@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import QuestionSend from "../components/SendQustion/QuestionSend1";
 import QuestionSend2 from "../components/SendQustion/QuestionSend2";
@@ -9,6 +9,10 @@ import QuestionSend6 from "../components/SendQustion/QuestionSend6";
 import QuestionSend7 from "../components/SendQustion/QuestionSend7";
 import LastPage from "../components/LastPage";
 function MainSend() {
+  useEffect(() => {
+    // 페이지가 로드될 때 스크롤을 맨 위로 이동
+    window.scrollTo(0, 0);
+  }, []);
   const [inquirerName, setInquirerName] = useState("");
   const [phoneNumber, setPhoneNumber] = useState({
     part1: "",

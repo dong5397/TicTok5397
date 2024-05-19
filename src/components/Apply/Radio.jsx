@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { RadioContext } from "./Contents";
+import { RadioContext } from "../Apply/layout/Contents";
 import styled from "styled-components";
 
 function Radio({ children, value, name }) {
@@ -58,16 +58,11 @@ const StyledRadio = styled.input`
   @media (max-width: 768px) {
     position: relative;
     appearance: none;
-    width: 35px;
-    height: 21px;
+    width: 40px;
+    height: 25px;
     border-radius: 50%;
     border: 2px solid #fe2c55;
     background-color: black;
-
-    &:checked {
-      background-color: black;
-      border-color: #fe2c55;
-    }
 
     &:checked::after {
       content: "";
@@ -79,13 +74,37 @@ const StyledRadio = styled.input`
       height: 10px;
       border-radius: 50%;
       background-color: #fe2c55;
-      border: 4px solid black;
+      border: 7px solid black;
+    }
+  }
+
+  @media (max-width: 425px) {
+    position: relative;
+    appearance: none;
+    width: 20px;
+    height: 15px;
+
+    border-radius: 50%;
+    border: 2px solid #fe2c55;
+    background-color: black;
+
+    &:checked::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #fe2c55;
+      border: 1px solid black;
     }
   }
 `;
 const StyledLabel = styled.div`
   height: 24px;
-  width: 90px;
+  width: 79px;
   margin-top: 2px;
 
   @media (max-width: 768px) {

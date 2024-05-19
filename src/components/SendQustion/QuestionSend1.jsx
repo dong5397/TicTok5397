@@ -73,7 +73,7 @@ const StyledLabel = styled.div`
 
   .label-container {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
     gap: 10px;
 
     @media (max-width: 768px) {
@@ -174,7 +174,7 @@ const StyledLine = styled.div`
     height: 2px;
   }
   @media (max-width: 768px) {
-    width: 97%;
+    width: 100%;
     height: 60px;
     margin-left: 0px;
   }
@@ -200,7 +200,7 @@ const StyledInput = styled.input`
   }
 
   @media (max-width: 768px) {
-    width: 95%;
+    width: 93%;
     height: 60px;
     margin-left: -1%;
   }

@@ -92,7 +92,7 @@ export const StyleBox2_3 = () => {
       <StyledLink to="/Submit">
         <StyledBox>
           <div className="rectangle">
-            <StyledLabel>참가신청하기</StyledLabel>
+            <StyledLabel>참가신청</StyledLabel>
           </div>
         </StyledBox>
       </StyledLink>
