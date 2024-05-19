@@ -51,7 +51,7 @@ const Styleline = styled.div`
   width: 85%;
   max-width: 800px;
 
-  margin-left: 60px;
+  margin-left: 90px;
 
   & .vector {
     width: 100%;
@@ -71,7 +71,7 @@ const BoxContainer = styled.div`
 
 const Img = styled.img`
   width: 77px;
-  height: 80px;
+  height: 79px;
   margin-top: -5px;
   @media (max-width: 768px) {
     width: 47px;

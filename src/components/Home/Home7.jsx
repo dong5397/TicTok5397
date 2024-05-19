@@ -63,7 +63,7 @@ const Styleline = styled.div`
   width: 85%;
   max-width: 800px;
 
-  margin-left: 60px;
+  margin-left: 90px;
 
   & .vector {
     width: 100%;

@@ -14,23 +14,24 @@ function Home11() {
 export default Home11;
 
 const MainContainer = styled.div`
-  width: 100%; /* 전체 너비로 설정 */
+  width: 100%;
   display: flex;
-  justify-content: center; /* 이미지가 가운데로 오도록 */
-  align-items: center; /* 이미지가 수직 가운데로 오도록 */
-  flex-direction: column; /* 이미지가 겹치지 않고 세로로 배치되도록 */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 `;
 
 const Image = styled.img`
   width: 100%;
-  height: auto; /* 비율 유지 */
+  height: auto;
+  max-width: 100%;
 `;
 
 const DesktopImage = styled(Image)`
-  max-width: 1200px; /* 데스크톱에서 이미지를 너무 크게 하지 않기 위해 제한 */
+  max-width: 100%;
 
   @media (max-width: 768px) {
-    display: none; /* 태블릿 및 모바일에서 숨기기 */
+    display: none;
   }
 `;
 
@@ -39,10 +40,6 @@ const MobileImage = styled(Image)`
 
   @media (max-width: 768px) {
     display: block; /* 태블릿 및 모바일에서 보이기 */
-    width: 90%; /* 태블릿 크기에서 적절한 너비로 조정 */
-  }
-
-  @media (max-width: 480px) {
-    width: 100%; /* 모바일에서 화면 전체 너비로 조정 */
+    width: 100%; /* 태블릿 및 모바일에서 화면 전체 너비로 조정 */
   }
 `;
