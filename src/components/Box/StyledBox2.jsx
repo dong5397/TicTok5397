@@ -4,7 +4,7 @@ import Dot from "../../../images/Home/Dot.png";
 import Label2 from "../Lable/Label2";
 
 const StyledBox2Container = styled.div`
-  margin-top: 60px;
+  margin-top: 50px;
   max-width: 800px;
   width: 100%;
   display: flex;
