@@ -39,11 +39,11 @@ const CenterContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 150px;
   margin-bottom: 150px;
 
   @media (max-width: 768px) {
-    margin-top: 50px;
+    margin-top: 100px;
     margin-bottom: 100px;
   }
 
@@ -77,21 +77,21 @@ const StyledBox = styled.div`
   width: 408px;
   position: relative;
   transition: all 0.3s ease;
-
-  & .rectangle {
+  * & .rectangle {
     background: linear-gradient(
       240deg,
       rgb(37, 244, 238) 0%,
       rgb(254, 44, 85) 100%
     );
     border-radius: 20px;
-    height: 108px;
-    width: 408px;
+    height: 72px;
+    width: 300px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
   }
 
   @media (max-width: 768px) {

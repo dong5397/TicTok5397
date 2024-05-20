@@ -122,6 +122,7 @@ const QuestionTitle = styled.div`
   color: white;
   font-size: 18px; /* 모바일에서 타이틀 폰트 크기 조절 */
   margin-top: 20px;
+  margin-right: 20px;
 `;
 
 const Answer = styled.div`

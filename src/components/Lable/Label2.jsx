@@ -19,7 +19,7 @@ const StyledLabel = styled.div`
 
     @media (max-width: 780px) {
       font-size: 8px;
-      margin-top: 135px;
+      margin-top: 155px;
     }
   }
 `;

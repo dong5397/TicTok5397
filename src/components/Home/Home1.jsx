@@ -15,11 +15,17 @@ function Home() {
 export default Home;
 
 const StyledImage = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
+  height: 100%;
+  width: 100%;
+  margin-top: -150px;
 
   & .untitled {
-    height: 539px;
-    width: 1280px;
+    height: 100%;
+    width: 85%;
 
     @media (max-width: 1200px) {
       width: 100%;

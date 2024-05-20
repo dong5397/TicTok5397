@@ -47,19 +47,22 @@ const StyledBox = styled.div`
     & .element {
       display: block;
       font-size: 25px;
-      margin-left: 28px;
+      margin-left: 38px;
       margin-bottom: 5px;
+      margin-top: -0px;
     }
     & .h3 {
       display: inline-block;
       font-size: 20px;
-      margin-left: 28px;
+      margin-left: 38px;
     }
     & .img {
+      width: 7px;
+      height: 7px;
       display: inline-block;
       font-size: 20px;
       margin-left: 28px;
-      margin-top: 10px;
+      margin-top: 20px;
     }
   }
 
