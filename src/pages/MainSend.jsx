@@ -8,6 +8,7 @@ import QuestionSend5 from "../components/SendQustion/QuestionSend5";
 import QuestionSend6 from "../components/SendQustion/QuestionSend6";
 import QuestionSend7 from "../components/SendQustion/QuestionSend7";
 import LastPage from "../components/LastPage";
+
 function MainSend() {
   const [inquirerName, setInquirerName] = useState("");
   const [phoneNumber, setPhoneNumber] = useState({
@@ -28,6 +29,7 @@ function MainSend() {
   const handlePhoneNumberChange = (part, value) => {
     setPhoneNumber((prev) => ({ ...prev, [part]: value }));
   };
+
   const handleEmailChange = (part, value) => {
     setEmail((prev) => ({ ...prev, [part]: value }));
   };
@@ -48,9 +50,36 @@ function MainSend() {
     setAgreed(isChecked);
   };
 
-  const submitQuestion = async () => {
+  const validateForm = () => {
+    if (!inquirerName) {
+      alert("문의자 이름을 입력해 주세요.");
+      return false;
+    }
+    if (!phoneNumber.part1 || !phoneNumber.part2 || !phoneNumber.part3) {
+      alert("전화번호를 완성해 주세요.");
+      return false;
+    }
+    if (!email.local || !email.domain) {
+      alert("이메일을 완성해 주세요.");
+      return false;
+    }
+    if (!title) {
+      alert("제목을 입력해 주세요.");
+      return false;
+    }
+    if (!content) {
+      alert("내용을 입력해 주세요.");
+      return false;
+    }
     if (!agreed) {
       alert("개인정보 처리방침에 동의해 주세요.");
+      return false;
+    }
+    return true;
+  };
+
+  const submitQuestion = async () => {
+    if (!validateForm()) {
       return;
     }
 
