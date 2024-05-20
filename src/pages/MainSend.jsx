@@ -71,6 +71,10 @@ function MainSend() {
       alert("내용을 입력해 주세요.");
       return false;
     }
+    if (!file) {
+      alert("파일을 입력해 주세요.");
+      return false;
+    }
     if (!agreed) {
       alert("개인정보 처리방침에 동의해 주세요.");
       return false;
@@ -96,7 +100,7 @@ function MainSend() {
 
     try {
       const response = await fetch(
-        "https://makterbackend.fly.dev/api/questions",
+        "https://tiktokbackendtest.fly.dev/api/questions",
         {
           method: "POST",
           body: formData,
