@@ -1,13 +1,13 @@
-# fly.toml app configuration file generated for tiktoktestpage on 2024-05-14T01:22:31+09:00
+# fly.toml app configuration file generated for tiktoktestpage on 2024-05-21T14:28:38+09:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = "tiktoktestpage"
-primary_region = "nrt"
+app = 'tiktoktestpage'
+primary_region = 'nrt'
 
 [build]
-  dockerfile = "Dockerfile"  # Dockerfile을 명시
+  dockerfile = 'Dockerfile'
 
 [http_service]
   internal_port = 80
@@ -15,7 +15,7 @@ primary_region = "nrt"
   auto_stop_machines = false
   auto_start_machines = true
   min_machines_running = 0
-  processes = ["app"]
+  processes = ['app']
 
 [[vm]]
-  size = "shared-cpu-1x"
+  size = 'shared-cpu-1x'
