@@ -64,7 +64,7 @@ const QuestionBox = styled.div`
   @media (max-width: 487px) {
     max-width: 437px;
   }
-  @media (max-width: 426px) {
+  @media (max-width: 436px) {
     max-width: 387px;
   }
 
@@ -106,7 +106,7 @@ const StyledLabel = styled.div`
     @media (max-width: 475px) {
       font-size: 51px;
     }
-    @media (max-width: 425px) {
+    @media (max-width: 435px) {
       font-size: 45px;
     }
 
@@ -123,7 +123,7 @@ const StyledLabel = styled.div`
 
     margin-top: 69px;
 
-    @media (max-width: 425px) {
+    @media (max-width: 435px) {
       margin-top: 72px;
     }
   }
@@ -137,7 +137,7 @@ const StyledLabel = styled.div`
     font-family: "Inter-SemiBold", Helvetica;
     font-weight: 700;
 
-    @media (max-width: 425px) {
+    @media (max-width: 435px) {
       align-items: center;
     }
 
@@ -166,7 +166,7 @@ const StyledLabel = styled.div`
 
     font-size: 23px;
 
-    @media (max-width: 425px) {
+    @media (max-width: 435px) {
       font-size: 19px;
     }
   }
@@ -176,7 +176,7 @@ const StyledLabel = styled.div`
     height: 23px;
     font-size: 16px;
 
-    @media (max-width: 425px) {
+    @media (max-width: 435px) {
       display: none;
     }
   }
@@ -198,7 +198,7 @@ const StyledLine = styled.div`
   @media (max-width: 475px) {
     width: 420px;
   }
-  @media (max-width: 425px) {
+  @media (max-width: 435px) {
     width: 375px;
   }
 
@@ -232,7 +232,7 @@ const StyledInput = styled.input`
     width: 408px;
     height: 45px;
   }
-  @media (max-width: 425px) {
+  @media (max-width: 435px) {
     width: 365px;
     height: 45px;
   }

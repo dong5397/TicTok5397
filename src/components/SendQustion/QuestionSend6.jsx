@@ -71,7 +71,7 @@ const QuestionBox = styled.div`
   @media (max-width: 476px) {
     max-width: 437px;
   }
-  @media (max-width: 426px) {
+  @media (max-width: 436px) {
     max-width: 387px;
   }
 
@@ -95,7 +95,7 @@ const StyledLabel = styled.div`
 
     margin-top: 48px;
 
-    @media (max-width: 425px) {
+    @media (max-width: 435px) {
       margin-top: 44px;
     }
   }
@@ -133,7 +133,7 @@ const StyledLabel = styled.div`
   .text-wrapper2 {
     font-size: 23px;
 
-    @media (max-width: 425px) {
+    @media (max-width: 435px) {
       font-size: 19px;
     }
   }
@@ -153,7 +153,7 @@ const FileInputBox = styled.div`
     width: 412px;
     height: 45px;
   }
-  @media (max-width: 425px) {
+  @media (max-width: 435px) {
     width: 369px;
     height: 45px;
   }
@@ -183,7 +183,7 @@ const CustomFileInputLabel = styled.label`
   cursor: pointer;
   font-weight: bold;
 
-  @media (max-width: 425px) {
+  @media (max-width: 435px) {
     padding: 5px 10px;
   }
 `;
@@ -193,7 +193,7 @@ const FileName = styled.span`
   color: #ffffff;
   font-size: 16px;
 
-  @media (max-width: 425px) {
+  @media (max-width: 435px) {
     font-size: 14px;
   }
 `;
@@ -205,7 +205,7 @@ const StyledLabel2 = styled.div`
   text-align: left;
   margin-left: 15px;
 
-  @media (max-width: 425px) {
+  @media (max-width: 435px) {
     width: 250px;
   }
   .text-wrapper {
@@ -216,7 +216,7 @@ const StyledLabel2 = styled.div`
     line-height: 1.2;
     margin: 0;
 
-    @media (max-width: 425px) {
+    @media (max-width: 435px) {
       display: none;
     }
   }
@@ -224,7 +224,7 @@ const StyledLabel2 = styled.div`
   .text-wrapper.mobile {
     display: none;
 
-    @media (max-width: 425px) {
+    @media (max-width: 435px) {
       display: block;
       font-size: 8px;
     }
@@ -238,7 +238,7 @@ const StyledLabel2 = styled.div`
     line-height: 1.2;
     margin: 0;
 
-    @media (max-width: 425px) {
+    @media (max-width: 435px) {
       font-size: 8px;
     }
   }

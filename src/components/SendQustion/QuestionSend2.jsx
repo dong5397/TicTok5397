@@ -78,7 +78,7 @@ const QuestionBox = styled.div`
   @media (max-width: 487px) {
     max-width: 437px;
   }
-  @media (max-width: 426px) {
+  @media (max-width: 436px) {
     max-width: 387px;
   }
 
@@ -102,7 +102,7 @@ const StyledLabel = styled.div`
 
     margin-top: 48px;
 
-    @media (max-width: 425px) {
+    @media (max-width: 435px) {
       margin-top: 44px;
     }
   }
@@ -139,7 +139,7 @@ const StyledLabel = styled.div`
   .text-wrapper2 {
     font-size: 23px;
 
-    @media (max-width: 425px) {
+    @media (max-width: 435px) {
       font-size: 19px;
     }
   }
@@ -151,13 +151,13 @@ const StyledInput = styled.input`
     font-size: 20px; /* 적절한 크기로 조정 */
     padding-left: 11px;
 
-    @media (max-width: 425px) {
+    @media (max-width: 435px) {
       font-size: 15px;
       padding-left: 5px;
     }
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: 435px) {
     width: 365px;
     height: 45px;
   }
@@ -169,7 +169,7 @@ const InputBox = styled.div`
     width: 118px;
     height: 49px;
   }
-  @media (max-width: 425px) {
+  @media (max-width: 435px) {
     width: 109px;
     height: 45px;
   }
@@ -211,7 +211,7 @@ const InputContainer = styled.div`
     height: 51px;
     gap: 15px;
   }
-  @media (max-width: 425px) {
+  @media (max-width: 435px) {
     width: 373px;
     height: 45px;
     gap: 20px;
@@ -229,7 +229,7 @@ const InputDivider = styled.span`
   position: relative;
   left: 2px;
 
-  @media (max-width: 425px) {
+  @media (max-width: 435px) {
     display: none;
   }
 `;

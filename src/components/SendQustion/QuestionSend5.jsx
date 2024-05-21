@@ -39,7 +39,7 @@ const QuestionBox = styled.div`
   @media (max-width: 476px) {
     max-width: 437px;
   }
-  @media (max-width: 426px) {
+  @media (max-width: 436px) {
     max-width: 387px;
   }
 
@@ -63,7 +63,7 @@ const StyledLabel = styled.div`
 
     margin-top: 48px;
 
-    @media (max-width: 425px) {
+    @media (max-width: 435px) {
       margin-top: 44px;
     }
   }
@@ -102,7 +102,7 @@ const StyledLabel = styled.div`
   .text-wrapper2 {
     font-size: 23px;
 
-    @media (max-width: 425px) {
+    @media (max-width: 435px) {
       font-size: 19px;
     }
   }
@@ -127,7 +127,7 @@ const StyledTextarea = styled.textarea`
     font-size: 24px; /* 적절한 크기로 조정 */
     padding-left: 10px;
 
-    @media (max-width: 425px) {
+    @media (max-width: 435px) {
       font-size: 19px;
       padding-left: 5px;
     }
@@ -136,7 +136,7 @@ const StyledTextarea = styled.textarea`
     width: 405px;
     height: 237px;
   }
-  @media (max-width: 425px) {
+  @media (max-width: 435px) {
     width: 365px;
     height: 194px;
   }

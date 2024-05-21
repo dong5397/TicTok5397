@@ -146,7 +146,7 @@ const QuestionBox = styled.div`
   @media (max-width: 476px) {
     max-width: 437px;
   }
-  @media (max-width: 426px) {
+  @media (max-width: 436px) {
     max-width: 387px;
   }
 
@@ -169,7 +169,7 @@ const StyledLabel = styled.div`
 
     margin-top: 48px;
 
-    @media (max-width: 425px) {
+    @media (max-width: 435px) {
       margin-top: 44px;
     }
   }
@@ -206,7 +206,7 @@ const StyledLabel = styled.div`
   .text-wrapper2 {
     font-size: 23px;
 
-    @media (max-width: 425px) {
+    @media (max-width: 435px) {
       font-size: 19px;
     }
   }
@@ -250,7 +250,7 @@ const StyledContent = styled.div`
     border-radius: 10px;
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: 435px) {
     max-width: 90%;
     height: 350px;
     padding: 10px;
